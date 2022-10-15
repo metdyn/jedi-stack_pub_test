@@ -1,0 +1,7 @@
+# for mac install
+#
+
+d_here="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+export JEDI_OPT=${d_here}/../../../modules
+module use ${JEDI_OPT}/modulefiles/core
+
