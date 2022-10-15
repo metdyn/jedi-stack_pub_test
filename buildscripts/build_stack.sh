@@ -77,31 +77,34 @@ $MODULES && (set +x;  source $MODULESHOME/init/bash; module purge; set -x)
 # - should add a check at some point to see if they are already there.
 # this can be done in each script individually
 # it might warrant a --force flag to force rebuild when desired
-build_lib CMAKE cmake 3.20.0
+build_lib CMAKE cmake 3.22.0
 build_lib UDUNITS udunits 2.2.28
 build_lib JPEG jpeg 9.1.0
-build_lib ZLIB zlib 1.2.11
+build_lib ZLIB zlib 1.2.12
 build_lib PNG png 1.6.35
 build_lib SZIP szip 2.1.1
 build_lib LAPACK lapack 3.8.0
-build_lib BOOST_HDRS boost 1.68.0 headers-only
-build_lib EIGEN3 eigen 3.3.7
+build_lib BOOST_HDRS boost 1.78.0 headers-only
+build_lib EIGEN3 eigen 3.4.0
 build_lib BUFR bufr noaa-emc 11.5.0
-build_lib ECBUILD ecbuild ecmwf 3.6.1
+build_lib ECBUILD ecbuild ecmwf 3.6.5
 build_lib CGAL cgal 5.0.4
 build_lib GITLFS git-lfs 2.11.0
+build_lib GSL_LITE gsl_lite 0.37.0
+build_lib PYBIND11 pybind11 2.8.1
 
 #----------------------
 # These must be rebuilt for each MPI implementation
-build_lib HDF5 hdf5 1.12.0
-build_lib PNETCDF pnetcdf 1.12.1
+build_lib HDF5 hdf5 1.13.2
+build_lib PNETCDF pnetcdf 1.12.2
 build_lib NETCDF netcdf 4.7.4 4.5.3 4.3.0
 build_lib NCCMP nccmp 1.8.7.0
-build_lib ECKIT eckit ecmwf 1.16.0
-build_lib FCKIT fckit ecmwf 0.9.2
-build_lib ATLAS atlas ecmwf 0.24.1
+build_lib ECKIT eckit ecmwf 1.19.0
+build_lib FCKIT fckit ecmwf 0.9.5
+build_lib ATLAS atlas ecmwf 0.30.0
 build_lib ODB odb 0.18.1.r2
-build_lib ODC odc ecmwf 2021.03.0
+build_lib ODC odc ecmwf 1.4.4
+build_lib ECCODES eccodes 2.24.0
 
 # ===============================================================================
 # Optional Extensions to the JEDI Stack
@@ -109,13 +112,10 @@ build_lib ODC odc ecmwf 2021.03.0
 #----------------------
 # MPI-independent
 build_lib JASPER jasper 1.900.1
-build_lib ARMADILLO armadillo 1.900.1
 build_lib XERCES xerces 3.1.4
 build_lib NCEPLIBS nceplibs fv3
 build_lib TKDIFF tkdiff 4.3.5
 build_lib PYJEDI pyjedi
-build_lib PYBIND11 pybind11 2.5.0
-build_lib GSL_LITE gsl_lite 0.37.0
 build_lib GEOS geos 3.8.1
 build_lib SQLITE sqlite 3.32.3
 build_lib PROJ proj 7.1.0
@@ -131,7 +131,7 @@ build_lib PIO pio 2.5.1
 build_lib FFTW fftw 3.3.8
 build_lib BOOST_FULL boost 1.68.0
 build_lib ESMF esmf 8_0_1
-build_lib BASELIBS baselibs 5.2.2
+build_lib BASELIBS baselibs 6.2.13
 build_lib PDTOOLKIT pdtoolkit 3.25.1
 build_lib TAU2 tau2 3.25.1
 build_lib FMS fms jcsda release-stable
