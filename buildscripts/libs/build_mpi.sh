@@ -43,7 +43,7 @@ software=$name-$version
 [[ -d $software ]] || ( $WGET $url; tar -xf $software.tar.gz )
 [[ ${DOWNLOAD_ONLY} =~ [yYtT] ]] && exit 0
 [[ -d $software ]] && cd $software || ( echo "$software does not exist, ABORT!"; exit 1 )
-[[ -d build ]] && rm -rf build
+#[[ -d build ]] && rm -rf build
 mkdir -p build && cd build
 
 prefix="${PREFIX:-"/opt/modules"}/$compiler/$name/$version"
@@ -90,6 +90,12 @@ case "$name" in
            export pac_cv_prog_f77_mismatched_args=yes
        fi
        [[ -n $HWLOC_ROOT ]] && extra_conf+=" --with-hwloc-prefix=${HWLOC_ROOT}"
+# add for clang 14.0.0
+# not work:      openmpi_conf="--with-hwloc=internal --with-libevent=internal"
+#       extra_conf+=${openmpi_conf}
+# note 2: does not work
+# https://docs.open-mpi.org/en/v5.0.x/faq/building-open-mpi.html; choice 3:
+#       extra_conf+="--with-hwloc-libdir=/usr/local/lib"
        ;;
     *       )
        echo "Invalid option for MPI = $software, ABORT!"
