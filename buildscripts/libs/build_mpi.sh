@@ -44,7 +44,7 @@ export CXXFLAGS+=" -fPIC"
 export FCFLAGS=${FFLAGS}
 
 [[ -d $software ]] && cd $software || ( echo "$software does not exist, ABORT!"; exit 1 )
-#[[ -d build ]] && rm -rf build
+[[ -d build ]] && rm -rf build
 mkdir -p build && cd build
 
 prefix="${PREFIX:-"/opt/modules"}/$compiler/$name/$version"
