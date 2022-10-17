@@ -8,11 +8,19 @@ set -ex
 name="json"
 version=$1
 
+cd $JEDI_STACK_ROOT/${PKGDIR:-"pkg"}
+
+software="$name-$version"
+tarfile="v$version.tar.gz"
+url="https://github.com/nlohmann/json/archive/$tarfile"
+[[ -d $software ]] || ( rm -f $tarfile; $WGET $url; tar -xf $tarfile )
+[[ ${DOWNLOAD_ONLY} =~ [yYtT] ]] && exit 0
+
 if $MODULES; then
     set +x
     source $MODULESHOME/init/bash
     module load jedi-$JEDI_COMPILER
-    module try-load cmake
+    module try_load cmake
     module list
     set -x
 
@@ -26,18 +34,11 @@ else
     prefix=${json_ROOT:-"/usr/local"}
 fi
 
-cd $JEDI_STACK_ROOT/${PKGDIR:-"pkg"}
-
-software="$name-$version"
-tarfile="v$version.tar.gz"
-url="https://github.com/nlohmann/json/archive/$tarfile"
-[[ -d $software ]] || ( $WGET $url; tar -xf $tarfile )
-[[ ${DOWNLOAD_ONLY} =~ [yYtT] ]] && exit 0
 [[ -d $software ]] && cd $software || ( echo "$software does not exist, ABORT!"; exit 1 )
 [[ -d build ]] && rm -rf build
 mkdir -p build && cd build
 
-cmake .. -DCMAKE_INSTALL_PREFIX=$prefix -DJSON_BuildTests=$MAKE_CHECK
+cmake .. -DCMAKE_INSTALL_PREFIX=$prefix -DCMAKE_INSTALL_LIBDIR=lib -DJSON_BuildTests=$MAKE_CHECK
 [[ $MAKE_CHECK =~ [yYtT] ]] && make test
 $SUDO make install
 

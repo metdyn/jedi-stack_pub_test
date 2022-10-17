@@ -11,6 +11,16 @@ set -ex
 name="pybind11"
 version=$1
 
+cd ${JEDI_STACK_ROOT}/${PKGDIR:-"pkg"}
+
+software=pybind11
+branch=v$(echo $version)
+[[ -d $software ]] || git clone https://github.com/pybind/$software
+[[ -d $software ]] && cd $software || ( echo "$software does not exist, ABORT!"; exit 1 )
+git fetch
+git checkout $branch
+[[ ${DOWNLOAD_ONLY} =~ [yYtT] ]] && exit 0
+
 # Hyphenated version used for install prefix
 compiler=$(echo $JEDI_COMPILER | sed 's/\//-/g')
 
@@ -18,7 +28,7 @@ if $MODULES; then
     set +x
     source $MODULESHOME/init/bash
     module load jedi-$JEDI_COMPILER
-    module try-load cmake
+    module try_load cmake
     module list
     set -x
 
@@ -31,15 +41,6 @@ else
     prefix="/usr/local"
 fi
 
-cd ${JEDI_STACK_ROOT}/${PKGDIR:-"pkg"}
-
-software=pybind11
-branch=v$(echo $version)
-[[ -d $software ]] || git clone https://github.com/pybind/$software
-[[ ${DOWNLOAD_ONLY} =~ [yYtT] ]] && exit 0
-[[ -d $software ]] && cd $software || ( echo "$software does not exist, ABORT!"; exit 1 )
-git fetch
-git checkout $branch
 [[ -d build ]] && rm -rf build
 mkdir -p build && cd build
 

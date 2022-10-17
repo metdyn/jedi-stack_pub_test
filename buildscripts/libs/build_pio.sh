@@ -16,14 +16,24 @@ mpi=$(echo $JEDI_MPI | sed 's/\//-/g')
 
 branch=pio_$(echo $version | sed -e 's/\./_/g')
 
+cd ${JEDI_STACK_ROOT}/${PKGDIR:-"pkg"}
+
+software=ParallelIO
+[[ -d $software ]] || git clone https://github.com/NCAR/$software
+[[ -d $software ]] && cd $software || ( echo "$software does not exist, ABORT!"; exit 1 )
+git fetch
+git checkout $branch
+[[ ${DOWNLOAD_ONLY} =~ [yYtT] ]] && exit 0
+
 if $MODULES; then
     set +x
     source $MODULESHOME/init/bash
     module load jedi-$JEDI_COMPILER
     module load jedi-$JEDI_MPI 
-    module try-load cmake
-    module try-load git-lfs
-    module try-load hdf5
+    module try_load ncarcompilers
+    module try_load cmake
+    module try_load git-lfs
+    module try_load hdf5
     module load pnetcdf
     module load netcdf
     module list
@@ -52,14 +62,6 @@ export CFLAGS+=" -fPIC -fcommon"
 export CXXFLAGS+=" -fPIC"
 export FCFLAGS="$FFLAGS"
 
-cd ${JEDI_STACK_ROOT}/${PKGDIR:-"pkg"}
-
-software=ParallelIO
-[[ -d $software ]] || git clone https://github.com/NCAR/$software
-[[ ${DOWNLOAD_ONLY} =~ [yYtT] ]] && exit 0
-[[ -d $software ]] && cd $software || ( echo "$software does not exist, ABORT!"; exit 1 )
-git fetch
-git checkout $branch
 [[ -d build ]] && rm -rf build
 mkdir -p build && cd build
 export CMAKE_INCLUDE_PATH=$MPI_Fortran_INCLUDE_PATH #Find MPI is broken in PIO GPTL MPIMOD_PATH must be found at this prefix

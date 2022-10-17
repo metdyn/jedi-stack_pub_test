@@ -8,13 +8,21 @@ set -ex
 name="eigen"
 version=$1
 
+cd $JEDI_STACK_ROOT/${PKGDIR:-"pkg"}
+
+software="eigen-$version"
+tarfile="$software.tar.bz2"
+url="https://gitlab.com/libeigen/eigen/-/archive/$version/$tarfile"
+[[ -d $software ]] || ( rm -f $tarfile; $WGET $url; tar -xf $tarfile )
+[[ ${DOWNLOAD_ONLY} =~ [yYtT] ]] && exit 0
+
 # this is only needed if MAKE_CHECK is enabled
 if $MODULES; then
     set +x
     source $MODULESHOME/init/bash
     module load jedi-$JEDI_COMPILER
-    module try-load boost-headers
-    module try-load cmake
+    module try_load boost-headers
+    module try_load cmake
     module list
     set -x
 
@@ -28,13 +36,6 @@ else
     prefix=${EIGEN_ROOT:-"/usr/local"}
 fi
 
-cd $JEDI_STACK_ROOT/${PKGDIR:-"pkg"}
-
-software="eigen-$version"
-tarfile="$software.tar.bz2"
-url="https://gitlab.com/libeigen/eigen/-/archive/$version/$tarfile"
-[[ -d $software ]] || ( $WGET $url; tar -xf $tarfile )
-[[ ${DOWNLOAD_ONLY} =~ [yYtT] ]] && exit 0
 [[ -d $software ]] && cd $software || ( echo "$software does not exist, ABORT!"; exit 1 )
 [[ -d build ]] && rm -rf build
 mkdir -p build && cd build

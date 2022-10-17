@@ -3,15 +3,19 @@
 # This software is licensed under the terms of the Apache Licence Version 2.0 which can be obtained at
 # http://www.apache.org/licenses/LICENSE-2.0.
 
+# Hosts cheyenne and casper use different default system module trees:
+#  cheyenne / MODULESHOME: /glade/u/apps/ch/opt
+#  casper / MODULESHOME:   /glade/u/apps/dav/opt
+# Use these to set CXXFLAGS / LDFLAGS accordingly per host-specific config_<host>.sh script
 
 # Compiler/MPI combination
-# GNU
-export JEDI_COMPILER="gnu/10.2.0"
-export JEDI_MPI="openmpi/4.0.4"
+# GNU (default)
+#export JEDI_COMPILER="gnu/10.1.0"
+#export JEDI_MPI="openmpi/4.1.0"
 
-# Intel
-export JEDI_COMPILER="intel/2020.2"
-export JEDI_MPI="impi/2020.2"
+# Intel (default)
+export JEDI_COMPILER="intel/19.1.1"
+export JEDI_MPI="impi/2019.7.217"
 
 # This tells jedi-stack how you want to build the compiler and mpi modules
 # valid options include:
@@ -24,14 +28,14 @@ export JEDI_COMPILER_BUILD="native-module"
 export MPI_BUILD="native-module"
 
 # Build options
-export PREFIX=/work/noaa/da/jedipara/opt/modules
+export PREFIX=/glade/work/jedipara/casper/opt/modules
 export USE_SUDO=N
 export PKGDIR=pkg
 export LOGDIR=buildscripts/log
-export OVERWRITE=Y
-export NTHREADS=8
+export OVERWRITE=N
+export NTHREADS=4
 export   MAKE_CHECK=N
-export MAKE_VERBOSE=N
+export MAKE_VERBOSE=Y
 export   MAKE_CLEAN=N
 export DOWNLOAD_ONLY=F
 export STACK_EXIT_ON_FAIL=T
@@ -43,6 +47,6 @@ export CFLAGS=""
 # C++-14 compliant compiler settings
 # set / export these variables when building for Intel compiler(s)
 if [[ "$JEDI_COMPILER" =~ .*"intel"* ]]; then
-    export CXXFLAGS="-std=c++14"
-    export LDFLAGS="-std=c++14"
+   export CXXFLAGS="-gxx-name=/glade/u/apps/dav/opt/gnu/9.1.0/bin/g++ -Wl,-rpath,/glade/u/apps/dav/opt/gnu/9.1.0/lib64"
+   export LDFLAGS="-gxx-name=/glade/u/apps/dav/opt/gnu/9.1.0/bin/g++ -Wl,-rpath,/glade/u/apps/dav/opt/gnu/9.1.0/lib64"
 fi

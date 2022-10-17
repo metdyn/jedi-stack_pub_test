@@ -15,10 +15,10 @@ cd ${JEDI_STACK_ROOT}/${PKGDIR:-"pkg"}
 
 software=$name
 [[ -d $software ]] || git clone https://github.com/$source/$software.git
-[[ ${DOWNLOAD_ONLY} =~ [yYtT] ]] && exit 0
 [[ -d $software ]] && cd $software || ( echo "$software does not exist, ABORT!"; exit 1 )
 git fetch --tags
 git checkout $version
+[[ ${DOWNLOAD_ONLY} =~ [yYtT] ]] && exit 0
 
 compiler=$(echo $JEDI_COMPILER | sed 's/\//-/g')
 
@@ -26,7 +26,7 @@ if $MODULES; then
     set +x
     source $MODULESHOME/init/bash
     module load jedi-$JEDI_COMPILER
-    module try-load cmake git python qt
+    module try_load cmake git python qt
     module list
     set -x
 
@@ -63,8 +63,8 @@ fi
 if [ -z $boost_root ]; then
     echo "Building boost from source"
     boost_software=$boost\_$(echo $boost_version | sed 's/\./_/g')
-    url="https://dl.bintray.com/boostorg/release/$boost_version/source/$boost_software.tar.gz"
-    [[ -d $boost_software ]] || ( $WGET $url; tar -xf $boost_software.tar.gz )
+    url="https://boostorg.jfrog.io/artifactory/main/release/$boost_version/source/$boost_software.tar.gz"
+    [[ -d $boost_software ]] || ( rm -f $boost_software.tar.gz; $WGET $url; tar -xf $boost_software.tar.gz )
     [[ -d $boost_software ]] && cd $boost_software || ( echo "$boost_software does not exist, ABORT!"; exit 1 )
 
     debug="--debug-configuration"

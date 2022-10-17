@@ -18,7 +18,7 @@ export JEDI_MPI="impi/19.0.5"
 export COMPILER_BUILD="native-module"
 export MPI_BUILD="native-module"
 # Build options
-export PREFIX=${JEDI_STACK_PREFIX:-/data/users/$USER/modules}
+export PREFIX=${JEDI_OPT:-/data/users/$USER/modules}
 export USE_SUDO=N
 export PKGDIR=pkg
 export LOGDIR=buildscripts/log
@@ -33,6 +33,11 @@ export WGET="wget -nv"
 #Global compiler flags
 export FFLAGS=""
 export CFLAGS=""
-export CXXFLAGS="-std=c++14"
-export LDFLAGS="-std=c++14"
+
+# C++-14 compliant compiler settings
+# set / export these variables when building for Intel compiler(s)
+if [[ "$JEDI_COMPILER" =~ .*"intel"* ]]; then
+    export CXXFLAGS="-std=c++14"
+    export LDFLAGS="-std=c++14"
+fi
 

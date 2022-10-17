@@ -14,16 +14,26 @@ version=$2
 compiler=$(echo $JEDI_COMPILER | sed 's/\//-/g')
 mpi=$(echo $JEDI_MPI | sed 's/\//-/g')
 
+software=$name
+cd ${JEDI_STACK_ROOT}/${PKGDIR:-"pkg"}
+[[ -d $software ]] || git clone https://github.com/$source/$software.git
+[[ -d $software ]] && cd $software || ( echo "$software does not exist, ABORT!"; exit 1 )
+git fetch --tags
+git checkout $version
+sed -i -e 's/project( eckit CXX/project( eckit CXX Fortran/' CMakeLists.txt
+[[ ${DOWNLOAD_ONLY} =~ [yYtT] ]] && exit 0
+
 if $MODULES; then
     set +x
     source $MODULESHOME/init/bash
     module load jedi-$JEDI_COMPILER
     module load jedi-$JEDI_MPI
-    module try-load cmake
-    module try-load ecbuild
-    module try-load zlib
-    module try-load boost-headers
-    module try-load eigen
+    module try_load ncarcompilers
+    module try_load cmake
+    module try_load ecbuild
+    module try_load zlib
+    module try_load boost-headers
+    module try_load eigen
     module list
     set -x
 
@@ -42,14 +52,6 @@ export CXX=$MPI_CXX
 export F9X=$FC
 export CXXFLAGS+=" -fPIC"
 
-software=$name
-cd ${JEDI_STACK_ROOT}/${PKGDIR:-"pkg"}
-[[ -d $software ]] || git clone https://github.com/$source/$software.git
-[[ ${DOWNLOAD_ONLY} =~ [yYtT] ]] && exit 0
-[[ -d $software ]] && cd $software || ( echo "$software does not exist, ABORT!"; exit 1 )
-git fetch --tags
-git checkout $version
-sed -i -e 's/project( eckit CXX/project( eckit CXX Fortran/' CMakeLists.txt
 [[ -d build ]] && $SUDO rm -rf build
 mkdir -p build && cd build
 

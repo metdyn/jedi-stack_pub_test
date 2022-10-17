@@ -8,13 +8,20 @@ set -ex
 name="jasper"
 version=$1
 
+cd ${JEDI_STACK_ROOT}/${PKGDIR:-"pkg"}
+
+software=$name-$version
+gitURL="https://github.com/mdadams/jasper"
+[[ -d $software ]] || ( git clone -b "version-$version" $gitURL $software )
+[[ ${DOWNLOAD_ONLY} =~ [yYtT] ]] && exit 0
+
 # Hyphenated version used for install prefix
 compiler=$(echo $JEDI_COMPILER | sed 's/\//-/g')
 
 set +x
 source $MODULESHOME/init/bash
 module load jedi-$JEDI_COMPILER
-module try-load cmake
+module try_load cmake
 module list
 set -x
 
@@ -25,12 +32,6 @@ export CXX=$SERIAL_CXX
 export FFLAGS+=" -fPIC"
 export CFLAGS+=" -fPIC"
 
-cd ${JEDI_STACK_ROOT}/${PKGDIR:-"pkg"}
-
-software=$name-$version
-gitURL="https://github.com/mdadams/jasper"
-[[ -d $software ]] || ( git clone -b "version-$version" $gitURL $software )
-[[ ${DOWNLOAD_ONLY} =~ [yYtT] ]] && exit 0
 [[ -d $software ]] && cd $software || ( echo "$software does not exist, ABORT!"; exit 1 )
 sourceDir=$PWD
 [[ -d build_jasper ]] && rm -rf build_jasper

@@ -13,24 +13,26 @@ set -ex
 name="proj"
 version=$1
 
+software=$name-$version
+cd ${JEDI_STACK_ROOT}/${PKGDIR:-"pkg"}
+tarname="$software.tar.gz"
+url="https://download.osgeo.org/proj/$tarname"
+[[ -d $software ]] || ( rm -f $tarname; $WGET $url; tar -xf $tarname )
+[[ ${DOWNLOAD_ONLY} =~ [yYtT] ]] && exit 0
+
 # Hyphenated version used for install prefix
 compiler=$(echo $JEDI_COMPILER | sed 's/\//-/g')
 
 set +x
 source $MODULESHOME/init/bash
 module load jedi-$JEDI_COMPILER
-module try-load cmake
+module try_load cmake
 module list
 set -x
 
 initialize_prefix_compiler $name $version $compiler "" sqlite
 set -x
-software=$name-$version
-cd ${JEDI_STACK_ROOT}/${PKGDIR:-"pkg"}
-tarname="$software.tar.gz"
-url="https://download.osgeo.org/proj/$tarname"
-[[ -d $software ]] || ( $WGET $url; tar -xf $tarname )
-[[ ${DOWNLOAD_ONLY} =~ [yYtT] ]] && exit 0
+
 [[ -d $software ]] && cd $software || ( echo "$software does not exist, ABORT!"; exit 1 )
 
 [[ -d build ]] && $SUDO rm -rf build

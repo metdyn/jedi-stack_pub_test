@@ -14,12 +14,43 @@ cxx_version=$3
 compiler=$(echo $JEDI_COMPILER | sed 's/\//-/g')
 mpi=$(echo $JEDI_MPI | sed 's/\//-/g')
 
+gitURLroot="https://github.com/Unidata"
+
+cd ${JEDI_STACK_ROOT}/${PKGDIR:-"pkg"}
+curr_dir=$(pwd)
+
+cd $curr_dir
+
+##################################################
+# Download only
+
+if [[ ${DOWNLOAD_ONLY} =~ [yYtT] ]]; then
+
+    version=$c_version
+    software=$name-"c"-$version
+    [[ -d $software ]] || ( git clone -b "v$version" $gitURLroot/$name-c.git $software )
+
+    version=$f_version
+    software=$name-"fortran"-$version
+    [[ -d $software ]] || ( git clone -b "v$version" $gitURLroot/$name-fortran.git $software )
+
+    version=$cxx_version
+    software=$name-"cxx4"-$version
+    [[ -d $software ]] || ( git clone -b "v$version" $gitURLroot/$name-cxx4.git $software )
+
+    exit 0
+
+fi
+
+##################################################
+
 if $MODULES; then
     set +x
     source $MODULESHOME/init/bash
     module load jedi-$JEDI_COMPILER
     [[ -z $mpi ]] || module load jedi-$JEDI_MPI 
-    module try-load szip
+    module try_load ncarcompilers
+    module try_load szip
     module load hdf5
     [[ -z $mpi ]] || module load pnetcdf
     module list
@@ -51,37 +82,7 @@ export CFLAGS+=" -fPIC"
 export CXXFLAGS+=" -fPIC -std=c++11"
 export FCFLAGS="$FFLAGS"
 
-gitURLroot="https://github.com/Unidata"
-
-cd ${JEDI_STACK_ROOT}/${PKGDIR:-"pkg"}
-curr_dir=$(pwd)
-
 export LDFLAGS+=" -L$HDF5_ROOT/lib -L$SZIP_ROOT/lib"
-
-cd $curr_dir
-
-##################################################
-# Download only
-
-if [[ ${DOWNLOAD_ONLY} =~ [yYtT] ]]; then
-
-    version=$c_version
-    software=$name-"c"-$version
-    [[ -d $software ]] || ( git clone -b "v$version" $gitURLroot/$name-c.git $software )
-
-    version=$f_version
-    software=$name-"fortran"-$version
-    [[ -d $software ]] || ( git clone -b "v$version" $gitURLroot/$name-fortran.git $software )
-
-    version=$cxx_version
-    software=$name-"cxx4"-$version
-    [[ -d $software ]] || ( git clone -b "v$version" $gitURLroot/$name-cxx4.git $software )
-
-    exit 0
-
-fi
-
-##################################################
 
 set +x
 echo "################################################################################"
@@ -156,6 +157,19 @@ software=$name-"cxx4"-$version
 mkdir -p build && cd build
 
 ../configure --prefix=$prefix
+
+# If on macos, rename the file "VERSION" so it doesn't collide with the
+# c++ include file (named "version"). Note this collision occurs since macos
+# uses a case-insensitive file system.
+#
+# Unidata has fixed this in their development track:
+#   https://github.com/Unidata/netcdf-cxx4/commit/41c0233cb964a3ee1d4e5db5448cd28d617925fb
+# Once this fix is released, and we update to that release, the following
+# if statements needs to be removed.
+if [[ "$(uname)" == "Darwin" ]]
+then
+  mv VERSION config.VERSION
+fi
 
 make V=$MAKE_VERBOSE -j${NTHREADS:-4}
 [[ $MAKE_CHECK =~ [yYtT] ]] && make check

@@ -14,14 +14,22 @@ software=$name-$version
 compiler=$(echo $JEDI_COMPILER | sed 's/\//-/g')
 mpi=$(echo $JEDI_MPI | sed 's/\//-/g')
 
+url="https://gitlab.com/remikz/nccmp/-/archive/$version/${software}.tar.gz"
+
+cd ${JEDI_STACK_ROOT}/${PKGDIR:-"pkg"}
+
+[[ -d $software ]] || ( rm -f $software.tar.gz; $WGET $url; tar -xf $software.tar.gz )
+[[ ${DOWNLOAD_ONLY} =~ [yYtT] ]] && exit 0
+
 if $MODULES; then
     set +x
     source $MODULESHOME/init/bash
     module load jedi-$JEDI_COMPILER
     [[ -z $mpi ]] || module load jedi-$JEDI_MPI
-    module try-load szip
+    module try_load ncarcompilers
+    module try_load szip
     module load hdf5
-    module try-load pnetcdf
+    module try_load pnetcdf
     module load netcdf
     module list
     set -x
@@ -48,18 +56,12 @@ fi
 export CFLAGS+=" -fPIC -fcommon"
 export LDFLAGS+=" -L$NETCDF_ROOT/lib -L$HDF5_ROOT/lib -L$SZIP_ROOT/lib"
 
-url="https://gitlab.com/remikz/nccmp/-/archive/$version/${software}.tar.gz"
-
-cd ${JEDI_STACK_ROOT}/${PKGDIR:-"pkg"}
-
-# Enable header pad comparison, if netcdf-c src directory exists!
-[[ -d "netcdf-c-$NETCDF_VERSION" ]] && extra_confs="--with-netcdf=$PWD/netcdf-c-$NETCDF_VERSION" || extra_confs=""
-
-[[ -d $software ]] || ( $WGET $url; tar -xf $software.tar.gz )
-[[ ${DOWNLOAD_ONLY} =~ [yYtT] ]] && exit 0
 [[ -d $software ]] && cd $software || ( echo "$software does not exist, ABORT!"; exit 1 )
 [[ -d build ]] && rm -rf build
 mkdir -p build && cd build
+
+# Enable header pad comparison, if netcdf-c src directory exists!
+[[ -d "netcdf-c-$NETCDF_VERSION" ]] && extra_confs="--with-netcdf=$PWD/netcdf-c-$NETCDF_VERSION" || extra_confs=""
 
 ../configure --prefix=$prefix $extra_confs
 

@@ -12,13 +12,22 @@ version=$1
 # Hyphenated version used for install prefix
 compiler=$(echo $JEDI_COMPILER | sed 's/\//-/g')
 
+gitURL="https://github.com/ecmwf/eccodes.git"
+
+cd ${JEDI_STACK_ROOT}/${PKGDIR:-"pkg"}
+
+software=$name-$version
+[[ -d $software ]] || ( git clone -b $version $gitURL $software )
+[[ ${DOWNLOAD_ONLY} =~ [yYtT] ]] && exit 0
+
 if $MODULES; then
     set +x
     source $MODULESHOME/init/bash
     module load jedi-$JEDI_COMPILER
     module load jedi-$JEDI_MPI 
-    module try-load cmake
-    module try-load szip
+    module try_load ncarcompilers
+    module try_load cmake
+    module try_load szip
     module load hdf5
     module load netcdf
     module list
@@ -43,18 +52,11 @@ export CFLAGS+=" -fPIC"
 export CXXFLAGS+=" -fPIC"
 export FCFLAGS="$FFLAGS"
 
-gitURL="https://github.com/ecmwf/eccodes.git"
-
-cd ${JEDI_STACK_ROOT}/${PKGDIR:-"pkg"}
-
-software=$name-$version
-[[ -d $software ]] || ( git clone -b $version $gitURL $software )
-[[ ${DOWNLOAD_ONLY} =~ [yYtT] ]] && exit 0
 [[ -d $software ]] && cd $software || ( echo "$software does not exist, ABORT!"; exit 1 )
 [[ -d build ]] && rm -rf build
 mkdir -p build && cd build
 
-cmake -DCMAKE_INSTALL_PREFIX=$prefix -DENABLE_NETCDF=ON -DENABLE_FORTRAN=ON ..
+cmake -DCMAKE_INSTALL_PREFIX=$prefix -DCMAKE_INSTALL_LIBDIR=lib -DENABLE_NETCDF=ON -DENABLE_FORTRAN=ON ..
 
 VERBOSE="$MAKE_VERBOSE" make -j${NTHREADS:-4}
 [[ $MAKE_CHECK =~ [yYtT] ]] && ctest
