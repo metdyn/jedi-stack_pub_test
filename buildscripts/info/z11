@@ -1,0 +1,99 @@
++++ dirname ./setup_modules.sh
+++ cd .
+++ pwd
++ JEDI_BUILDSCRIPTS_DIR=/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts
++ export JEDI_STACK_ROOT=/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/..
++ JEDI_STACK_ROOT=/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/..
++ JEDI_OPT=/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules
++ '[' -z /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules ']'
++ logdir=/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/../log
++ source /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/libs/update_modules.sh
+++ export -f update_modules
+++ export -f no_modules
+++ export -f build_lib
+++ export -f _initialize_prefix
+++ export -f initialize_prefix_core
+++ export -f initialize_prefix_compiler
+++ export -f initialize_prefix_mpi
++ pkgdir=/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/../pkg
++ mkdir -p /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/../pkg
++ [[ 0 -ne 1 ]]
++ source /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/config/config_custom.sh
+++ export JEDI_COMPILER=gnu/9.3.0
+++ JEDI_COMPILER=gnu/9.3.0
+++ export JEDI_MPI=openmpi/4.0.3
+++ JEDI_MPI=openmpi/4.0.3
+++ export COMPILER_BUILD=native-pkg
+++ COMPILER_BUILD=native-pkg
+++ export MPI_BUILD=from-source
+++ MPI_BUILD=from-source
+++ export PREFIX=/opt/modules
+++ PREFIX=/opt/modules
+++ export USE_SUDO=Y
+++ USE_SUDO=Y
+++ export PKGDIR=pkg
+++ PKGDIR=pkg
+++ export LOGDIR=buildscripts/log
+++ LOGDIR=buildscripts/log
+++ export OVERWRITE=N
+++ OVERWRITE=N
+++ export NTHREADS=4
+++ NTHREADS=4
+++ export MAKE_CHECK=N
+++ MAKE_CHECK=N
+++ export MAKE_VERBOSE=Y
+++ MAKE_VERBOSE=Y
+++ export MAKE_CLEAN=N
+++ MAKE_CLEAN=N
+++ export DOWNLOAD_ONLY=N
+++ DOWNLOAD_ONLY=N
+++ export STACK_EXIT_ON_FAIL=Y
+++ STACK_EXIT_ON_FAIL=Y
+++ export 'WGET=wget -nv'
+++ WGET='wget -nv'
+++ export FFLAGS=
+++ FFLAGS=
+++ export CFLAGS=
+++ CFLAGS=
+++ export CXXFLAGS=
+++ CXXFLAGS=
+++ export LDFLAGS=
+++ LDFLAGS=
+++ echo gnu/9.3.0
+++ cut -d/ -f1
++ compilerName=gnu
+++ echo gnu/9.3.0
+++ cut -d/ -f2
++ compilerVersion=9.3.0
+++ echo openmpi/4.0.3
+++ cut -d/ -f1
++ mpiName=openmpi
+++ echo openmpi/4.0.3
+++ cut -d/ -f2
++ mpiVersion=4.0.3
++ set +x
+Compiler: gnu/9.3.0
+Mpi: openmpi/4.0.3
++ [[ Y =~ [yYtT] ]]
++ export SUDO=sudo
++ SUDO=sudo
++ [[ Y =~ [yYtT] ]]
++ export SUDO=sudo
++ SUDO=sudo
++ sudo mkdir -p /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/modulefiles/core
++ sudo mkdir -p /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/modulefiles/compiler/gnu/9.3.0
++ sudo mkdir -p /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/modulefiles/mpi/gnu/9.3.0/openmpi/4.0.3
++ sudo mkdir -p /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/modulefiles/core/jedi-gnu
++ sudo cp /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/../modulefiles/core/jedi-gnu/jedi-gnu.lua /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/modulefiles/core/jedi-gnu/9.3.0.lua
++ sudo mkdir -p /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/modulefiles/compiler/gnu/9.3.0/jedi-openmpi
++ sudo cp /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/../modulefiles/compiler/compilerName/compilerVersion/jedi-openmpi/jedi-openmpi.lua /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/modulefiles/compiler/gnu/9.3.0/jedi-openmpi/4.0.3.lua
++ case ${COMPILER_BUILD} in
++ echo -e '==========================\n USING NATIVE COMPILER'
+==========================
+ USING NATIVE COMPILER
++ cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/modulefiles/core/jedi-gnu
++ sudo sed -i -e '/load(compiler)/d' 9.3.0.lua
++ sudo sed -i -e '/prereq(compiler)/d' 9.3.0.lua
++ set +x
+WARNING: COMPILER VERSION gnu/9.3.0 APPEARS TO BE INCORRECT!
+CONTINUE ANYWAY? ANSWER Y OR N

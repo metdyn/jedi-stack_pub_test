@@ -14,7 +14,8 @@ build_type=Debug
 compiler=$(echo $JEDI_COMPILER | sed 's/\//-/g')
 mpi=$(echo $JEDI_MPI | sed 's/\//-/g')
 
-branch=pio_$(echo $version | sed -e 's/\./_/g')
+#branch=pio_$(echo $version | sed -e 's/\./_/g')
+branch=pio$(echo $version | sed -e 's/\./_/g')
 
 cd ${JEDI_STACK_ROOT}/${PKGDIR:-"pkg"}
 

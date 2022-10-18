@@ -1,0 +1,1098 @@
++ source /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/libs/update_modules.sh
+++ export -f update_modules
+++ export -f no_modules
+++ export -f build_lib
+++ export -f _initialize_prefix
+++ export -f initialize_prefix_core
+++ export -f initialize_prefix_compiler
+++ export -f initialize_prefix_mpi
++ pkgdir=/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/../pkg
++ mkdir -p /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/../pkg
++ [[ 1 -ne 1 ]]
++ config_file=/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/config/config_mac.sh
++ [[ -e /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/config/config_mac.sh ]]
++ source /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/config/config_mac.sh
+++ export JEDI_COMPILER=clang/14.0.0
+++ JEDI_COMPILER=clang/14.0.0
+++ export FC=gfortran
+++ FC=gfortran
+++ export JEDI_MPI=openmpi/4.0.7
+++ JEDI_MPI=openmpi/4.0.7
+++ export COMPILER_BUILD=native-pkg
+++ COMPILER_BUILD=native-pkg
+++ export MPI_BUILD=from-source
+++ MPI_BUILD=from-source
+++ export PREFIX=/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules
+++ PREFIX=/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules
+++ export USE_SUDO=Y
+++ USE_SUDO=Y
+++ export PKGDIR=pkg
+++ PKGDIR=pkg
+++ export LOGDIR=buildscripts/log
+++ LOGDIR=buildscripts/log
+++ export OVERWRITE=Y
+++ OVERWRITE=Y
+++ export NTHREADS=16
+++ NTHREADS=16
+++ export MAKE_CHECK=N
+++ MAKE_CHECK=N
+++ export MAKE_VERBOSE=Y
+++ MAKE_VERBOSE=Y
+++ export MAKE_CLEAN=N
+++ MAKE_CLEAN=N
+++ export DOWNLOAD_ONLY=F
+++ DOWNLOAD_ONLY=F
+++ export STACK_EXIT_ON_FAIL=T
+++ STACK_EXIT_ON_FAIL=T
+++ export 'WGET=wget -nv'
+++ WGET='wget -nv'
+++ export FFLAGS=
+++ FFLAGS=
+++ export CFLAGS=
+++ CFLAGS=
+++ export CXXFLAGS=
+++ CXXFLAGS=
+++ export LDFLAGS=
+++ LDFLAGS=
++ [[ mac =~ ^container ]]
++ export MODULES=true
++ MODULES=true
++ true
++ source /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/config/choose_modules.sh
+++ export STACK_BUILD_CMAKE=N
+++ STACK_BUILD_CMAKE=N
+++ export STACK_BUILD_GITLFS=N
+++ STACK_BUILD_GITLFS=N
+++ export STACK_BUILD_SZIP=Y
+++ STACK_BUILD_SZIP=Y
+++ export STACK_BUILD_UDUNITS=Y
+++ STACK_BUILD_UDUNITS=Y
+++ export STACK_BUILD_ZLIB=Y
+++ STACK_BUILD_ZLIB=Y
+++ export STACK_BUILD_LAPACK=N
+++ STACK_BUILD_LAPACK=N
+++ export STACK_BUILD_BOOST_HDRS=Y
+++ STACK_BUILD_BOOST_HDRS=Y
+++ export STACK_BUILD_BUFR=Y
+++ STACK_BUILD_BUFR=Y
+++ export STACK_BUILD_EIGEN3=N
+++ STACK_BUILD_EIGEN3=N
+++ export STACK_BUILD_HDF5=Y
+++ STACK_BUILD_HDF5=Y
+++ export STACK_BUILD_PNETCDF=Y
+++ STACK_BUILD_PNETCDF=Y
+++ export STACK_BUILD_NETCDF=Y
+++ STACK_BUILD_NETCDF=Y
+++ export STACK_BUILD_NCCMP=Y
+++ STACK_BUILD_NCCMP=Y
+++ export STACK_BUILD_ECBUILD=Y
+++ STACK_BUILD_ECBUILD=Y
+++ export STACK_BUILD_ECKIT=Y
+++ STACK_BUILD_ECKIT=Y
+++ export STACK_BUILD_FCKIT=Y
+++ STACK_BUILD_FCKIT=Y
+++ export STACK_BUILD_ATLAS=Y
+++ STACK_BUILD_ATLAS=Y
+++ export STACK_BUILD_GSL_LITE=Y
+++ STACK_BUILD_GSL_LITE=Y
+++ export STACK_BUILD_PYBIND11=Y
+++ STACK_BUILD_PYBIND11=Y
+++ export STACK_BUILD_ECCODES=Y
+++ STACK_BUILD_ECCODES=Y
+++ export STACK_BUILD_ODC=N
+++ STACK_BUILD_ODC=N
+++ export STACK_BUILD_PIO=Y
+++ STACK_BUILD_PIO=Y
+++ export STACK_BUILD_GPTL=N
+++ STACK_BUILD_GPTL=N
+++ export STACK_BUILD_NCO=Y
+++ STACK_BUILD_NCO=Y
+++ export STACK_BUILD_PYJEDI=N
+++ STACK_BUILD_PYJEDI=N
+++ export STACK_BUILD_NCEPLIBS=N
+++ STACK_BUILD_NCEPLIBS=N
+++ export STACK_BUILD_JPEG=N
+++ STACK_BUILD_JPEG=N
+++ export STACK_BUILD_PNG=N
+++ STACK_BUILD_PNG=N
+++ export STACK_BUILD_JASPER=N
+++ STACK_BUILD_JASPER=N
+++ export STACK_BUILD_XERCES=N
+++ STACK_BUILD_XERCES=N
+++ export STACK_BUILD_TKDIFF=N
+++ STACK_BUILD_TKDIFF=N
+++ export STACK_BUILD_BOOST_FULL=N
+++ STACK_BUILD_BOOST_FULL=N
+++ export STACK_BUILD_ESMF=N
+++ STACK_BUILD_ESMF=N
+++ export STACK_BUILD_BASELIBS=N
+++ STACK_BUILD_BASELIBS=N
+++ export STACK_BUILD_PDTOOLKIT=N
+++ STACK_BUILD_PDTOOLKIT=N
+++ export STACK_BUILD_TAU2=N
+++ STACK_BUILD_TAU2=N
+++ export STACK_BUILD_CGAL=N
+++ STACK_BUILD_CGAL=N
+++ export STACK_BUILD_GEOS=N
+++ STACK_BUILD_GEOS=N
+++ export STACK_BUILD_SQLITE=N
+++ STACK_BUILD_SQLITE=N
+++ export STACK_BUILD_PROJ=N
+++ STACK_BUILD_PROJ=N
+++ export STACK_BUILD_FMS=N
+++ STACK_BUILD_FMS=N
+++ export STACK_BUILD_JSON=Y
+++ STACK_BUILD_JSON=Y
+++ export STACK_BUILD_JSON_SCHEMA_VALIDATOR=Y
+++ STACK_BUILD_JSON_SCHEMA_VALIDATOR=Y
+++ export STACK_BUILD_ECFLOW=N
+++ STACK_BUILD_ECFLOW=N
++ true
++ logdir=/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/../buildscripts/log
++ mkdir -p /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/../buildscripts/log
++ [[ Y =~ [yYtT] ]]
++ export SUDO=sudo
++ SUDO=sudo
++ true
++ set +x
++ build_lib JASPER jasper 1.900.1
++ set +x
++ build_lib XERCES xerces 3.1.4
++ set +x
++ build_lib NCEPLIBS nceplibs fv3
++ set +x
++ build_lib TKDIFF tkdiff 4.3.5
++ set +x
++ build_lib PYJEDI pyjedi
++ set +x
++ build_lib GEOS geos 3.8.1
++ set +x
++ build_lib SQLITE sqlite 3.32.3
++ set +x
++ build_lib PROJ proj 7.1.0
++ set +x
++ build_lib JSON json 3.9.1
++ set +x
++ name=json
++ version=3.9.1
++ cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/../pkg
++ software=json-3.9.1
++ tarfile=v3.9.1.tar.gz
++ url=https://github.com/nlohmann/json/archive/v3.9.1.tar.gz
++ [[ -d json-3.9.1 ]]
++ rm -f v3.9.1.tar.gz
++ wget -nv https://github.com/nlohmann/json/archive/v3.9.1.tar.gz
+2022-10-17 21:05:44 URL:https://codeload.github.com/nlohmann/json/tar.gz/refs/tags/v3.9.1 [6882818/6882818] -> "v3.9.1.tar.gz" [1]
++ tar -xf v3.9.1.tar.gz
++ [[ F =~ [yYtT] ]]
++ true
++ set +x
+
+Currently Loaded Modules:
+  1) jedi-clang/14.0.0
+
+ 
+
++ prefix=/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/core/json/3.9.1
++ [[ -d /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/core/json/3.9.1 ]]
++ [[ -d json-3.9.1 ]]
++ cd json-3.9.1
++ [[ -d build ]]
++ mkdir -p build
++ cd build
++ cmake .. -DCMAKE_INSTALL_PREFIX=/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/core/json/3.9.1 -DCMAKE_INSTALL_LIBDIR=lib -DJSON_BuildTests=N
+-- The CXX compiler identification is AppleClang 14.0.0.14000029
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Using the single-header code from /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/json-3.9.1/single_include/
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/json-3.9.1/build
++ [[ N =~ [yYtT] ]]
++ sudo make install
+Install the project...
+-- Install configuration: ""
+-- Installing: /Users/yonggang/tools/js1.clang-mpich/modules/core/json/3.9.1/include
+-- Installing: /Users/yonggang/tools/js1.clang-mpich/modules/core/json/3.9.1/include/nlohmann
+-- Installing: /Users/yonggang/tools/js1.clang-mpich/modules/core/json/3.9.1/include/nlohmann/json.hpp
+-- Installing: /Users/yonggang/tools/js1.clang-mpich/modules/core/json/3.9.1/lib/cmake/nlohmann_json/nlohmann_jsonConfig.cmake
+-- Installing: /Users/yonggang/tools/js1.clang-mpich/modules/core/json/3.9.1/lib/cmake/nlohmann_json/nlohmann_jsonConfigVersion.cmake
+-- Installing: /Users/yonggang/tools/js1.clang-mpich/modules/core/json/3.9.1/lib/cmake/nlohmann_json/nlohmann_jsonTargets.cmake
+-- Installing: /Users/yonggang/tools/js1.clang-mpich/modules/core/json/3.9.1/lib/pkgconfig/nlohmann_json.pc
++ true
++ update_modules core json 3.9.1
++ OPT=/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules
++ case $1 in
++ tmpl_file=/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/../modulefiles/core/json/json.lua
++ to_dir=/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/modulefiles/core
++ [[ -e /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/../modulefiles/core/json/json.lua ]]
++ [[ -d /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/modulefiles/core ]]
++ cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/modulefiles/core
++ sudo mkdir -p json
++ cd json
++ sudo cp /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/../modulefiles/core/json/json.lua 3.9.1.lua
++ [[ -n '' ]]
++ [[ -e default ]]
++ sudo ln -s 3.9.1.lua default
++ exit 0
+BUILD SUCCESS! Lib: json-3.9.1
++ build_lib JSON_SCHEMA_VALIDATOR json-schema-validator 2.1.0
++ set +x
++ name=json-schema-validator
++ version=2.1.0
+++ echo clang/14.0.0
+++ sed 's/\//-/g'
++ compiler=clang-14.0.0
++ cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/../pkg
++ software=json-schema-validator-2.1.0
++ tarfile=2.1.0.tar.gz
++ url=https://github.com/pboettch/json-schema-validator/archive/2.1.0.tar.gz
++ [[ -d json-schema-validator-2.1.0 ]]
++ rm -f 2.1.0.tar.gz
++ wget -nv https://github.com/pboettch/json-schema-validator/archive/2.1.0.tar.gz
+2022-10-17 21:05:53 URL:https://codeload.github.com/pboettch/json-schema-validator/tar.gz/refs/tags/2.1.0 [54213] -> "2.1.0.tar.gz" [1]
++ tar -xf 2.1.0.tar.gz
++ [[ F =~ [yYtT] ]]
++ true
++ set +x
+
+Currently Loaded Modules:
+  1) jedi-clang/14.0.0   2) json/3.9.1
+
+ 
+
++ prefix=/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/json-schema-validator/2.1.0
++ [[ -d /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/json-schema-validator/2.1.0 ]]
++ [[ -d json-schema-validator-2.1.0 ]]
++ cd json-schema-validator-2.1.0
++ [[ -d build ]]
++ mkdir -p build
++ cd build
++ [[ -n /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/core/json/3.9.1/lib/cmake/nlohmann_json ]]
++ cmake .. -DCMAKE_INSTALL_PREFIX=/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/json-schema-validator/2.1.0 -DCMAKE_INSTALL_LIBDIR=lib -DCMAKE_BUILD_TYPE=Release -DCMAKE_POLICY_DEFAULT_CMP0074=NEW -DBUILD_SHARED_LIBS=Y -Dnlohmann_json_DIR=/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/core/json/3.9.1/lib/cmake/nlohmann_json -DBUILD_TESTS=N -DBUILD_EXAMPLES=N
+-- The CXX compiler identification is AppleClang 14.0.0.14000029
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/clang++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found nlohmann_json-cmake-package - linking with it
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CMAKE_INSTALL_LIBDIR
+
+
+-- Build files have been written to: /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/json-schema-validator-2.1.0/build
++ [[ N =~ [yYtT] ]]
++ sudo make install
+[ 16%] Building CXX object CMakeFiles/nlohmann_json_schema_validator.dir/src/json-schema-draft7.json.cpp.o
+[ 33%] Building CXX object CMakeFiles/nlohmann_json_schema_validator.dir/src/json-uri.cpp.o
+[ 50%] Building CXX object CMakeFiles/nlohmann_json_schema_validator.dir/src/json-validator.cpp.o
+/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/json-schema-validator-2.1.0/src/json-validator.cpp:604:29: warning: loop variable 'c' of type 'const unsigned char &' binds to a temporary constructed from type 'std::__wrap_iter<const char *>::reference' (aka 'const char &') [-Wrange-loop-construct]
+                for (const unsigned char &c : s)
+                                          ^
+/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/json-schema-validator-2.1.0/src/json-validator.cpp:604:8: note: use non-reference type 'unsigned char' to make construction explicit or type 'const char &' to prevent copying
+                for (const unsigned char &c : s)
+                     ^~~~~~~~~~~~~~~~~~~~~~~~
+/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/json-schema-validator-2.1.0/src/json-validator.cpp:1098:10: warning: enumeration value 'binary' not handled in switch [-Wswitch]
+        switch (type) {
+                ^~~~
+/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/json-schema-validator-2.1.0/src/json-validator.cpp:1098:10: note: add missing switch cases
+        switch (type) {
+                ^
+2 warnings generated.
+[ 66%] Building CXX object CMakeFiles/nlohmann_json_schema_validator.dir/src/json-patch.cpp.o
+[ 83%] Building CXX object CMakeFiles/nlohmann_json_schema_validator.dir/src/string-format-check.cpp.o
+[100%] Linking CXX shared library libnlohmann_json_schema_validator.dylib
+[100%] Built target nlohmann_json_schema_validator
+Install the project...
+-- Install configuration: "Release"
+-- Installing: /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/json-schema-validator/2.1.0/lib/libnlohmann_json_schema_validator.2.1.0.dylib
+-- Installing: /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/json-schema-validator/2.1.0/lib/libnlohmann_json_schema_validator.1.dylib
+-- Installing: /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/json-schema-validator/2.1.0/lib/libnlohmann_json_schema_validator.dylib
+-- Installing: /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/json-schema-validator/2.1.0/include/nlohmann/json-schema.hpp
+-- Installing: /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/json-schema-validator/2.1.0/lib/cmake/nlohmann_json_schema_validator/nlohmann_json_schema_validatorConfig.cmake
+-- Installing: /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/json-schema-validator/2.1.0/lib/cmake/nlohmann_json_schema_validator/nlohmann_json_schema_validatorConfigVersion.cmake
+-- Installing: /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/json-schema-validator/2.1.0/lib/cmake/nlohmann_json_schema_validator/nlohmann_json_schema_validatorTargets.cmake
+-- Installing: /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/json-schema-validator/2.1.0/lib/cmake/nlohmann_json_schema_validator/nlohmann_json_schema_validatorTargets-release.cmake
++ true
++ update_modules compiler json-schema-validator 2.1.0
++ OPT=/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules
++ case $1 in
++ tmpl_file=/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/../modulefiles/compiler/compilerName/compilerVersion/json-schema-validator/json-schema-validator.lua
++ to_dir=/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/modulefiles/compiler/clang/14.0.0
++ [[ -e /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/../modulefiles/compiler/compilerName/compilerVersion/json-schema-validator/json-schema-validator.lua ]]
++ [[ -d /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/modulefiles/compiler/clang/14.0.0 ]]
++ cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/modulefiles/compiler/clang/14.0.0
++ sudo mkdir -p json-schema-validator
++ cd json-schema-validator
++ sudo cp /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/../modulefiles/compiler/compilerName/compilerVersion/json-schema-validator/json-schema-validator.lua 2.1.0.lua
++ [[ -n '' ]]
++ [[ -e default ]]
++ sudo ln -s 2.1.0.lua default
++ exit 0
+BUILD SUCCESS! Lib: json-schema-validator-2.1.0
++ build_lib ECFLOW ecflow ecmwf 5.5.3 boost 1.68.0
++ set +x
++ build_lib GPTL gptl 8.0.3
++ set +x
++ build_lib NCO nco 4.9.9
++ set +x
++ name=nco
++ version=4.9.9
+++ echo clang/14.0.0
+++ sed 's/\//-/g'
++ compiler=clang-14.0.0
+++ echo openmpi/4.0.7
+++ sed 's/\//-/g'
++ mpi=openmpi-4.0.7
++ gitURL=https://github.com/nco/nco.git
++ cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/../pkg
++ software=nco-4.9.9
++ [[ -d nco-4.9.9 ]]
++ git clone -b 4.9.9 https://github.com/nco/nco.git nco-4.9.9
+Cloning into 'nco-4.9.9'...
+Note: switching to '73e354d8f599c3f39bc45fb261ad26c0b11ff862'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
++ [[ F =~ [yYtT] ]]
++ true
++ set +x
+
+Currently Loaded Modules:
+  1) jedi-clang/14.0.0   3) jedi-openmpi/4.0.7   5) hdf5/1.13.2      7) netcdf/4.7.4
+  2) openmpi/4.0.7       4) szip/2.1.1           6) pnetcdf/1.12.2   8) udunits/2.2.28
+
+ 
+
++ prefix=/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/nco/4.9.9
++ [[ -d /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/nco/4.9.9 ]]
++ [[ ! -z openmpi-4.0.7 ]]
++ export FC=mpifort
++ FC=mpifort
++ export CC=mpicc
++ CC=mpicc
++ export CXX=mpicxx
++ CXX=mpicxx
++ export F77=mpifort
++ F77=mpifort
++ export 'FFLAGS+= -fPIC'
++ FFLAGS+=' -fPIC'
++ export 'CFLAGS+= -fPIC'
++ CFLAGS+=' -fPIC'
++ export 'CXXFLAGS+= -fPIC'
++ CXXFLAGS+=' -fPIC'
++ export 'FCFLAGS= -fPIC'
++ FCFLAGS=' -fPIC'
++ export 'LDFLAGS+= -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/hdf5/1.13.2/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/szip/2.1.1/lib'
++ LDFLAGS+=' -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/hdf5/1.13.2/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/szip/2.1.1/lib'
++ [[ -d nco-4.9.9 ]]
++ cd nco-4.9.9
++ [[ -d build ]]
++ mkdir -p build
++ cd build
++ ../configure --prefix=/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/nco/4.9.9 --enable-doc=no
+checking build system type... x86_64-apple-darwin21.6.0
+checking host system type... x86_64-apple-darwin21.6.0
+checking target system type... x86_64-apple-darwin21.6.0
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for a BSD-compatible install... /usr/local/bin/ginstall -c
+checking whether build environment is sane... yes
+checking for a race-free mkdir -p... /usr/local/bin/gmkdir -p
+checking for gawk... no
+checking for mawk... no
+checking for nawk... no
+checking for awk... awk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking for gcc... mpicc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether the compiler supports GNU C... yes
+checking whether mpicc accepts -g... yes
+checking for mpicc option to enable C11 features... none needed
+checking whether mpicc understands -c and -o together... yes
+checking whether make supports the include directive... yes (GNU style)
+checking dependency style of mpicc... gcc3
+checking whether the compiler supports GNU C++... yes
+checking whether mpicxx accepts -g... yes
+checking for mpicxx option to enable C++11 features... none needed
+checking dependency style of mpicxx... gcc3
+checking how to run the C preprocessor... mpicc -E
+checking how to run the C++ preprocessor... mpicxx -E
+checking for flex... flex
+checking for lex output file root... lex.yy
+checking for lex library... none needed
+checking whether yytext is a pointer... yes
+checking whether ln -s works... yes
+checking how to print strings... printf
+checking for a sed that does not truncate output... /usr/local/bin/gsed
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by mpicc... clang
+checking if the linker (clang) is GNU ld... no
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking the maximum length of command line arguments... 786432
+checking whether the shell understands some XSI constructs... yes
+checking whether the shell understands "+="... yes
+checking how to convert x86_64-apple-darwin21.6.0 file names to x86_64-apple-darwin21.6.0 format... func_convert_file_noop
+checking how to convert x86_64-apple-darwin21.6.0 file names to toolchain format... func_convert_file_noop
+checking for clang option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... no
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from mpicc object... ok
+checking for sysroot... no
+checking for mt... no
+checking if : is a manifest tool... no
+checking for dsymutil... dsymutil
+checking for nmedit... nmedit
+checking for lipo... lipo
+checking for otool... otool
+checking for otool64... no
+checking for -single_module linker flag... yes
+checking for -exported_symbols_list linker flag... yes
+checking for -force_load linker flag... yes
+checking for stdio.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for strings.h... yes
+checking for sys/stat.h... yes
+checking for sys/types.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if mpicc supports -fno-rtti -fno-exceptions... yes
+checking for mpicc option to produce PIC... -fno-common -DPIC
+checking if mpicc PIC flag -fno-common -DPIC works... yes
+checking if mpicc static flag -static works... no
+checking if mpicc supports -c -o file.o... yes
+checking if mpicc supports -c -o file.o... (cached) yes
+checking whether the mpicc linker (clang) supports shared libraries... yes
+checking dynamic linker characteristics... darwin21.6.0 dyld
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... yes
+checking how to run the C++ preprocessor... mpicxx -E
+checking for ld used by mpicxx... clang
+checking if the linker (clang) is GNU ld... no
+checking whether the mpicxx linker (clang) supports shared libraries... yes
+checking for mpicxx option to produce PIC... -fno-common -DPIC
+checking if mpicxx PIC flag -fno-common -DPIC works... yes
+checking if mpicxx static flag -static works... no
+checking if mpicxx supports -c -o file.o... yes
+checking if mpicxx supports -c -o file.o... (cached) yes
+checking whether the mpicxx linker (clang) supports shared libraries... yes
+checking dynamic linker characteristics... darwin21.6.0 dyld
+checking how to hardcode library paths into programs... immediate
+checking whether to enable maintainer-specific portions of Makefiles... no
+checking for working memcmp... yes
+checking whether lstat correctly handles trailing slash... no
+checking whether stat accepts an empty string... no
+checking for working strtod... yes
+checking for canonicalize_file_name... no
+checking for floor... yes
+checking for gethostname... yes
+checking for getpagesize... yes
+checking for getrusage... yes
+checking for memchr... yes
+checking for memmove... yes
+checking for memset... yes
+checking for mkstemp... yes
+checking for pow... yes
+checking for readlink... yes
+checking for realpath... yes
+checking for regcomp... yes
+checking for setlocale... yes
+checking for sqrt... yes
+checking for strchr... yes
+checking for strerror... yes
+checking for strpbrk... yes
+checking for strrchr... yes
+checking for strstr... yes
+checking for strtol... yes
+checking for egrep... (cached) /usr/bin/grep -E
+checking for getopt.h... yes
+checking for libintl.h... yes
+checking for limits.h... yes
+checking for locale.h... yes
+checking for netinet/in.h... yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for strings.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for cstdlib... yes
+checking for an ANSI C-conforming const... yes
+checking for inline... inline
+checking for pid_t... yes
+checking for size_t... yes
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for uid_t in sys/types.h... yes
+checking for ptrdiff_t... yes
+checking size of int*... 8
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+#################################
+#  Test for netCDF             #
+################################
+checking for netcdf.h... yes
+checking for nc_open in -lnetcdf... yes
+#################################
+#  Test for netCDF4 support     #
+#################################
+checking for mpicc options needed to detect all undeclared functions... none needed
+checking whether NC_CHUNKED is declared... yes
+configure: netcdf.h contains netCDF4 definitions
+checking for nc_def_var_chunking in -lnetcdf... yes
+configure: Good news: Simple program compiles and links to netCDF4 library
+checking for netcdf_mem.h... yes
+checking for mpicc option to support OpenMP... unsupported
+configure: OpenMP support enabled
+Beginning generic tests for DAP support
+Testing for DAP-netCDF support (is DAP in libnetcdf.a?)...
+checking for daperror in -lnetcdf... yes
+configure: DAP support enabled
+checking for getopt_long... yes
+checking for _g95_ac_array in -lf95... no
+checking for sin in -lm... yes
+checking for sinf in -lsunmath... no
+checking for gettext in -lintl... yes
+checking for res_init in -lresolv... yes
+checking for main in -lsocket... no
+checking for main in -lthread... no
+checking for nco_open in -lnco... no
+checking for nc_inq_format... yes
+checking for nc_inq_path... yes
+checking for nc_set_log_level... yes
+checking for nc_rename_grp... yes
+checking for getopt... yes
+checking for getopt_long... (cached) yes
+checking for atan2... yes
+checking for acosf... yes
+checking for asinf... yes
+checking for atanf... yes
+checking for atan2f... yes
+checking for cosf... yes
+checking for expf... yes
+checking for fabsf... yes
+checking for fmodf... yes
+checking for log10f... yes
+checking for logf... yes
+checking for powf... yes
+checking for sinf... yes
+checking for sqrtf... yes
+checking for tanf... yes
+checking for erff... yes
+checking for erfcf... yes
+checking for gammaf... no
+checking for acoshf... yes
+checking for asinhf... yes
+checking for atanhf... yes
+checking for coshf... yes
+checking for sinhf... yes
+checking for tanhf... yes
+checking for ceilf... yes
+checking for floorf... yes
+checking for nearbyint... yes
+checking for rint... yes
+checking for round... yes
+checking for trunc... yes
+checking for nearbyintf... yes
+checking for rintf... yes
+checking for roundf... yes
+checking for truncf... yes
+checking for getopt_long... (cached) yes
+checking for strdup... yes
+checking for strcasecmp... yes
+checking for strsep... yes
+checking for strcasestr... yes
+checking for htonl... yes
+checking for htons... yes
+checking for ntohl... yes
+checking for ntohs... yes
+checking for __builtin_bswap16... no
+checking for __builtin_bswap32... no
+checking for __builtin_bswap64... no
+##########################################################
+#     Sorting out MacOSX build parameters                #
+##########################################################
+#################################
+#  Testing for ANTLR support    #
+#################################
+checking for runantlr... no
+checking for antlr... no
+configure: antlr library was not found, disabling ncap2 build
+########################################
+#     Testing for GSL support          #
+########################################
+configure: These GSL library and header tests must succeed for GSL support:
+checking for gsl_sf_gamma_inc in -lgsl... yes
+checking for /usr/local/Cellar/gsl/2.7.1/include/gsl/gsl_sf_gamma.h... yes
+configure: GSL support enabled
+########################################
+#     Testing for CCR support          #
+########################################
+checking where to put HDF5 plugins... .
+checking whether Community Codec Repository library should be used... no
+checking for regex.h... yes
+checking for sys/types.h... (cached) yes
+checking for regexec... yes
+checking for regcomp... (cached) yes
+checking for regfree... yes
+########################################
+#     Testing for UDUNITS support      #
+########################################
+WARNING: Requested both UDUnits and UDUnits2 support---overriding UDUnits
+Will attempt to build NCO with UDUnits support from libudunits2, not from libudunits
+checking for XML_ParserCreate in -lexpat... yes
+checking for /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/share/udunits/udunits2.xml... yes
+configure: NB: Following tests of UDUnits2 library and header must succeed for UDUnits2 support:
+checking for ut_read_xml in -ludunits2... yes
+checking for /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include/udunits2.h... yes
+configure: UDUnits2 support enabled
+checking for ncgen... /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/bin/ncgen
+configure: Creating sample netCDF data files for self-tests
+can't open file data/in.cdl for reading: 
+No such file or directory
+can't open file data/in_grp.cdl for reading: 
+No such file or directory
+can't open file data/in_grp_1.cdl for reading: 
+No such file or directory
+can't open file data/in_grp_2.cdl for reading: 
+No such file or directory
+can't open file data/in_grp_3.cdl for reading: 
+No such file or directory
+can't open file data/in_grp_4.cdl for reading: 
+No such file or directory
+can't open file data/in_grp_5.cdl for reading: 
+No such file or directory
+can't open file data/in_grp_6.cdl for reading: 
+No such file or directory
+can't open file data/in_grp_7.cdl for reading: 
+No such file or directory
+can't open file data/in_1.cdl for reading: 
+No such file or directory
+can't open file data/in_2.cdl for reading: 
+No such file or directory
+can't open file data/mdl_1.cdl for reading: 
+No such file or directory
+can't open file data/mdl_2.cdl for reading: 
+No such file or directory
+can't open file data/mdl_3.cdl for reading: 
+No such file or directory
+can't open file data/cmip5.cdl for reading: 
+No such file or directory
+can't open file data/obs.cdl for reading: 
+No such file or directory
+ln: data/85.nc: No such file or directory
+ln: data/86.nc: No such file or directory
+ln: data/87.nc: No such file or directory
+ln: data/88.nc: No such file or directory
+ln: data/89.nc: No such file or directory
+ln: data/h0001.nc: No such file or directory
+ln: data/h0002.nc: No such file or directory
+ln: data/h0003.nc: No such file or directory
+ln: src/nco_c++/in.nc: No such file or directory
+###############################
+#    Require Shared Libs?     #
+###############################
+checking for makeinfo... yes
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating data/Makefile
+config.status: creating src/Makefile
+config.status: creating src/nco/Makefile
+config.status: creating man/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing libtool commands
+
+Configuration Parameters:
+AR_FLAGS............. cru
+CC................... mpicc
+CFLAGS............... -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE 
+CPP.................. mpicc -E
+CPPFLAGS............. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include
+CXX.................. mpicxx
+CXXFLAGS.............  -fPIC
+ENABLE_CCR........... no
+ENABLE_DAP........... yes
+ENABLE_GSL........... yes
+ENABLE_NETCDF4....... yes
+ENABLE_OPENMP........ yes
+ENABLE_UDUNITS....... no
+ENABLE_UDUNITS2...... yes
+GSL_ROOT............. /usr/local/Cellar/gsl/2.7.1
+HAVE_ANTLR........... no
+HAVE_MAKEINFO........ yes
+HAVE_NETCDF4_H....... yes
+HDF5_PLUGIN_PATH..... .
+HOST................. 
+HOSTNAME............. Yonggangs-MacBook-Pro-gyig.local
+LDFLAGS.............. -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib -lnetcdf -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib  -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/hdf5/1.13.2/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/szip/2.1.1/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/lib
+LIBS................. -ludunits2 -lexpat -lgsl -lresolv -lintl -lm -lnetcdf -lnetcdf -lnetcdf  -lcurl -L/usr/local/Cellar/gsl/2.7.1/lib -lgsl -lgslcblas -ludunits2
+NETCDF_ROOT.......... /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4
+OPENMP_CFLAGS........ 
+host................. x86_64-apple-darwin21.6.0
+install prefix ...... /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/nco/4.9.9
+*******************************************************************
+Configuration complete. You are now ready to run 'make'.
+Ensure 'make' points to GNU Make (AT&T Make chokes on GNU syntax).
+If the build fails, please examine the file 'configure.eg'
+in the top-level NCO directory.  It contains examples known to
+build NCO for various platforms and compilers.
+*******************************************************************
++ make V=Y -j16
+/Library/Developer/CommandLineTools/usr/bin/make  all-recursive
+Making all in data
+/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/bin/ncgen -o big.nc ../../data/big.cdl 
+/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/bin/ncgen -o in.nc ../../data/in.cdl 
+/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/bin/ncgen -o in_rec_zero.nc ../../data/in_rec_zero.cdl 
+/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/nco-4.9.9/build/src/nco/ncks -O -7 --cnk_dmn time,10 in.nc in_4c.nc
+make[2]: /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/nco-4.9.9/build/src/nco/ncks: No such file or directory
+/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/bin/ncgen -k netCDF-4 -o in_4.nc ../../data/in.cdl 
+/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/bin/ncgen -k netCDF-4 -o in_grp.nc ../../data/in_grp.cdl 
+/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/bin/ncgen -k netCDF-4 -o in_grp_1.nc ../../data/in_grp_1.cdl 
+make[2]: [in_4c.nc] Error 1 (ignored)
+/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/bin/ncgen -k netCDF-4 -o in_grp_2.nc ../../data/in_grp_2.cdl 
+/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/bin/ncgen -k netCDF-4 -o in_grp_3.nc ../../data/in_grp_3.cdl 
+/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/bin/ncgen -k netCDF-4 -o in_grp_4.nc ../../data/in_grp_4.cdl 
+/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/bin/ncgen -k netCDF-4 -o in_grp_5.nc ../../data/in_grp_5.cdl 
+/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/bin/ncgen -k netCDF-4 -o in_grp_6.nc ../../data/in_grp_6.cdl 
+/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/bin/ncgen -k netCDF-4 -o in_grp_7.nc ../../data/in_grp_7.cdl 
+/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/bin/ncgen -k netCDF-4 -o in_grp_8.nc ../../data/in_grp_8.cdl 
+/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/bin/ncgen -k netCDF-4 -o cmip5.nc ../../data/cmip5.cdl 
+/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/bin/ncgen -k netCDF-4 -o obs.nc ../../data/obs.cdl 
+/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/bin/ncgen -k netCDF-4 -o mdl_1.nc ../../data/mdl_1.cdl 
+/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/bin/ncgen -k netCDF-4 -o mdl_2.nc ../../data/mdl_2.cdl 
+/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/bin/ncgen -k netCDF-4 -o mdl_3.nc ../../data/mdl_3.cdl 
+/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/bin/ncgen -k netCDF-4 -o hdn.nc ../../data/hdn.cdl 
+/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/bin/ncgen -k netCDF-4 -o mrd.nc ../../data/mrd.cdl 
+/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/bin/ncgen -k netCDF-4 -o split.nc ../../data/split.cdl 
+/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/bin/ncgen -k netCDF-4 -o ref_utf8.nc ../../data/ref_utf8.cdl 
+ln -s -f in.nc 85.nc
+ln -s -f in.nc 86.nc
+ln -s -f in.nc 87.nc
+ln -s -f in.nc 88.nc
+ln -s -f in.nc 89.nc
+ln -s -f in.nc h0001.nc
+ln -s -f in.nc h0002.nc
+ln -s -f in.nc h0003.nc
+Making all in src
+Making all in nco
+mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT ncatted.o -MD -MP -MF .deps/ncatted.Tpo -c -o ncatted.o ../../../src/nco/ncatted.c
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_att_utl.lo -MD -MP -MF .deps/nco_att_utl.Tpo -c -o nco_att_utl.lo ../../../src/nco/nco_att_utl.c
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_aux.lo -MD -MP -MF .deps/nco_aux.Tpo -c -o nco_aux.lo ../../../src/nco/nco_aux.c
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_bnr.lo -MD -MP -MF .deps/nco_bnr.Tpo -c -o nco_bnr.lo ../../../src/nco/nco_bnr.c
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_cln_utl.lo -MD -MP -MF .deps/nco_cln_utl.Tpo -c -o nco_cln_utl.lo ../../../src/nco/nco_cln_utl.c
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_cnf_dmn.lo -MD -MP -MF .deps/nco_cnf_dmn.Tpo -c -o nco_cnf_dmn.lo ../../../src/nco/nco_cnf_dmn.c
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_cnf_typ.lo -MD -MP -MF .deps/nco_cnf_typ.Tpo -c -o nco_cnf_typ.lo ../../../src/nco/nco_cnf_typ.c
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_cnk.lo -MD -MP -MF .deps/nco_cnk.Tpo -c -o nco_cnk.lo ../../../src/nco/nco_cnk.c
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_cnv_arm.lo -MD -MP -MF .deps/nco_cnv_arm.Tpo -c -o nco_cnv_arm.lo ../../../src/nco/nco_cnv_arm.c
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_cnv_csm.lo -MD -MP -MF .deps/nco_cnv_csm.Tpo -c -o nco_cnv_csm.lo ../../../src/nco/nco_cnv_csm.c
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_crt.lo -MD -MP -MF .deps/nco_crt.Tpo -c -o nco_crt.lo ../../../src/nco/nco_crt.c
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_ctl.lo -MD -MP -MF .deps/nco_ctl.Tpo -c -o nco_ctl.lo ../../../src/nco/nco_ctl.c
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_dbg.lo -MD -MP -MF .deps/nco_dbg.Tpo -c -o nco_dbg.lo ../../../src/nco/nco_dbg.c
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_dmn_utl.lo -MD -MP -MF .deps/nco_dmn_utl.Tpo -c -o nco_dmn_utl.lo ../../../src/nco/nco_dmn_utl.c
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_fl_utl.lo -MD -MP -MF .deps/nco_fl_utl.Tpo -c -o nco_fl_utl.lo ../../../src/nco/nco_fl_utl.c
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_flt.lo -MD -MP -MF .deps/nco_flt.Tpo -c -o nco_flt.lo ../../../src/nco/nco_flt.c
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_att_utl.lo -MD -MP -MF .deps/nco_att_utl.Tpo -c ../../../src/nco/nco_att_utl.c -o nco_att_utl.o
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_aux.lo -MD -MP -MF .deps/nco_aux.Tpo -c ../../../src/nco/nco_aux.c -o nco_aux.o
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_bnr.lo -MD -MP -MF .deps/nco_bnr.Tpo -c ../../../src/nco/nco_bnr.c -o nco_bnr.o
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_cln_utl.lo -MD -MP -MF .deps/nco_cln_utl.Tpo -c ../../../src/nco/nco_cln_utl.c -o nco_cln_utl.o
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_cnf_typ.lo -MD -MP -MF .deps/nco_cnf_typ.Tpo -c ../../../src/nco/nco_cnf_typ.c -o nco_cnf_typ.o
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_cnk.lo -MD -MP -MF .deps/nco_cnk.Tpo -c ../../../src/nco/nco_cnk.c -o nco_cnk.o
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_cnf_dmn.lo -MD -MP -MF .deps/nco_cnf_dmn.Tpo -c ../../../src/nco/nco_cnf_dmn.c -o nco_cnf_dmn.o
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_cnv_arm.lo -MD -MP -MF .deps/nco_cnv_arm.Tpo -c ../../../src/nco/nco_cnv_arm.c -o nco_cnv_arm.o
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_cnv_csm.lo -MD -MP -MF .deps/nco_cnv_csm.Tpo -c ../../../src/nco/nco_cnv_csm.c -o nco_cnv_csm.o
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_crt.lo -MD -MP -MF .deps/nco_crt.Tpo -c ../../../src/nco/nco_crt.c -o nco_crt.o
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_ctl.lo -MD -MP -MF .deps/nco_ctl.Tpo -c ../../../src/nco/nco_ctl.c -o nco_ctl.o
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_dbg.lo -MD -MP -MF .deps/nco_dbg.Tpo -c ../../../src/nco/nco_dbg.c -o nco_dbg.o
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_fl_utl.lo -MD -MP -MF .deps/nco_fl_utl.Tpo -c ../../../src/nco/nco_fl_utl.c -o nco_fl_utl.o
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_dmn_utl.lo -MD -MP -MF .deps/nco_dmn_utl.Tpo -c ../../../src/nco/nco_dmn_utl.c -o nco_dmn_utl.o
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_flt.lo -MD -MP -MF .deps/nco_flt.Tpo -c ../../../src/nco/nco_flt.c -o nco_flt.o
+mv -f .deps/nco_dbg.Tpo .deps/nco_dbg.Plo
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_grp_utl.lo -MD -MP -MF .deps/nco_grp_utl.Tpo -c -o nco_grp_utl.lo ../../../src/nco/nco_grp_utl.c
+mv -f .deps/nco_cnv_arm.Tpo .deps/nco_cnv_arm.Plo
+mv -f .deps/nco_bnr.Tpo .deps/nco_bnr.Plo
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_grp_trv.lo -MD -MP -MF .deps/nco_grp_trv.Tpo -c -o nco_grp_trv.lo ../../../src/nco/nco_grp_trv.c
+mv -f .deps/nco_cnf_dmn.Tpo .deps/nco_cnf_dmn.Plo
+mv -f .deps/nco_dmn_utl.Tpo .deps/nco_dmn_utl.Plo
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_grp_utl.lo -MD -MP -MF .deps/nco_grp_utl.Tpo -c ../../../src/nco/nco_grp_utl.c -o nco_grp_utl.o
+mv -f .deps/nco_flt.Tpo .deps/nco_flt.Plo
+mv -f .deps/nco_cnv_csm.Tpo .deps/nco_cnv_csm.Plo
+mv -f .deps/nco_aux.Tpo .deps/nco_aux.Plo
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_kd.lo -MD -MP -MF .deps/nco_kd.Tpo -c -o nco_kd.lo ../../../src/nco/nco_kd.c
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_lmt.lo -MD -MP -MF .deps/nco_lmt.Tpo -c -o nco_lmt.lo ../../../src/nco/nco_lmt.c
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_lst_utl.lo -MD -MP -MF .deps/nco_lst_utl.Tpo -c -o nco_lst_utl.lo ../../../src/nco/nco_lst_utl.c
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_map.lo -MD -MP -MF .deps/nco_map.Tpo -c -o nco_map.lo ../../../src/nco/nco_map.c
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_md5.lo -MD -MP -MF .deps/nco_md5.Tpo -c -o nco_md5.lo ../../../src/nco/nco_md5.c
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_mmr.lo -MD -MP -MF .deps/nco_mmr.Tpo -c -o nco_mmr.lo ../../../src/nco/nco_mmr.c
+mv -f .deps/nco_ctl.Tpo .deps/nco_ctl.Plo
+mv -f .deps/nco_cln_utl.Tpo .deps/nco_cln_utl.Plo
+mv -f .deps/nco_cnk.Tpo .deps/nco_cnk.Plo
+mv -f .deps/ncatted.Tpo .deps/ncatted.Po
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_msa.lo -MD -MP -MF .deps/nco_msa.Tpo -c -o nco_msa.lo ../../../src/nco/nco_msa.c
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_mss_val.lo -MD -MP -MF .deps/nco_mss_val.Tpo -c -o nco_mss_val.lo ../../../src/nco/nco_mss_val.c
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_mta.lo -MD -MP -MF .deps/nco_mta.Tpo -c -o nco_mta.lo ../../../src/nco/nco_mta.c
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_netcdf.lo -MD -MP -MF .deps/nco_netcdf.Tpo -c -o nco_netcdf.lo ../../../src/nco/nco_netcdf.c
+mv -f .deps/nco_fl_utl.Tpo .deps/nco_fl_utl.Plo
+mv -f .deps/nco_crt.Tpo .deps/nco_crt.Plo
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_omp.lo -MD -MP -MF .deps/nco_omp.Tpo -c -o nco_omp.lo ../../../src/nco/nco_omp.c
+mv -f .deps/nco_cnf_typ.Tpo .deps/nco_cnf_typ.Plo
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_pck.lo -MD -MP -MF .deps/nco_pck.Tpo -c -o nco_pck.lo ../../../src/nco/nco_pck.c
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_ply.lo -MD -MP -MF .deps/nco_ply.Tpo -c -o nco_ply.lo ../../../src/nco/nco_ply.c
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_grp_trv.lo -MD -MP -MF .deps/nco_grp_trv.Tpo -c ../../../src/nco/nco_grp_trv.c -o nco_grp_trv.o
+mv -f .deps/nco_att_utl.Tpo .deps/nco_att_utl.Plo
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_kd.lo -MD -MP -MF .deps/nco_kd.Tpo -c ../../../src/nco/nco_kd.c -o nco_kd.o
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_map.lo -MD -MP -MF .deps/nco_map.Tpo -c ../../../src/nco/nco_map.c -o nco_map.o
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_lmt.lo -MD -MP -MF .deps/nco_lmt.Tpo -c ../../../src/nco/nco_lmt.c -o nco_lmt.o
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_ply_lst.lo -MD -MP -MF .deps/nco_ply_lst.Tpo -c -o nco_ply_lst.lo ../../../src/nco/nco_ply_lst.c
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_lst_utl.lo -MD -MP -MF .deps/nco_lst_utl.Tpo -c ../../../src/nco/nco_lst_utl.c -o nco_lst_utl.o
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_mmr.lo -MD -MP -MF .deps/nco_mmr.Tpo -c ../../../src/nco/nco_mmr.c -o nco_mmr.o
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_md5.lo -MD -MP -MF .deps/nco_md5.Tpo -c ../../../src/nco/nco_md5.c -o nco_md5.o
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_msa.lo -MD -MP -MF .deps/nco_msa.Tpo -c ../../../src/nco/nco_msa.c -o nco_msa.o
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_mss_val.lo -MD -MP -MF .deps/nco_mss_val.Tpo -c ../../../src/nco/nco_mss_val.c -o nco_mss_val.o
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_mta.lo -MD -MP -MF .deps/nco_mta.Tpo -c ../../../src/nco/nco_mta.c -o nco_mta.o
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_netcdf.lo -MD -MP -MF .deps/nco_netcdf.Tpo -c ../../../src/nco/nco_netcdf.c -o nco_netcdf.o
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_omp.lo -MD -MP -MF .deps/nco_omp.Tpo -c ../../../src/nco/nco_omp.c -o nco_omp.o
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_pck.lo -MD -MP -MF .deps/nco_pck.Tpo -c ../../../src/nco/nco_pck.c -o nco_pck.o
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_ply.lo -MD -MP -MF .deps/nco_ply.Tpo -c ../../../src/nco/nco_ply.c -o nco_ply.o
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_ply_lst.lo -MD -MP -MF .deps/nco_ply_lst.Tpo -c ../../../src/nco/nco_ply_lst.c -o nco_ply_lst.o
+../../../src/nco/nco_lst_utl.c:38:47: warning: unknown escape sequence '\.' [-Wunknown-escape-sequence]
+  const char rx_sng[]="%([+-0#'I])?([0-9]*)?([\.?[0-9]*)?([h+l+Ljzt])?[bcdeEfFgGiosuxX]"; /* [sng] Regular expression pattern */
+                                              ^~
+1 warning generated.
+mv -f .deps/nco_mmr.Tpo .deps/nco_mmr.Plo
+mv -f .deps/nco_lst_utl.Tpo .deps/nco_lst_utl.Plo
+mv -f .deps/nco_md5.Tpo .deps/nco_md5.Plo
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_ppc.lo -MD -MP -MF .deps/nco_ppc.Tpo -c -o nco_ppc.lo ../../../src/nco/nco_ppc.c
+mv -f .deps/nco_mta.Tpo .deps/nco_mta.Plo
+mv -f .deps/nco_mss_val.Tpo .deps/nco_mss_val.Plo
+mv -f .deps/nco_grp_trv.Tpo .deps/nco_grp_trv.Plo
+mv -f .deps/nco_omp.Tpo .deps/nco_omp.Plo
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_prn.lo -MD -MP -MF .deps/nco_prn.Tpo -c -o nco_prn.lo ../../../src/nco/nco_prn.c
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_rec_var.lo -MD -MP -MF .deps/nco_rec_var.Tpo -c -o nco_rec_var.lo ../../../src/nco/nco_rec_var.c
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_rgr.lo -MD -MP -MF .deps/nco_rgr.Tpo -c -o nco_rgr.lo ../../../src/nco/nco_rgr.c
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_rth_flt.lo -MD -MP -MF .deps/nco_rth_flt.Tpo -c -o nco_rth_flt.lo ../../../src/nco/nco_rth_flt.c
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_rth_utl.lo -MD -MP -MF .deps/nco_rth_utl.Tpo -c -o nco_rth_utl.lo ../../../src/nco/nco_rth_utl.c
+mv -f .deps/nco_lmt.Tpo .deps/nco_lmt.Plo
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_scl_utl.lo -MD -MP -MF .deps/nco_scl_utl.Tpo -c -o nco_scl_utl.lo ../../../src/nco/nco_scl_utl.c
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_s1d.lo -MD -MP -MF .deps/nco_s1d.Tpo -c -o nco_s1d.lo ../../../src/nco/nco_s1d.c
+mv -f .deps/nco_msa.Tpo .deps/nco_msa.Plo
+mv -f .deps/nco_kd.Tpo .deps/nco_kd.Plo
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_scm.lo -MD -MP -MF .deps/nco_scm.Tpo -c -o nco_scm.lo ../../../src/nco/nco_scm.c
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_sld.lo -MD -MP -MF .deps/nco_sld.Tpo -c -o nco_sld.lo ../../../src/nco/nco_sld.c
+mv -f .deps/nco_netcdf.Tpo .deps/nco_netcdf.Plo
+mv -f .deps/nco_pck.Tpo .deps/nco_pck.Plo
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_sng_utl.lo -MD -MP -MF .deps/nco_sng_utl.Tpo -c -o nco_sng_utl.lo ../../../src/nco/nco_sng_utl.c
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_sph.lo -MD -MP -MF .deps/nco_sph.Tpo -c -o nco_sph.lo ../../../src/nco/nco_sph.c
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_ppc.lo -MD -MP -MF .deps/nco_ppc.Tpo -c ../../../src/nco/nco_ppc.c -o nco_ppc.o
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_rgr.lo -MD -MP -MF .deps/nco_rgr.Tpo -c ../../../src/nco/nco_rgr.c -o nco_rgr.o
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_rec_var.lo -MD -MP -MF .deps/nco_rec_var.Tpo -c ../../../src/nco/nco_rec_var.c -o nco_rec_var.o
+mv -f .deps/nco_ply.Tpo .deps/nco_ply.Plo
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_prn.lo -MD -MP -MF .deps/nco_prn.Tpo -c ../../../src/nco/nco_prn.c -o nco_prn.o
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_rth_utl.lo -MD -MP -MF .deps/nco_rth_utl.Tpo -c ../../../src/nco/nco_rth_utl.c -o nco_rth_utl.o
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_rth_flt.lo -MD -MP -MF .deps/nco_rth_flt.Tpo -c ../../../src/nco/nco_rth_flt.c -o nco_rth_flt.o
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_scl_utl.lo -MD -MP -MF .deps/nco_scl_utl.Tpo -c ../../../src/nco/nco_scl_utl.c -o nco_scl_utl.o
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_srm.lo -MD -MP -MF .deps/nco_srm.Tpo -c -o nco_srm.lo ../../../src/nco/nco_srm.c
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_s1d.lo -MD -MP -MF .deps/nco_s1d.Tpo -c ../../../src/nco/nco_s1d.c -o nco_s1d.o
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_scm.lo -MD -MP -MF .deps/nco_scm.Tpo -c ../../../src/nco/nco_scm.c -o nco_scm.o
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_sld.lo -MD -MP -MF .deps/nco_sld.Tpo -c ../../../src/nco/nco_sld.c -o nco_sld.o
+mv -f .deps/nco_map.Tpo .deps/nco_map.Plo
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_sng_utl.lo -MD -MP -MF .deps/nco_sng_utl.Tpo -c ../../../src/nco/nco_sng_utl.c -o nco_sng_utl.o
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_sph.lo -MD -MP -MF .deps/nco_sph.Tpo -c ../../../src/nco/nco_sph.c -o nco_sph.o
+mv -f .deps/nco_ply_lst.Tpo .deps/nco_ply_lst.Plo
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_var_avg.lo -MD -MP -MF .deps/nco_var_avg.Tpo -c -o nco_var_avg.lo ../../../src/nco/nco_var_avg.c
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_var_lst.lo -MD -MP -MF .deps/nco_var_lst.Tpo -c -o nco_var_lst.lo ../../../src/nco/nco_var_lst.c
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_srm.lo -MD -MP -MF .deps/nco_srm.Tpo -c ../../../src/nco/nco_srm.c -o nco_srm.o
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_var_lst.lo -MD -MP -MF .deps/nco_var_lst.Tpo -c ../../../src/nco/nco_var_lst.c -o nco_var_lst.o
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_var_avg.lo -MD -MP -MF .deps/nco_var_avg.Tpo -c ../../../src/nco/nco_var_avg.c -o nco_var_avg.o
+mv -f .deps/nco_rth_flt.Tpo .deps/nco_rth_flt.Plo
+mv -f .deps/nco_rec_var.Tpo .deps/nco_rec_var.Plo
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_var_rth.lo -MD -MP -MF .deps/nco_var_rth.Tpo -c -o nco_var_rth.lo ../../../src/nco/nco_var_rth.c
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_var_scv.lo -MD -MP -MF .deps/nco_var_scv.Tpo -c -o nco_var_scv.lo ../../../src/nco/nco_var_scv.c
+mv -f .deps/nco_grp_utl.Tpo .deps/nco_grp_utl.Plo
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=compile mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT nco_var_utl.lo -MD -MP -MF .deps/nco_var_utl.Tpo -c -o nco_var_utl.lo ../../../src/nco/nco_var_utl.c
+mv -f .deps/nco_scl_utl.Tpo .deps/nco_scl_utl.Plo
+mv -f .deps/nco_rth_utl.Tpo .deps/nco_rth_utl.Plo
+mv -f .deps/nco_ppc.Tpo .deps/nco_ppc.Plo
+mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT ncbo.o -MD -MP -MF .deps/ncbo.Tpo -c -o ncbo.o ../../../src/nco/ncbo.c
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_var_scv.lo -MD -MP -MF .deps/nco_var_scv.Tpo -c ../../../src/nco/nco_var_scv.c -o nco_var_scv.o
+mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT ncecat.o -MD -MP -MF .deps/ncecat.Tpo -c -o ncecat.o ../../../src/nco/ncecat.c
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_var_rth.lo -MD -MP -MF .deps/nco_var_rth.Tpo -c ../../../src/nco/nco_var_rth.c -o nco_var_rth.o
+mv -f .deps/nco_scm.Tpo .deps/nco_scm.Plo
+mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT ncflint.o -MD -MP -MF .deps/ncflint.Tpo -c -o ncflint.o ../../../src/nco/ncflint.c
+mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT ncks.o -MD -MP -MF .deps/ncks.Tpo -c -o ncks.o ../../../src/nco/ncks.c
+libtool: compile:  mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../.. -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include -fno-common -fPIC -std=c99 -D_BSD_SOURCE -MT nco_var_utl.lo -MD -MP -MF .deps/nco_var_utl.Tpo -c ../../../src/nco/nco_var_utl.c -o nco_var_utl.o
+mv -f .deps/nco_sld.Tpo .deps/nco_sld.Plo
+mv -f .deps/nco_sng_utl.Tpo .deps/nco_sng_utl.Plo
+mv -f .deps/nco_s1d.Tpo .deps/nco_s1d.Plo
+mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT ncpdq.o -MD -MP -MF .deps/ncpdq.Tpo -c -o ncpdq.o ../../../src/nco/ncpdq.c
+mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT ncra.o -MD -MP -MF .deps/ncra.Tpo -c -o ncra.o ../../../src/nco/ncra.c
+mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT ncrename.o -MD -MP -MF .deps/ncrename.Tpo -c -o ncrename.o ../../../src/nco/ncrename.c
+mv -f .deps/nco_srm.Tpo .deps/nco_srm.Plo
+mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT ncwa.o -MD -MP -MF .deps/ncwa.Tpo -c -o ncwa.o ../../../src/nco/ncwa.c
+mv -f .deps/nco_var_lst.Tpo .deps/nco_var_lst.Plo
+mv -f .deps/nco_var_avg.Tpo .deps/nco_var_avg.Plo
+mv -f .deps/nco_sph.Tpo .deps/nco_sph.Plo
+mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT ncap_utl.o -MD -MP -MF .deps/ncap_utl.Tpo -c -o ncap_utl.o ../../../src/nco/ncap_utl.c
+test -f ncap_lex.c || /bin/sh ../../../autobld/ylwrap ../../../src/nco/ncap_lex.l lex.nco_yy.c ncap_lex.c -- flex  -Pnco_yy
+mv -f .deps/nco_prn.Tpo .deps/nco_prn.Plo
+mv -f .deps/nco_var_scv.Tpo .deps/nco_var_scv.Plo
+mv -f .deps/ncbo.Tpo .deps/ncbo.Po
+mv -f .deps/nco_var_utl.Tpo .deps/nco_var_utl.Plo
+mv -f .deps/ncecat.Tpo .deps/ncecat.Po
+mv -f .deps/ncflint.Tpo .deps/ncflint.Po
+mpicc -DHAVE_CONFIG_H -I. -I../../../src/nco -I../..   -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include  -I/usr/local/Cellar/gsl/2.7.1/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/include  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -MT ncap_lex.o -MD -MP -MF .deps/ncap_lex.Tpo -c -o ncap_lex.o ncap_lex.c
+mv -f .deps/ncrename.Tpo .deps/ncrename.Po
+mv -f .deps/nco_var_rth.Tpo .deps/nco_var_rth.Plo
+mv -f .deps/ncpdq.Tpo .deps/ncpdq.Po
+mv -f .deps/ncks.Tpo .deps/ncks.Po
+mv -f .deps/ncwa.Tpo .deps/ncwa.Po
+mv -f .deps/ncra.Tpo .deps/ncra.Po
+mv -f .deps/ncap_utl.Tpo .deps/ncap_utl.Po
+mv -f .deps/nco_rgr.Tpo .deps/nco_rgr.Plo
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=link mpicc  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE  -release 4.9.9 -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib -lnetcdf -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib  -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/hdf5/1.13.2/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/szip/2.1.1/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/lib -o libnco.la -rpath /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/nco/4.9.9/lib   nco_att_utl.lo nco_aux.lo nco_bnr.lo nco_cln_utl.lo nco_cnf_dmn.lo nco_cnf_typ.lo nco_cnk.lo nco_cnv_arm.lo nco_cnv_csm.lo nco_crt.lo nco_ctl.lo nco_dbg.lo nco_dmn_utl.lo nco_fl_utl.lo nco_flt.lo nco_grp_utl.lo nco_grp_trv.lo nco_kd.lo nco_lmt.lo nco_lst_utl.lo nco_map.lo nco_md5.lo nco_mmr.lo nco_msa.lo nco_mss_val.lo nco_mta.lo nco_netcdf.lo nco_omp.lo nco_pck.lo nco_ply.lo nco_ply_lst.lo nco_ppc.lo nco_prn.lo nco_rec_var.lo nco_rgr.lo nco_rth_flt.lo nco_rth_utl.lo nco_scl_utl.lo nco_s1d.lo nco_scm.lo nco_sld.lo nco_sng_utl.lo nco_sph.lo nco_srm.lo nco_var_avg.lo nco_var_lst.lo nco_var_rth.lo nco_var_scv.lo nco_var_utl.lo  -ludunits2 -lexpat -lgsl -lresolv -lintl -lm -lnetcdf -lnetcdf -lnetcdf  -lcurl -L/usr/local/Cellar/gsl/2.7.1/lib -lgsl -lgslcblas -ludunits2
+mv -f .deps/ncap_lex.Tpo .deps/ncap_lex.Po
+libtool: link: ar cru .libs/libnco.a  nco_att_utl.o nco_aux.o nco_bnr.o nco_cln_utl.o nco_cnf_dmn.o nco_cnf_typ.o nco_cnk.o nco_cnv_arm.o nco_cnv_csm.o nco_crt.o nco_ctl.o nco_dbg.o nco_dmn_utl.o nco_fl_utl.o nco_flt.o nco_grp_utl.o nco_grp_trv.o nco_kd.o nco_lmt.o nco_lst_utl.o nco_map.o nco_md5.o nco_mmr.o nco_msa.o nco_mss_val.o nco_mta.o nco_netcdf.o nco_omp.o nco_pck.o nco_ply.o nco_ply_lst.o nco_ppc.o nco_prn.o nco_rec_var.o nco_rgr.o nco_rth_flt.o nco_rth_utl.o nco_scl_utl.o nco_s1d.o nco_scm.o nco_sld.o nco_sng_utl.o nco_sph.o nco_srm.o nco_var_avg.o nco_var_lst.o nco_var_rth.o nco_var_scv.o nco_var_utl.o
+libtool: link: ranlib .libs/libnco.a
+libtool: link: ( cd ".libs" && rm -f "libnco.la" && ln -s "../libnco.la" "libnco.la" )
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=link mpicc  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE   -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib -lnetcdf -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib  -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/hdf5/1.13.2/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/szip/2.1.1/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/lib -o ncatted ncatted.o libnco.la -ludunits2 -lexpat -lgsl -lresolv -lintl -lm -lnetcdf -lnetcdf -lnetcdf  -lcurl -L/usr/local/Cellar/gsl/2.7.1/lib -lgsl -lgslcblas -ludunits2
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=link mpicc  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE   -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib -lnetcdf -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib  -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/hdf5/1.13.2/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/szip/2.1.1/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/lib -o ncbo ncbo.o libnco.la -ludunits2 -lexpat -lgsl -lresolv -lintl -lm -lnetcdf -lnetcdf -lnetcdf  -lcurl -L/usr/local/Cellar/gsl/2.7.1/lib -lgsl -lgslcblas -ludunits2
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=link mpicc  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE   -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib -lnetcdf -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib  -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/hdf5/1.13.2/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/szip/2.1.1/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/lib -o ncecat ncecat.o libnco.la -ludunits2 -lexpat -lgsl -lresolv -lintl -lm -lnetcdf -lnetcdf -lnetcdf  -lcurl -L/usr/local/Cellar/gsl/2.7.1/lib -lgsl -lgslcblas -ludunits2
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=link mpicc  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE   -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib -lnetcdf -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib  -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/hdf5/1.13.2/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/szip/2.1.1/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/lib -o ncflint ncflint.o libnco.la -ludunits2 -lexpat -lgsl -lresolv -lintl -lm -lnetcdf -lnetcdf -lnetcdf  -lcurl -L/usr/local/Cellar/gsl/2.7.1/lib -lgsl -lgslcblas -ludunits2
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=link mpicc  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE   -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib -lnetcdf -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib  -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/hdf5/1.13.2/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/szip/2.1.1/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/lib -o ncks ncks.o libnco.la -ludunits2 -lexpat -lgsl -lresolv -lintl -lm -lnetcdf -lnetcdf -lnetcdf  -lcurl -L/usr/local/Cellar/gsl/2.7.1/lib -lgsl -lgslcblas -ludunits2
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=link mpicc  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE   -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib -lnetcdf -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib  -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/hdf5/1.13.2/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/szip/2.1.1/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/lib -o ncpdq ncpdq.o libnco.la -ludunits2 -lexpat -lgsl -lresolv -lintl -lm -lnetcdf -lnetcdf -lnetcdf  -lcurl -L/usr/local/Cellar/gsl/2.7.1/lib -lgsl -lgslcblas -ludunits2
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=link mpicc  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE   -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib -lnetcdf -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib  -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/hdf5/1.13.2/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/szip/2.1.1/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/lib -o ncra ncra.o libnco.la -ludunits2 -lexpat -lgsl -lresolv -lintl -lm -lnetcdf -lnetcdf -lnetcdf  -lcurl -L/usr/local/Cellar/gsl/2.7.1/lib -lgsl -lgslcblas -ludunits2
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=link mpicc  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE   -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib -lnetcdf -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib  -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/hdf5/1.13.2/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/szip/2.1.1/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/lib -o ncrename ncrename.o libnco.la -ludunits2 -lexpat -lgsl -lresolv -lintl -lm -lnetcdf -lnetcdf -lnetcdf  -lcurl -L/usr/local/Cellar/gsl/2.7.1/lib -lgsl -lgslcblas -ludunits2
+/bin/sh ../../libtool --tag=CXX  --tag=CC   --mode=link mpicc  -fno-common  -fPIC  -std=c99 -D_BSD_SOURCE   -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib -lnetcdf -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib  -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/hdf5/1.13.2/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/szip/2.1.1/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/lib -o ncwa ncwa.o ncap_utl.o ncap_lex.o libnco.la -ludunits2 -lexpat -lgsl -lresolv -lintl -lm -lnetcdf -lnetcdf -lnetcdf  -lcurl -L/usr/local/Cellar/gsl/2.7.1/lib -lgsl -lgslcblas -ludunits2
+libtool: link: mpicc -fno-common -fPIC -std=c99 -D_BSD_SOURCE -o ncbo ncbo.o  -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/hdf5/1.13.2/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/szip/2.1.1/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/lib ./.libs/libnco.a -L/usr/local/Cellar/gcc/12.2.0/lib/gcc/current -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/zlib/1.2.13/lib -L/usr/local/Cellar/gsl/2.7.1/lib -lresolv -lintl /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib/libnetcdf.dylib -lpnetcdf /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/hdf5/1.13.2/lib/libhdf5_hl.dylib /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/hdf5/1.13.2/lib/libhdf5.dylib /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/szip/2.1.1/lib/libsz.dylib -lm -lz -lcurl -lgsl -lgslcblas /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/lib/libudunits2.dylib -ldl -lexpat
+libtool: link: mpicc -fno-common -fPIC -std=c99 -D_BSD_SOURCE -o ncecat ncecat.o  -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/hdf5/1.13.2/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/szip/2.1.1/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/lib ./.libs/libnco.a -L/usr/local/Cellar/gcc/12.2.0/lib/gcc/current -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/zlib/1.2.13/lib -L/usr/local/Cellar/gsl/2.7.1/lib -lresolv -lintl /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib/libnetcdf.dylib -lpnetcdf /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/hdf5/1.13.2/lib/libhdf5_hl.dylib /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/hdf5/1.13.2/lib/libhdf5.dylib /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/szip/2.1.1/lib/libsz.dylib -lm -lz -lcurl -lgsl -lgslcblas /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/lib/libudunits2.dylib -ldl -lexpat
+libtool: link: mpicc -fno-common -fPIC -std=c99 -D_BSD_SOURCE -o ncatted ncatted.o  -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/hdf5/1.13.2/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/szip/2.1.1/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/lib ./.libs/libnco.a -L/usr/local/Cellar/gcc/12.2.0/lib/gcc/current -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/zlib/1.2.13/lib -L/usr/local/Cellar/gsl/2.7.1/lib -lresolv -lintl /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib/libnetcdf.dylib -lpnetcdf /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/hdf5/1.13.2/lib/libhdf5_hl.dylib /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/hdf5/1.13.2/lib/libhdf5.dylib /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/szip/2.1.1/lib/libsz.dylib -lm -lz -lcurl -lgsl -lgslcblas /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/lib/libudunits2.dylib -ldl -lexpat
+libtool: link: mpicc -fno-common -fPIC -std=c99 -D_BSD_SOURCE -o ncra ncra.o  -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/hdf5/1.13.2/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/szip/2.1.1/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/lib ./.libs/libnco.a -L/usr/local/Cellar/gcc/12.2.0/lib/gcc/current -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/zlib/1.2.13/lib -L/usr/local/Cellar/gsl/2.7.1/lib -lresolv -lintl /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib/libnetcdf.dylib -lpnetcdf /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/hdf5/1.13.2/lib/libhdf5_hl.dylib /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/hdf5/1.13.2/lib/libhdf5.dylib /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/szip/2.1.1/lib/libsz.dylib -lm -lz -lcurl -lgsl -lgslcblas /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/lib/libudunits2.dylib -ldl -lexpat
+libtool: link: mpicc -fno-common -fPIC -std=c99 -D_BSD_SOURCE -o ncks ncks.o  -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/hdf5/1.13.2/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/szip/2.1.1/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/lib ./.libs/libnco.a -L/usr/local/Cellar/gcc/12.2.0/lib/gcc/current -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/zlib/1.2.13/lib -L/usr/local/Cellar/gsl/2.7.1/lib -lresolv -lintl /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib/libnetcdf.dylib -lpnetcdf /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/hdf5/1.13.2/lib/libhdf5_hl.dylib /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/hdf5/1.13.2/lib/libhdf5.dylib /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/szip/2.1.1/lib/libsz.dylib -lm -lz -lcurl -lgsl -lgslcblas /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/lib/libudunits2.dylib -ldl -lexpat
+libtool: link: mpicc -fno-common -fPIC -std=c99 -D_BSD_SOURCE -o ncflint ncflint.o  -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/hdf5/1.13.2/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/szip/2.1.1/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/lib ./.libs/libnco.a -L/usr/local/Cellar/gcc/12.2.0/lib/gcc/current -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/zlib/1.2.13/lib -L/usr/local/Cellar/gsl/2.7.1/lib -lresolv -lintl /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib/libnetcdf.dylib -lpnetcdf /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/hdf5/1.13.2/lib/libhdf5_hl.dylib /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/hdf5/1.13.2/lib/libhdf5.dylib /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/szip/2.1.1/lib/libsz.dylib -lm -lz -lcurl -lgsl -lgslcblas /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/lib/libudunits2.dylib -ldl -lexpat
+libtool: link: mpicc -fno-common -fPIC -std=c99 -D_BSD_SOURCE -o ncrename ncrename.o  -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/hdf5/1.13.2/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/szip/2.1.1/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/lib ./.libs/libnco.a -L/usr/local/Cellar/gcc/12.2.0/lib/gcc/current -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/zlib/1.2.13/lib -L/usr/local/Cellar/gsl/2.7.1/lib -lresolv -lintl /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib/libnetcdf.dylib -lpnetcdf /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/hdf5/1.13.2/lib/libhdf5_hl.dylib /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/hdf5/1.13.2/lib/libhdf5.dylib /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/szip/2.1.1/lib/libsz.dylib -lm -lz -lcurl -lgsl -lgslcblas /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/lib/libudunits2.dylib -ldl -lexpat
+libtool: link: mpicc -fno-common -fPIC -std=c99 -D_BSD_SOURCE -o ncpdq ncpdq.o  -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/hdf5/1.13.2/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/szip/2.1.1/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/lib ./.libs/libnco.a -L/usr/local/Cellar/gcc/12.2.0/lib/gcc/current -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/zlib/1.2.13/lib -L/usr/local/Cellar/gsl/2.7.1/lib -lresolv -lintl /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib/libnetcdf.dylib -lpnetcdf /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/hdf5/1.13.2/lib/libhdf5_hl.dylib /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/hdf5/1.13.2/lib/libhdf5.dylib /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/szip/2.1.1/lib/libsz.dylib -lm -lz -lcurl -lgsl -lgslcblas /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/lib/libudunits2.dylib -ldl -lexpat
+libtool: link: mpicc -fno-common -fPIC -std=c99 -D_BSD_SOURCE -o ncwa ncwa.o ncap_utl.o ncap_lex.o  -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/hdf5/1.13.2/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/szip/2.1.1/lib -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/lib ./.libs/libnco.a -L/usr/local/Cellar/gcc/12.2.0/lib/gcc/current -L/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/zlib/1.2.13/lib -L/usr/local/Cellar/gsl/2.7.1/lib -lresolv -lintl /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib/libnetcdf.dylib -lpnetcdf /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/hdf5/1.13.2/lib/libhdf5_hl.dylib /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/hdf5/1.13.2/lib/libhdf5.dylib /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/szip/2.1.1/lib/libsz.dylib -lm -lz -lcurl -lgsl -lgslcblas /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/udunits/2.2.28/lib/libudunits2.dylib -ldl -lexpat
+make[3]: Nothing to be done for `all-am'.
+Making all in man
+make[2]: Nothing to be done for `all'.
+make[2]: Nothing to be done for `all-am'.
++ [[ N =~ [yYtT] ]]
++ sudo make install
+Making install in data
+ /usr/local/bin/gmkdir -p '/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/nco/4.9.9/bin'
+ /usr/local/bin/ginstall -c ../../data/ncclimo ../../data/ncremap '/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/nco/4.9.9/bin'
+make[2]: Nothing to be done for `install-data-am'.
+Making install in src
+Making install in nco
+ /usr/local/bin/gmkdir -p '/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/nco/4.9.9/lib'
+ /bin/sh ../../libtool --tag=CXX   --mode=install /usr/local/bin/ginstall -c   libnco.la '/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/nco/4.9.9/lib'
+libtool: install: /usr/local/bin/ginstall -c .libs/libnco.lai /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/nco/4.9.9/lib/libnco.la
+libtool: install: /usr/local/bin/ginstall -c .libs/libnco.a /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/nco/4.9.9/lib/libnco.a
+libtool: install: chmod 644 /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/nco/4.9.9/lib/libnco.a
+libtool: install: ranlib /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/nco/4.9.9/lib/libnco.a
+ /usr/local/bin/gmkdir -p '/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/nco/4.9.9/bin'
+  /bin/sh ../../libtool --tag=CXX   --mode=install /usr/local/bin/ginstall -c ncatted ncbo ncecat ncflint ncks ncpdq ncra ncrename ncwa '/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/nco/4.9.9/bin'
+libtool: install: /usr/local/bin/ginstall -c ncatted /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/nco/4.9.9/bin/ncatted
+libtool: install: /usr/local/bin/ginstall -c ncbo /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/nco/4.9.9/bin/ncbo
+libtool: install: /usr/local/bin/ginstall -c ncecat /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/nco/4.9.9/bin/ncecat
+libtool: install: /usr/local/bin/ginstall -c ncflint /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/nco/4.9.9/bin/ncflint
+libtool: install: /usr/local/bin/ginstall -c ncks /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/nco/4.9.9/bin/ncks
+libtool: install: /usr/local/bin/ginstall -c ncpdq /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/nco/4.9.9/bin/ncpdq
+libtool: install: /usr/local/bin/ginstall -c ncra /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/nco/4.9.9/bin/ncra
+libtool: install: /usr/local/bin/ginstall -c ncrename /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/nco/4.9.9/bin/ncrename
+libtool: install: /usr/local/bin/ginstall -c ncwa /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/nco/4.9.9/bin/ncwa
+/Library/Developer/CommandLineTools/usr/bin/make  install-exec-hook
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/nco/4.9.9/bin && ln -s -f ncbo ncdiff || (rm -f ncdiff && ln -s -f ncbo ncdiff)
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/nco/4.9.9/bin && ln -s -f ncra ncea || (rm -f ncea && ln -s -f ncra ncea)
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/nco/4.9.9/bin && ln -s -f ncra nces || (rm -f nces && ln -s -f ncra nces)
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/nco/4.9.9/bin && ln -s -f ncra ncrcat || (rm -f ncrcat && ln -s -f ncra ncrcat)
+make[3]: Nothing to be done for `install-data-am'.
+make[3]: Nothing to be done for `install-exec-am'.
+make[3]: Nothing to be done for `install-data-am'.
+Making install in man
+make[2]: Nothing to be done for `install-exec-am'.
+ /usr/local/bin/gmkdir -p '/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/nco/4.9.9/share/man/man1'
+ /usr/local/bin/ginstall -c -m 644 ../../man/ncap2.1 ../../man/ncatted.1 ../../man/ncbo.1 ../../man/ncclimo.1 ../../man/nces.1 ../../man/ncecat.1 ../../man/ncflint.1 ../../man/ncks.1 ../../man/nco.1 ../../man/ncra.1 ../../man/ncremap.1 ../../man/ncrename.1 ../../man/ncpdq.1 ../../man/ncrcat.1 ../../man/ncwa.1 '/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/nco/4.9.9/share/man/man1'
+make[2]: Nothing to be done for `install-exec-am'.
+make[2]: Nothing to be done for `install-data-am'.
++ [[ -z openmpi-4.0.7 ]]
++ modpath=mpi
++ true
++ update_modules mpi nco 4.9.9
++ OPT=/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules
++ case $1 in
++ tmpl_file=/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/../modulefiles/mpi/compilerName/compilerVersion/mpiName/mpiVersion/nco/nco.lua
++ to_dir=/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/modulefiles/mpi/clang/14.0.0/openmpi/4.0.7
++ [[ -e /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/../modulefiles/mpi/compilerName/compilerVersion/mpiName/mpiVersion/nco/nco.lua ]]
++ [[ -d /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/modulefiles/mpi/clang/14.0.0/openmpi/4.0.7 ]]
++ cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/modulefiles/mpi/clang/14.0.0/openmpi/4.0.7
++ sudo mkdir -p nco
++ cd nco
++ sudo cp /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/../modulefiles/mpi/compilerName/compilerVersion/mpiName/mpiVersion/nco/nco.lua 4.9.9.lua
++ [[ -n '' ]]
++ [[ -e default ]]
++ sudo ln -s 4.9.9.lua default
+BUILD SUCCESS! Lib: nco-4.9.9
++ build_lib PIO pio 2.5.8
++ set +x
++ name=pio
++ version=2.5.8
++ build_type=Debug
+++ echo clang/14.0.0
+++ sed 's/\//-/g'
++ compiler=clang-14.0.0
+++ echo openmpi/4.0.7
+++ sed 's/\//-/g'
++ mpi=openmpi-4.0.7
+++ echo 2.5.8
+++ sed -e 's/\./_/g'
++ branch=pio_2_5_8
++ cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/../pkg
++ software=ParallelIO
++ [[ -d ParallelIO ]]
++ git clone https://github.com/NCAR/ParallelIO
+Cloning into 'ParallelIO'...
++ [[ -d ParallelIO ]]
++ cd ParallelIO
++ git fetch
++ git checkout pio_2_5_8
+error: pathspec 'pio_2_5_8' did not match any file(s) known to git
+BUILD FAIL!  Lib: pio-2.5.8 Error:1

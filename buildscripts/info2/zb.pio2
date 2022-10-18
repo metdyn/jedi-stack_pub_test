@@ -1,0 +1,753 @@
++ source /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/libs/update_modules.sh
+++ export -f update_modules
+++ export -f no_modules
+++ export -f build_lib
+++ export -f _initialize_prefix
+++ export -f initialize_prefix_core
+++ export -f initialize_prefix_compiler
+++ export -f initialize_prefix_mpi
++ pkgdir=/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/../pkg
++ mkdir -p /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/../pkg
++ [[ 1 -ne 1 ]]
++ config_file=/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/config/config_mac.sh
++ [[ -e /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/config/config_mac.sh ]]
++ source /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/config/config_mac.sh
+++ export JEDI_COMPILER=clang/14.0.0
+++ JEDI_COMPILER=clang/14.0.0
+++ export FC=gfortran
+++ FC=gfortran
+++ export JEDI_MPI=openmpi/4.0.7
+++ JEDI_MPI=openmpi/4.0.7
+++ export COMPILER_BUILD=native-pkg
+++ COMPILER_BUILD=native-pkg
+++ export MPI_BUILD=from-source
+++ MPI_BUILD=from-source
+++ export PREFIX=/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules
+++ PREFIX=/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules
+++ export USE_SUDO=Y
+++ USE_SUDO=Y
+++ export PKGDIR=pkg
+++ PKGDIR=pkg
+++ export LOGDIR=buildscripts/log
+++ LOGDIR=buildscripts/log
+++ export OVERWRITE=Y
+++ OVERWRITE=Y
+++ export NTHREADS=16
+++ NTHREADS=16
+++ export MAKE_CHECK=N
+++ MAKE_CHECK=N
+++ export MAKE_VERBOSE=Y
+++ MAKE_VERBOSE=Y
+++ export MAKE_CLEAN=N
+++ MAKE_CLEAN=N
+++ export DOWNLOAD_ONLY=F
+++ DOWNLOAD_ONLY=F
+++ export STACK_EXIT_ON_FAIL=T
+++ STACK_EXIT_ON_FAIL=T
+++ export 'WGET=wget -nv'
+++ WGET='wget -nv'
+++ export FFLAGS=
+++ FFLAGS=
+++ export CFLAGS=
+++ CFLAGS=
+++ export CXXFLAGS=
+++ CXXFLAGS=
+++ export LDFLAGS=
+++ LDFLAGS=
++ [[ mac =~ ^container ]]
++ export MODULES=true
++ MODULES=true
++ true
++ source /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/config/choose_modules.sh
+++ export STACK_BUILD_CMAKE=N
+++ STACK_BUILD_CMAKE=N
+++ export STACK_BUILD_GITLFS=N
+++ STACK_BUILD_GITLFS=N
+++ export STACK_BUILD_SZIP=Y
+++ STACK_BUILD_SZIP=Y
+++ export STACK_BUILD_UDUNITS=Y
+++ STACK_BUILD_UDUNITS=Y
+++ export STACK_BUILD_ZLIB=Y
+++ STACK_BUILD_ZLIB=Y
+++ export STACK_BUILD_LAPACK=N
+++ STACK_BUILD_LAPACK=N
+++ export STACK_BUILD_BOOST_HDRS=Y
+++ STACK_BUILD_BOOST_HDRS=Y
+++ export STACK_BUILD_BUFR=Y
+++ STACK_BUILD_BUFR=Y
+++ export STACK_BUILD_EIGEN3=N
+++ STACK_BUILD_EIGEN3=N
+++ export STACK_BUILD_HDF5=Y
+++ STACK_BUILD_HDF5=Y
+++ export STACK_BUILD_PNETCDF=Y
+++ STACK_BUILD_PNETCDF=Y
+++ export STACK_BUILD_NETCDF=Y
+++ STACK_BUILD_NETCDF=Y
+++ export STACK_BUILD_NCCMP=Y
+++ STACK_BUILD_NCCMP=Y
+++ export STACK_BUILD_ECBUILD=Y
+++ STACK_BUILD_ECBUILD=Y
+++ export STACK_BUILD_ECKIT=Y
+++ STACK_BUILD_ECKIT=Y
+++ export STACK_BUILD_FCKIT=Y
+++ STACK_BUILD_FCKIT=Y
+++ export STACK_BUILD_ATLAS=Y
+++ STACK_BUILD_ATLAS=Y
+++ export STACK_BUILD_GSL_LITE=Y
+++ STACK_BUILD_GSL_LITE=Y
+++ export STACK_BUILD_PYBIND11=Y
+++ STACK_BUILD_PYBIND11=Y
+++ export STACK_BUILD_ECCODES=Y
+++ STACK_BUILD_ECCODES=Y
+++ export STACK_BUILD_ODC=N
+++ STACK_BUILD_ODC=N
+++ export STACK_BUILD_PIO=Y
+++ STACK_BUILD_PIO=Y
+++ export STACK_BUILD_GPTL=N
+++ STACK_BUILD_GPTL=N
+++ export STACK_BUILD_NCO=Y
+++ STACK_BUILD_NCO=Y
+++ export STACK_BUILD_PYJEDI=N
+++ STACK_BUILD_PYJEDI=N
+++ export STACK_BUILD_NCEPLIBS=N
+++ STACK_BUILD_NCEPLIBS=N
+++ export STACK_BUILD_JPEG=N
+++ STACK_BUILD_JPEG=N
+++ export STACK_BUILD_PNG=N
+++ STACK_BUILD_PNG=N
+++ export STACK_BUILD_JASPER=N
+++ STACK_BUILD_JASPER=N
+++ export STACK_BUILD_XERCES=N
+++ STACK_BUILD_XERCES=N
+++ export STACK_BUILD_TKDIFF=N
+++ STACK_BUILD_TKDIFF=N
+++ export STACK_BUILD_BOOST_FULL=N
+++ STACK_BUILD_BOOST_FULL=N
+++ export STACK_BUILD_ESMF=N
+++ STACK_BUILD_ESMF=N
+++ export STACK_BUILD_BASELIBS=N
+++ STACK_BUILD_BASELIBS=N
+++ export STACK_BUILD_PDTOOLKIT=N
+++ STACK_BUILD_PDTOOLKIT=N
+++ export STACK_BUILD_TAU2=N
+++ STACK_BUILD_TAU2=N
+++ export STACK_BUILD_CGAL=N
+++ STACK_BUILD_CGAL=N
+++ export STACK_BUILD_GEOS=N
+++ STACK_BUILD_GEOS=N
+++ export STACK_BUILD_SQLITE=N
+++ STACK_BUILD_SQLITE=N
+++ export STACK_BUILD_PROJ=N
+++ STACK_BUILD_PROJ=N
+++ export STACK_BUILD_FMS=N
+++ STACK_BUILD_FMS=N
+++ export STACK_BUILD_JSON=Y
+++ STACK_BUILD_JSON=Y
+++ export STACK_BUILD_JSON_SCHEMA_VALIDATOR=Y
+++ STACK_BUILD_JSON_SCHEMA_VALIDATOR=Y
+++ export STACK_BUILD_ECFLOW=N
+++ STACK_BUILD_ECFLOW=N
++ true
++ logdir=/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/../buildscripts/log
++ mkdir -p /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/../buildscripts/log
++ [[ Y =~ [yYtT] ]]
++ export SUDO=sudo
++ SUDO=sudo
++ true
++ set +x
++ build_lib PIO pio 2.5.9
++ set +x
++ name=pio
++ version=2.5.9
++ build_type=Debug
+++ echo clang/14.0.0
+++ sed 's/\//-/g'
++ compiler=clang-14.0.0
+++ echo openmpi/4.0.7
+++ sed 's/\//-/g'
++ mpi=openmpi-4.0.7
+++ echo 2.5.9
+++ sed -e 's/\./_/g'
++ branch=pio2_5_9
++ cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/../pkg
++ software=ParallelIO
++ [[ -d ParallelIO ]]
++ [[ -d ParallelIO ]]
++ cd ParallelIO
++ git fetch
++ git checkout pio2_5_9
+Note: switching to 'pio2_5_9'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at a61c7630 Merge pull request #1936 from jedwards4b/version_update
++ [[ F =~ [yYtT] ]]
++ true
++ set +x
+
+Currently Loaded Modules:
+  1) jedi-clang/14.0.0   2) szip/2.1.1   3) openmpi/4.0.7   4) jedi-openmpi/4.0.7   5) hdf5/1.13.2   6) pnetcdf/1.12.2   7) netcdf/4.7.4
+
+ 
+
++ [[ Debug == Debug ]]
++ version=2.5.9-debug
++ extra_conf='-DCMAKE_BUILD_TYPE=Debug -DPIO_ENABLE_LOGGING=OFF'
++ prefix=/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/pio/2.5.9-debug
++ [[ -d /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/pio/2.5.9-debug ]]
++ export FC=mpifort
++ FC=mpifort
++ export CC=mpicc
++ CC=mpicc
++ export CXX=mpicxx
++ CXX=mpicxx
++ export F9X=mpifort
++ F9X=mpifort
++ export 'FFLAGS+= -fPIC'
++ FFLAGS+=' -fPIC'
++ export 'CFLAGS+= -fPIC -fcommon'
++ CFLAGS+=' -fPIC -fcommon'
++ export 'CXXFLAGS+= -fPIC'
++ CXXFLAGS+=' -fPIC'
++ export 'FCFLAGS= -fPIC'
++ FCFLAGS=' -fPIC'
++ [[ -d build ]]
++ mkdir -p build
++ cd build
++ export CMAKE_INCLUDE_PATH=
++ CMAKE_INCLUDE_PATH=
++ cmake -DNetCDF_C_PATH=/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4 -DNetCDF_Fortran_PATH=/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4 -DPnetCDF_PATH=/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2 -DHDF5_PATH=/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/hdf5/1.13.2 -DCMAKE_INSTALL_PREFIX=/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/pio/2.5.9-debug -DPIO_USE_MALLOC=ON -DCMAKE_VERBOSE_MAKEFILE=1 -DPIO_ENABLE_TIMING=OFF -DCMAKE_BUILD_TYPE=Debug -DPIO_ENABLE_LOGGING=OFF ..
+-- The C compiler identification is AppleClang 14.0.0.14000029
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi/4.0.7/bin/mpicc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- The Fortran compiler identification is GNU 12.2.0
+-- Checking whether Fortran compiler has -isysroot
+-- Checking whether Fortran compiler has -isysroot - yes
+-- Checking whether Fortran compiler supports OSX deployment target flag
+-- Checking whether Fortran compiler supports OSX deployment target flag - yes
+-- Detecting Fortran compiler ABI info
+-- Detecting Fortran compiler ABI info - done
+-- Check for working Fortran compiler: /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi/4.0.7/bin/mpifort - skipped
+-- Importing CMake_Fortran_utils
+-- Importing CMake_Fortran_utils - success
+CMake Warning (dev) at CMakeLists.txt:172 (find_package):
+  Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+  Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  Environment variable MPI_ROOT is set to:
+
+    /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi/4.0.7
+
+  For compatibility, CMake is ignoring the variable.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found MPI_C: /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi/4.0.7/bin/mpicc (found version "3.1") 
+-- Found MPI_Fortran: /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi/4.0.7/bin/mpifort (found version "3.1") 
+-- Found MPI: TRUE (found version "3.1")  
+-- Found NetCDF_C: /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib/libnetcdf.dylib  
+-- Checking NetCDF version
+-- Checking NetCDF version - 4.7.4./*!<
+-- Checking whether NetCDF has parallel support
+-- Checking whether NetCDF has parallel support - yes
+-- Looking for nc_set_log_level
+-- Looking for nc_set_log_level - found
+Fortran Library build is ON
+CMake Warning (dev) at CMakeLists.txt:258 (find_package):
+  Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.
+  Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy
+  command to set the policy and suppress this warning.
+
+  Environment variable NetCDF_ROOT is set to:
+
+    /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4
+
+  For compatibility, CMake is ignoring the variable.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+CMake Warning (dev) at /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (NetCDF_Fortran) does not match the name of the calling package (NetCDF).
+  This can lead to problems in calling code that expects `find_package`
+  result variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  cmake/LibFind.cmake:306 (find_package_handle_standard_args)
+  cmake/FindNetCDF.cmake:49 (find_package_component)
+  CMakeLists.txt:258 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found NetCDF_Fortran: /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib/libnetcdff.dylib  
+CMake Warning (dev) at /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (PnetCDF_C)
+  does not match the name of the calling package (PnetCDF).  This can lead to
+  problems in calling code that expects `find_package` result variables
+  (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  cmake/LibFind.cmake:306 (find_package_handle_standard_args)
+  cmake/FindPnetCDF.cmake:49 (find_package_component)
+  CMakeLists.txt:260 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found PnetCDF_C: /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2/lib/libpnetcdf.dylib  
+-- Checking PnetCDF version
+-- Checking PnetCDF version - 1.12.2
+CMake Warning (dev) at /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args`
+  (PnetCDF_Fortran) does not match the name of the calling package (PnetCDF).
+  This can lead to problems in calling code that expects `find_package`
+  result variables (e.g., `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  cmake/LibFind.cmake:306 (find_package_handle_standard_args)
+  cmake/FindPnetCDF.cmake:49 (find_package_component)
+  CMakeLists.txt:260 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Found PnetCDF_Fortran: /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2/lib/libpnetcdf.dylib  
+-- Looking for sys/types.h
+CMake Warning (dev) at /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/CheckIncludeFile.cmake:82 (message):
+  Policy CMP0075 is not set: Include file check macros honor
+  CMAKE_REQUIRED_LIBRARIES.  Run "cmake --help-policy CMP0075" for policy
+  details.  Use the cmake_policy command to set the policy and suppress this
+  warning.
+
+  CMAKE_REQUIRED_LIBRARIES is set to:
+
+    /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2/lib/libpnetcdf.dylib
+
+  For compatibility with CMake 3.11 and below this check is ignoring it.
+Call Stack (most recent call first):
+  /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/CheckTypeSize.cmake:256 (check_include_file)
+  src/clib/CMakeLists.txt:177 (check_type_size)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of size_t
+-- Check size of size_t - done
+-- Check size of long long
+-- Check size of long long - done
+-- Checking whether Fortran compiler supports c_sizeof
+-- Checking whether Fortran compiler supports c_sizeof - yes
+-- MPIIO not detected and therefore disabled.
+-- Checking whether MPI Fortran module is supported
+-- Checking whether MPI Fortran module is supported - yes
+-- MPI Fortran module verified and enabled.
+CMAKE_EXE_LINKER_FLAGS 
+CMAKE_EXE_LINKER_FLAGS 
+-- Cannot build performance test without gptl timing library
+CMake Warning (dev) at /usr/local/Cellar/cmake/3.24.2/share/cmake/Modules/FindPackageHandleStandardArgs.cmake:438 (message):
+  The package name passed to `find_package_handle_standard_args` (MPE_C) does
+  not match the name of the calling package (MPE).  This can lead to problems
+  in calling code that expects `find_package` result variables (e.g.,
+  `_FOUND`) to follow a certain pattern.
+Call Stack (most recent call first):
+  cmake/LibFind.cmake:306 (find_package_handle_standard_args)
+  cmake/FindMPE.cmake:42 (find_package_component)
+  examples/c/CMakeLists.txt:56 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Could NOT find MPE_C (missing: MPE_C_LIBRARY MPE_C_INCLUDE_DIR) 
+-- Found Doxygen: /usr/local/bin/doxygen (found version "1.9.5") found components: doxygen dot 
+-- Performing Test HAVE_NETCDF4
+-- Performing Test HAVE_NETCDF4 - Success
+-- Performing Test HAVE_NETCDF_PAR
+-- Performing Test HAVE_NETCDF_PAR - Success
+-- Performing Test HAVE_SZIP_WRITE
+-- Performing Test HAVE_SZIP_WRITE - Success
+-- Performing Test HDF5_HAS_PAR_FILTERS
+-- Performing Test HDF5_HAS_PAR_FILTERS - Success
+-- Performing Test HAVE_472
+-- Performing Test HAVE_472 - Failed
+-- Performing Test HAVE_DISPATCH2
+-- Performing Test HAVE_DISPATCH2 - Success
+-- # PIO Configuration Summary
+==============================
+
+# General
+-------
+PIO Version:		2.5.9
+Configured On:		Mon Oct 17 21:14:55 MDT 2022
+Host System:		x86_64-Darwin-21.6.0
+Build Directory: 	/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build
+Install Prefix:         /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi-4.0.7/pio/2.5.9-debug
+
+# Compiling Options
+-----------------
+C Compiler:		AppleClang 14.0.0.14000029
+CFLAGS:			-fPIC -fcommon -std=c99  
+CPPFLAGS:		 -DDARWIN -DCPRAPPLECLANG -DLOGGING -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/../ncint -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2/include
+LDFLAGS:		 
+Shared Library:		no
+Static Library:		yes
+Extra libraries:	
+
+Fortran Compiler:       GNU 12.2.0
+FFLAGS:                 -fPIC
+FCFLAGS:                
+More Fortran Flags:	 -DDARWIN -DCPRGNU -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/flib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2/include
+
+# Features
+--------
+PnetCDF Support:	yes
+SZIP Write Support:	no
+Parallel Filters:	yes
+NetCDF/HDF5 Support:	yes
+NetCDF/HDF5 Par I/O:	yes
+NetCDF Integration:	no
+PIO Logging:		no
+MPIEXEC:		mpiexec
+Fortran:		yes
+
+
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    HDF5_PATH
+    PIO_USE_MALLOC
+
+
+-- Build files have been written to: /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build
++ VERBOSE=Y
++ make -j16
+/usr/local/Cellar/cmake/3.24.2/bin/cmake -S/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO -B/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/local/Cellar/cmake/3.24.2/bin/cmake -E cmake_progress_start /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/CMakeFiles /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build//CMakeFiles/progress.marks
+/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/Makefile2 all
+/Library/Developer/CommandLineTools/usr/bin/make  -f src/clib/CMakeFiles/pioc.dir/build.make src/clib/CMakeFiles/pioc.dir/depend
+/Library/Developer/CommandLineTools/usr/bin/make  -f src/flib/CMakeFiles/genf90.dir/build.make src/flib/CMakeFiles/genf90.dir/depend
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build && /usr/local/Cellar/cmake/3.24.2/bin/cmake -E cmake_depends "Unix Makefiles" /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/flib /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib/CMakeFiles/genf90.dir/DependInfo.cmake --color=
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build && /usr/local/Cellar/cmake/3.24.2/bin/cmake -E cmake_depends "Unix Makefiles" /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib/CMakeFiles/pioc.dir/DependInfo.cmake --color=
+/Library/Developer/CommandLineTools/usr/bin/make  -f src/flib/CMakeFiles/genf90.dir/build.make src/flib/CMakeFiles/genf90.dir/build
+/Library/Developer/CommandLineTools/usr/bin/make  -f src/clib/CMakeFiles/pioc.dir/build.make src/clib/CMakeFiles/pioc.dir/build
+[  4%] Creating directories for 'genf90'
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib && /usr/local/Cellar/cmake/3.24.2/bin/cmake -Dcfgdir= -P /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib/genf90/tmp/genf90-mkdirs.cmake
+[  4%] Building C object src/clib/CMakeFiles/pioc.dir/pioc.c.o
+[  4%] Building C object src/clib/CMakeFiles/pioc.dir/pio_file.c.o
+[  9%] Building C object src/clib/CMakeFiles/pioc.dir/pioc_support.c.o
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib && /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi/4.0.7/bin/mpicc -DCPRAPPLECLANG -DDARWIN -DLOGGING -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/../ncint -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2/include -fPIC -fcommon -std=c99  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -MD -MT src/clib/CMakeFiles/pioc.dir/pioc.c.o -MF CMakeFiles/pioc.dir/pioc.c.o.d -o CMakeFiles/pioc.dir/pioc.c.o -c /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/pioc.c
+[  9%] Building C object src/clib/CMakeFiles/pioc.dir/topology.c.o
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib && /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi/4.0.7/bin/mpicc -DCPRAPPLECLANG -DDARWIN -DLOGGING -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/../ncint -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2/include -fPIC -fcommon -std=c99  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -MD -MT src/clib/CMakeFiles/pioc.dir/pioc_support.c.o -MF CMakeFiles/pioc.dir/pioc_support.c.o.d -o CMakeFiles/pioc.dir/pioc_support.c.o -c /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/pioc_support.c
+[ 14%] Building C object src/clib/CMakeFiles/pioc.dir/pioc_sc.c.o
+[ 14%] Building C object src/clib/CMakeFiles/pioc.dir/pio_lists.c.o
+[ 14%] Building C object src/clib/CMakeFiles/pioc.dir/pio_spmd.c.o
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib && /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi/4.0.7/bin/mpicc -DCPRAPPLECLANG -DDARWIN -DLOGGING -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/../ncint -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2/include -fPIC -fcommon -std=c99  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -MD -MT src/clib/CMakeFiles/pioc.dir/pioc_sc.c.o -MF CMakeFiles/pioc.dir/pioc_sc.c.o.d -o CMakeFiles/pioc.dir/pioc_sc.c.o -c /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/pioc_sc.c
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib && /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi/4.0.7/bin/mpicc -DCPRAPPLECLANG -DDARWIN -DLOGGING -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/../ncint -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2/include -fPIC -fcommon -std=c99  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -MD -MT src/clib/CMakeFiles/pioc.dir/pio_spmd.c.o -MF CMakeFiles/pioc.dir/pio_spmd.c.o.d -o CMakeFiles/pioc.dir/pio_spmd.c.o -c /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/pio_spmd.c
+[ 19%] Building C object src/clib/CMakeFiles/pioc.dir/pio_nc4.c.o
+[ 19%] Building C object src/clib/CMakeFiles/pioc.dir/pio_rearrange.c.o
+[ 19%] Building C object src/clib/CMakeFiles/pioc.dir/pioc_async.c.o
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib && /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi/4.0.7/bin/mpicc -DCPRAPPLECLANG -DDARWIN -DLOGGING -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/../ncint -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2/include -fPIC -fcommon -std=c99  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -MD -MT src/clib/CMakeFiles/pioc.dir/pio_nc4.c.o -MF CMakeFiles/pioc.dir/pio_nc4.c.o.d -o CMakeFiles/pioc.dir/pio_nc4.c.o -c /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/pio_nc4.c
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib && /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi/4.0.7/bin/mpicc -DCPRAPPLECLANG -DDARWIN -DLOGGING -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/../ncint -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2/include -fPIC -fcommon -std=c99  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -MD -MT src/clib/CMakeFiles/pioc.dir/pio_rearrange.c.o -MF CMakeFiles/pioc.dir/pio_rearrange.c.o.d -o CMakeFiles/pioc.dir/pio_rearrange.c.o -c /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/pio_rearrange.c
+[ 23%] Building C object src/clib/CMakeFiles/pioc.dir/pio_nc.c.o
+[ 23%] Building C object src/clib/CMakeFiles/pioc.dir/pio_put_nc.c.o
+[ 28%] Building C object src/clib/CMakeFiles/pioc.dir/pio_get_nc.c.o
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib && /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi/4.0.7/bin/mpicc -DCPRAPPLECLANG -DDARWIN -DLOGGING -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/../ncint -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2/include -fPIC -fcommon -std=c99  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -MD -MT src/clib/CMakeFiles/pioc.dir/pio_put_nc.c.o -MF CMakeFiles/pioc.dir/pio_put_nc.c.o.d -o CMakeFiles/pioc.dir/pio_put_nc.c.o -c /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/pio_put_nc.c
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib && /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi/4.0.7/bin/mpicc -DCPRAPPLECLANG -DDARWIN -DLOGGING -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/../ncint -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2/include -fPIC -fcommon -std=c99  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -MD -MT src/clib/CMakeFiles/pioc.dir/pio_get_nc.c.o -MF CMakeFiles/pioc.dir/pio_get_nc.c.o.d -o CMakeFiles/pioc.dir/pio_get_nc.c.o -c /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/pio_get_nc.c
+[ 28%] Building C object src/clib/CMakeFiles/pioc.dir/pio_getput_int.c.o
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib && /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi/4.0.7/bin/mpicc -DCPRAPPLECLANG -DDARWIN -DLOGGING -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/../ncint -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2/include -fPIC -fcommon -std=c99  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -MD -MT src/clib/CMakeFiles/pioc.dir/pio_getput_int.c.o -MF CMakeFiles/pioc.dir/pio_getput_int.c.o.d -o CMakeFiles/pioc.dir/pio_getput_int.c.o -c /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/pio_getput_int.c
+[ 28%] Building C object src/clib/CMakeFiles/pioc.dir/pio_msg.c.o
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib && /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi/4.0.7/bin/mpicc -DCPRAPPLECLANG -DDARWIN -DLOGGING -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/../ncint -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2/include -fPIC -fcommon -std=c99  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -MD -MT src/clib/CMakeFiles/pioc.dir/pio_msg.c.o -MF CMakeFiles/pioc.dir/pio_msg.c.o.d -o CMakeFiles/pioc.dir/pio_msg.c.o -c /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/pio_msg.c
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib && /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi/4.0.7/bin/mpicc -DCPRAPPLECLANG -DDARWIN -DLOGGING -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/../ncint -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2/include -fPIC -fcommon -std=c99  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -MD -MT src/clib/CMakeFiles/pioc.dir/pio_nc.c.o -MF CMakeFiles/pioc.dir/pio_nc.c.o.d -o CMakeFiles/pioc.dir/pio_nc.c.o -c /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/pio_nc.c
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib && /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi/4.0.7/bin/mpicc -DCPRAPPLECLANG -DDARWIN -DLOGGING -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/../ncint -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2/include -fPIC -fcommon -std=c99  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -O0 -MD -MT src/clib/CMakeFiles/pioc.dir/pioc_async.c.o -MF CMakeFiles/pioc.dir/pioc_async.c.o.d -o CMakeFiles/pioc.dir/pioc_async.c.o -c /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/pioc_async.c
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib && /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi/4.0.7/bin/mpicc -DCPRAPPLECLANG -DDARWIN -DLOGGING -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/../ncint -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2/include -fPIC -fcommon -std=c99  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -MD -MT src/clib/CMakeFiles/pioc.dir/pio_lists.c.o -MF CMakeFiles/pioc.dir/pio_lists.c.o.d -o CMakeFiles/pioc.dir/pio_lists.c.o -c /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/pio_lists.c
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib && /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi/4.0.7/bin/mpicc -DCPRAPPLECLANG -DDARWIN -DLOGGING -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/../ncint -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2/include -fPIC -fcommon -std=c99  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -MD -MT src/clib/CMakeFiles/pioc.dir/pio_file.c.o -MF CMakeFiles/pioc.dir/pio_file.c.o.d -o CMakeFiles/pioc.dir/pio_file.c.o -c /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/pio_file.c
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib && /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi/4.0.7/bin/mpicc -DCPRAPPLECLANG -DDARWIN -DLOGGING -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/../ncint -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2/include -fPIC -fcommon -std=c99  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -MD -MT src/clib/CMakeFiles/pioc.dir/topology.c.o -MF CMakeFiles/pioc.dir/topology.c.o.d -o CMakeFiles/pioc.dir/topology.c.o -c /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/topology.c
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib && /usr/local/Cellar/cmake/3.24.2/bin/cmake -E touch /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib/genf90/src/genf90-stamp/genf90-mkdir
+[ 33%] Performing download step (git clone) for 'genf90'
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib/genf90/src && /usr/local/Cellar/cmake/3.24.2/bin/cmake -P /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib/genf90/tmp/genf90-gitclone.cmake
+[ 38%] Building C object src/clib/CMakeFiles/pioc.dir/pio_darray.c.o
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib && /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi/4.0.7/bin/mpicc -DCPRAPPLECLANG -DDARWIN -DLOGGING -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/../ncint -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2/include -fPIC -fcommon -std=c99  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -MD -MT src/clib/CMakeFiles/pioc.dir/pio_darray.c.o -MF CMakeFiles/pioc.dir/pio_darray.c.o.d -o CMakeFiles/pioc.dir/pio_darray.c.o -c /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/pio_darray.c
+Cloning into 'genf90'...
+/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/pio_rearrange.c:14:9: warning: 'SIZEOF_MPI_OFFSET' macro redefined [-Wmacro-redefined]
+#define SIZEOF_MPI_OFFSET sizeof(MPI_Offset)
+        ^
+/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/config.h:22:9: note: previous definition is here
+#define SIZEOF_MPI_OFFSET 
+        ^
+[ 38%] Building C object src/clib/CMakeFiles/pioc.dir/pio_darray_int.c.o
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib && /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi/4.0.7/bin/mpicc -DCPRAPPLECLANG -DDARWIN -DLOGGING -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/../ncint -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2/include -fPIC -fcommon -std=c99  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -MD -MT src/clib/CMakeFiles/pioc.dir/pio_darray_int.c.o -MF CMakeFiles/pioc.dir/pio_darray_int.c.o.d -o CMakeFiles/pioc.dir/pio_darray_int.c.o -c /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/pio_darray_int.c
+[ 42%] Building C object src/clib/CMakeFiles/pioc.dir/pio_get_vard.c.o
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib && /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi/4.0.7/bin/mpicc -DCPRAPPLECLANG -DDARWIN -DLOGGING -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/../ncint -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2/include -fPIC -fcommon -std=c99  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -MD -MT src/clib/CMakeFiles/pioc.dir/pio_get_vard.c.o -MF CMakeFiles/pioc.dir/pio_get_vard.c.o.d -o CMakeFiles/pioc.dir/pio_get_vard.c.o -c /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/pio_get_vard.c
+[ 42%] Building C object src/clib/CMakeFiles/pioc.dir/pio_put_vard.c.o
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib && /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi/4.0.7/bin/mpicc -DCPRAPPLECLANG -DDARWIN -DLOGGING -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/../ncint -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2/include -fPIC -fcommon -std=c99  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -MD -MT src/clib/CMakeFiles/pioc.dir/pio_put_vard.c.o -MF CMakeFiles/pioc.dir/pio_put_vard.c.o.d -o CMakeFiles/pioc.dir/pio_put_vard.c.o -c /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/pio_put_vard.c
+[ 42%] Building C object src/clib/CMakeFiles/pioc.dir/pio_error.c.o
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib && /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi/4.0.7/bin/mpicc -DCPRAPPLECLANG -DDARWIN -DLOGGING -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/../ncint -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2/include -fPIC -fcommon -std=c99  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -MD -MT src/clib/CMakeFiles/pioc.dir/pio_error.c.o -MF CMakeFiles/pioc.dir/pio_error.c.o.d -o CMakeFiles/pioc.dir/pio_error.c.o -c /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/pio_error.c
+[ 47%] Building C object src/clib/CMakeFiles/pioc.dir/parallel_sort.c.o
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib && /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi/4.0.7/bin/mpicc -DCPRAPPLECLANG -DDARWIN -DLOGGING -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/../ncint -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2/include -fPIC -fcommon -std=c99  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -MD -MT src/clib/CMakeFiles/pioc.dir/parallel_sort.c.o -MF CMakeFiles/pioc.dir/parallel_sort.c.o.d -o CMakeFiles/pioc.dir/parallel_sort.c.o -c /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/parallel_sort.c
+1 warning generated.
+[ 47%] Linking C static library libpioc.a
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib && /usr/local/Cellar/cmake/3.24.2/bin/cmake -P CMakeFiles/pioc.dir/cmake_clean_target.cmake
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib && /usr/local/Cellar/cmake/3.24.2/bin/cmake -E cmake_link_script CMakeFiles/pioc.dir/link.txt --verbose=1
+/usr/bin/ar qc libpioc.a CMakeFiles/pioc.dir/topology.c.o CMakeFiles/pioc.dir/pio_file.c.o CMakeFiles/pioc.dir/pioc_support.c.o CMakeFiles/pioc.dir/pio_lists.c.o CMakeFiles/pioc.dir/pioc.c.o CMakeFiles/pioc.dir/pioc_sc.c.o CMakeFiles/pioc.dir/pio_spmd.c.o CMakeFiles/pioc.dir/pio_rearrange.c.o CMakeFiles/pioc.dir/pio_nc4.c.o CMakeFiles/pioc.dir/pioc_async.c.o CMakeFiles/pioc.dir/pio_nc.c.o CMakeFiles/pioc.dir/pio_put_nc.c.o CMakeFiles/pioc.dir/pio_get_nc.c.o CMakeFiles/pioc.dir/pio_getput_int.c.o CMakeFiles/pioc.dir/pio_msg.c.o CMakeFiles/pioc.dir/pio_darray.c.o CMakeFiles/pioc.dir/pio_darray_int.c.o CMakeFiles/pioc.dir/pio_get_vard.c.o CMakeFiles/pioc.dir/pio_put_vard.c.o CMakeFiles/pioc.dir/pio_error.c.o CMakeFiles/pioc.dir/parallel_sort.c.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libpioc.a(topology.c.o) has no symbols
+/usr/bin/ranlib -c libpioc.a
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: libpioc.a(topology.c.o) has no symbols
+[ 47%] Built target pioc
+/Library/Developer/CommandLineTools/usr/bin/make  -f examples/c/CMakeFiles/example1.dir/build.make examples/c/CMakeFiles/example1.dir/depend
+/Library/Developer/CommandLineTools/usr/bin/make  -f examples/c/CMakeFiles/darray_no_async.dir/build.make examples/c/CMakeFiles/darray_no_async.dir/depend
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build && /usr/local/Cellar/cmake/3.24.2/bin/cmake -E cmake_depends "Unix Makefiles" /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/examples/c /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/examples/c /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/examples/c/CMakeFiles/example1.dir/DependInfo.cmake --color=
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build && /usr/local/Cellar/cmake/3.24.2/bin/cmake -E cmake_depends "Unix Makefiles" /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/examples/c /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/examples/c /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/examples/c/CMakeFiles/darray_no_async.dir/DependInfo.cmake --color=
+/Library/Developer/CommandLineTools/usr/bin/make  -f examples/c/CMakeFiles/example1.dir/build.make examples/c/CMakeFiles/example1.dir/build
+/Library/Developer/CommandLineTools/usr/bin/make  -f examples/c/CMakeFiles/darray_no_async.dir/build.make examples/c/CMakeFiles/darray_no_async.dir/build
+[ 47%] Building C object examples/c/CMakeFiles/darray_no_async.dir/darray_no_async.c.o
+[ 52%] Building C object examples/c/CMakeFiles/example1.dir/example1.c.o
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/examples/c && /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi/4.0.7/bin/mpicc -DCPRAPPLECLANG -DDARWIN -DLOGGING -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/examples/c -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/../ncint -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2/include -fPIC -fcommon -g -O0 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -MD -MT examples/c/CMakeFiles/darray_no_async.dir/darray_no_async.c.o -MF CMakeFiles/darray_no_async.dir/darray_no_async.c.o.d -o CMakeFiles/darray_no_async.dir/darray_no_async.c.o -c /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/examples/c/darray_no_async.c
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/examples/c && /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi/4.0.7/bin/mpicc -DCPRAPPLECLANG -DDARWIN -DLOGGING -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/examples/c -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/../ncint -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2/include -fPIC -fcommon -g -O0 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -MD -MT examples/c/CMakeFiles/example1.dir/example1.c.o -MF CMakeFiles/example1.dir/example1.c.o.d -o CMakeFiles/example1.dir/example1.c.o -c /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/examples/c/example1.c
+[ 52%] Linking C executable example1
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/examples/c && /usr/local/Cellar/cmake/3.24.2/bin/cmake -E cmake_link_script CMakeFiles/example1.dir/link.txt --verbose=1
+[ 52%] Linking C executable darray_no_async
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/examples/c && /usr/local/Cellar/cmake/3.24.2/bin/cmake -E cmake_link_script CMakeFiles/darray_no_async.dir/link.txt --verbose=1
+/Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi/4.0.7/bin/mpicc -fPIC -fcommon -g -O0 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/example1.dir/example1.c.o -o example1  ../../src/clib/libpioc.a /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib/libnetcdf.dylib /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2/lib/libpnetcdf.dylib 
+/Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi/4.0.7/bin/mpicc -fPIC -fcommon -g -O0 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/darray_no_async.dir/darray_no_async.c.o -o darray_no_async  ../../src/clib/libpioc.a /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib/libnetcdf.dylib /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2/lib/libpnetcdf.dylib 
+[ 52%] Built target example1
+[ 52%] Built target darray_no_async
+HEAD is now at 4816965 Merge pull request #1 from PARALLELIO/add_short_datatype
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib/genf90/src && /usr/local/Cellar/cmake/3.24.2/bin/cmake -E touch /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib/genf90/src/genf90-stamp/genf90-download
+[ 52%] No update step for 'genf90'
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib/genf90/src/genf90 && /usr/local/Cellar/cmake/3.24.2/bin/cmake -E echo_append
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib/genf90/src/genf90 && /usr/local/Cellar/cmake/3.24.2/bin/cmake -E touch /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib/genf90/src/genf90-stamp/genf90-update
+[ 52%] No patch step for 'genf90'
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib && /usr/local/Cellar/cmake/3.24.2/bin/cmake -E echo_append
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib && /usr/local/Cellar/cmake/3.24.2/bin/cmake -E touch /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib/genf90/src/genf90-stamp/genf90-patch
+[ 52%] No configure step for 'genf90'
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib/genf90/src/genf90-build && /usr/local/Cellar/cmake/3.24.2/bin/cmake -E echo_append
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib/genf90/src/genf90-build && /usr/local/Cellar/cmake/3.24.2/bin/cmake -E touch /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib/genf90/src/genf90-stamp/genf90-configure
+[ 52%] No build step for 'genf90'
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib/genf90/src/genf90-build && /usr/local/Cellar/cmake/3.24.2/bin/cmake -E echo_append
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib/genf90/src/genf90-build && /usr/local/Cellar/cmake/3.24.2/bin/cmake -E touch /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib/genf90/src/genf90-stamp/genf90-build
+[ 52%] No install step for 'genf90'
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib/genf90/src/genf90-build && /usr/local/Cellar/cmake/3.24.2/bin/cmake -E echo_append
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib/genf90/src/genf90-build && /usr/local/Cellar/cmake/3.24.2/bin/cmake -E touch /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib/genf90/src/genf90-stamp/genf90-install
+[ 57%] Completed 'genf90'
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib && /usr/local/Cellar/cmake/3.24.2/bin/cmake -E make_directory /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib/CMakeFiles
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib && /usr/local/Cellar/cmake/3.24.2/bin/cmake -E touch /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib/CMakeFiles/genf90-complete
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib && /usr/local/Cellar/cmake/3.24.2/bin/cmake -E touch /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib/genf90/src/genf90-stamp/genf90-done
+[ 57%] Built target genf90
+/Library/Developer/CommandLineTools/usr/bin/make  -f src/flib/CMakeFiles/piof.dir/build.make src/flib/CMakeFiles/piof.dir/depend
+[ 57%] Generating pionfget_mod.F90
+[ 57%] Generating pionfput_mod.F90
+[ 66%] Generating piodarray.F90
+[ 66%] Generating pionfatt_mod.F90
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib && genf90/src/genf90/genf90.pl /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/flib/pionfget_mod.F90.in > pionfget_mod.F90
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib && genf90/src/genf90/genf90.pl /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/flib/pionfatt_mod.F90.in > pionfatt_mod.F90
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib && genf90/src/genf90/genf90.pl /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/flib/piodarray.F90.in > piodarray.F90
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib && genf90/src/genf90/genf90.pl /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/flib/pionfput_mod.F90.in > pionfput_mod.F90
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build && /usr/local/Cellar/cmake/3.24.2/bin/cmake -E cmake_depends "Unix Makefiles" /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/flib /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib/CMakeFiles/piof.dir/DependInfo.cmake --color=
+Dependee "/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib/CMakeFiles/piof.dir/DependInfo.cmake" is newer than depender "/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib/CMakeFiles/piof.dir/depend.internal".
+Dependee "/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib/CMakeFiles/piof.dir/depend.internal".
+Scanning dependencies of target piof
+/Library/Developer/CommandLineTools/usr/bin/make  -f src/flib/CMakeFiles/piof.dir/build.make src/flib/CMakeFiles/piof.dir/build
+[ 66%] Building Fortran object src/flib/CMakeFiles/piof.dir/pio_kinds.F90.o
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib && /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi/4.0.7/bin/mpifort -DCPRAPPLECLANG -DCPRGNU -DDARWIN -DLOGGING -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/flib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/../ncint -fPIC -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -ffree-line-length-none -c /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/flib/pio_kinds.F90 -o CMakeFiles/piof.dir/pio_kinds.F90.o
+/usr/local/Cellar/cmake/3.24.2/bin/cmake -E cmake_copy_f90_mod src/flib/pio_kinds.mod src/flib/CMakeFiles/piof.dir/pio_kinds.mod.stamp GNU
+/usr/local/Cellar/cmake/3.24.2/bin/cmake -E touch src/flib/CMakeFiles/piof.dir/pio_kinds.F90.o.provides.build
+[ 66%] Building Fortran object src/flib/CMakeFiles/piof.dir/pio_types.F90.o
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib && /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi/4.0.7/bin/mpifort -DCPRAPPLECLANG -DCPRGNU -DDARWIN -DLOGGING -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/flib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/../ncint -fPIC -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -ffree-line-length-none -c /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/flib/pio_types.F90 -o CMakeFiles/piof.dir/pio_types.F90.o
+/usr/local/Cellar/cmake/3.24.2/bin/cmake -E cmake_copy_f90_mod src/flib/pio_types.mod src/flib/CMakeFiles/piof.dir/pio_types.mod.stamp GNU
+/usr/local/Cellar/cmake/3.24.2/bin/cmake -E touch src/flib/CMakeFiles/piof.dir/pio_types.F90.o.provides.build
+[ 66%] Building Fortran object src/flib/CMakeFiles/piof.dir/pio_support.F90.o
+[ 66%] Building Fortran object src/flib/CMakeFiles/piof.dir/pionfput_mod.F90.o
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib && /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi/4.0.7/bin/mpifort -DCPRAPPLECLANG -DCPRGNU -DDARWIN -DLOGGING -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/flib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/../ncint -fPIC -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -ffree-line-length-none -c /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/flib/pio_support.F90 -o CMakeFiles/piof.dir/pio_support.F90.o
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib && /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi/4.0.7/bin/mpifort -DCPRAPPLECLANG -DCPRGNU -DDARWIN -DLOGGING -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/flib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/../ncint -fPIC -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -ffree-line-length-none -c /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib/pionfput_mod.F90 -o CMakeFiles/piof.dir/pionfput_mod.F90.o
+/usr/local/Cellar/cmake/3.24.2/bin/cmake -E cmake_copy_f90_mod src/flib/pio_support.mod src/flib/CMakeFiles/piof.dir/pio_support.mod.stamp GNU
+/usr/local/Cellar/cmake/3.24.2/bin/cmake -E touch src/flib/CMakeFiles/piof.dir/pio_support.F90.o.provides.build
+[ 66%] Building Fortran object src/flib/CMakeFiles/piof.dir/pio_nf.F90.o
+[ 71%] Building Fortran object src/flib/CMakeFiles/piof.dir/piodarray.F90.o
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib && /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi/4.0.7/bin/mpifort -DCPRAPPLECLANG -DCPRGNU -DDARWIN -DLOGGING -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/flib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/../ncint -fPIC -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -ffree-line-length-none -c /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/flib/pio_nf.F90 -o CMakeFiles/piof.dir/pio_nf.F90.o
+[ 76%] Building Fortran object src/flib/CMakeFiles/piof.dir/pionfatt_mod.F90.o
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib && /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi/4.0.7/bin/mpifort -DCPRAPPLECLANG -DCPRGNU -DDARWIN -DLOGGING -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/flib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/../ncint -fPIC -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -ffree-line-length-none -c /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib/piodarray.F90 -o CMakeFiles/piof.dir/piodarray.F90.o
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib && /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi/4.0.7/bin/mpifort -DCPRAPPLECLANG -DCPRGNU -DDARWIN -DLOGGING -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/flib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/../ncint -fPIC -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -ffree-line-length-none -c /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib/pionfatt_mod.F90 -o CMakeFiles/piof.dir/pionfatt_mod.F90.o
+/usr/local/Cellar/cmake/3.24.2/bin/cmake -E cmake_copy_f90_mod src/flib/pio_nf.mod src/flib/CMakeFiles/piof.dir/pio_nf.mod.stamp GNU
+/usr/local/Cellar/cmake/3.24.2/bin/cmake -E cmake_copy_f90_mod src/flib/pionfatt_mod.mod src/flib/CMakeFiles/piof.dir/pionfatt_mod.mod.stamp GNU
+/usr/local/Cellar/cmake/3.24.2/bin/cmake -E touch src/flib/CMakeFiles/piof.dir/pio_nf.F90.o.provides.build
+/usr/local/Cellar/cmake/3.24.2/bin/cmake -E touch src/flib/CMakeFiles/piof.dir/pionfatt_mod.F90.o.provides.build
+[ 80%] Building Fortran object src/flib/CMakeFiles/piof.dir/piolib_mod.F90.o
+[ 80%] Building Fortran object src/flib/CMakeFiles/piof.dir/pionfget_mod.F90.o
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib && /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi/4.0.7/bin/mpifort -DCPRAPPLECLANG -DCPRGNU -DDARWIN -DLOGGING -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/flib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/../ncint -fPIC -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -ffree-line-length-none -c /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib/pionfget_mod.F90 -o CMakeFiles/piof.dir/pionfget_mod.F90.o
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib && /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi/4.0.7/bin/mpifort -DCPRAPPLECLANG -DCPRGNU -DDARWIN -DLOGGING -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/flib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/../ncint -fPIC -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -ffree-line-length-none -c /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/flib/piolib_mod.F90 -o CMakeFiles/piof.dir/piolib_mod.F90.o
+/usr/local/Cellar/cmake/3.24.2/bin/cmake -E cmake_copy_f90_mod src/flib/pionfput_mod.mod src/flib/CMakeFiles/piof.dir/pionfput_mod.mod.stamp GNU
+/usr/local/Cellar/cmake/3.24.2/bin/cmake -E touch src/flib/CMakeFiles/piof.dir/pionfput_mod.F90.o.provides.build
+/usr/local/Cellar/cmake/3.24.2/bin/cmake -E cmake_copy_f90_mod src/flib/piodarray.mod src/flib/CMakeFiles/piof.dir/piodarray.mod.stamp GNU
+/usr/local/Cellar/cmake/3.24.2/bin/cmake -E touch src/flib/CMakeFiles/piof.dir/piodarray.F90.o.provides.build
+/usr/local/Cellar/cmake/3.24.2/bin/cmake -E cmake_copy_f90_mod src/flib/piolib_mod.mod src/flib/CMakeFiles/piof.dir/piolib_mod.mod.stamp GNU
+/usr/local/Cellar/cmake/3.24.2/bin/cmake -E touch src/flib/CMakeFiles/piof.dir/piolib_mod.F90.o.provides.build
+/usr/local/Cellar/cmake/3.24.2/bin/cmake -E cmake_copy_f90_mod src/flib/pionfget_mod.mod src/flib/CMakeFiles/piof.dir/pionfget_mod.mod.stamp GNU
+/usr/local/Cellar/cmake/3.24.2/bin/cmake -E touch src/flib/CMakeFiles/piof.dir/pionfget_mod.F90.o.provides.build
+[ 85%] Building Fortran object src/flib/CMakeFiles/piof.dir/pio.F90.o
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib && /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi/4.0.7/bin/mpifort -DCPRAPPLECLANG -DCPRGNU -DDARWIN -DLOGGING -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/flib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/../ncint -fPIC -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -fPIC -ffree-line-length-none -c /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/flib/pio.F90 -o CMakeFiles/piof.dir/pio.F90.o
+/usr/local/Cellar/cmake/3.24.2/bin/cmake -E cmake_copy_f90_mod src/flib/pio.mod src/flib/CMakeFiles/piof.dir/pio.mod.stamp GNU
+/usr/local/Cellar/cmake/3.24.2/bin/cmake -E touch src/flib/CMakeFiles/piof.dir/pio.F90.o.provides.build
+[ 85%] Linking Fortran static library libpiof.a
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib && /usr/local/Cellar/cmake/3.24.2/bin/cmake -P CMakeFiles/piof.dir/cmake_clean_target.cmake
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib && /usr/local/Cellar/cmake/3.24.2/bin/cmake -E cmake_link_script CMakeFiles/piof.dir/link.txt --verbose=1
+/usr/bin/ar qc libpiof.a CMakeFiles/piof.dir/pio_nf.F90.o CMakeFiles/piof.dir/pio.F90.o CMakeFiles/piof.dir/pio_kinds.F90.o CMakeFiles/piof.dir/pio_types.F90.o CMakeFiles/piof.dir/piolib_mod.F90.o CMakeFiles/piof.dir/pio_support.F90.o CMakeFiles/piof.dir/pionfatt_mod.F90.o CMakeFiles/piof.dir/pionfput_mod.F90.o CMakeFiles/piof.dir/pionfget_mod.F90.o CMakeFiles/piof.dir/piodarray.F90.o
+/usr/bin/ranlib libpiof.a
+[ 85%] Built target piof
+/Library/Developer/CommandLineTools/usr/bin/make  -f tests/general/CMakeFiles/pio_tutil.dir/build.make tests/general/CMakeFiles/pio_tutil.dir/depend
+/Library/Developer/CommandLineTools/usr/bin/make  -f examples/f03/CMakeFiles/examplePio_f90.dir/build.make examples/f03/CMakeFiles/examplePio_f90.dir/depend
+/Library/Developer/CommandLineTools/usr/bin/make  -f examples/f03/CMakeFiles/exampleAsyncPio_f90.dir/build.make examples/f03/CMakeFiles/exampleAsyncPio_f90.dir/depend
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build && /usr/local/Cellar/cmake/3.24.2/bin/cmake -E cmake_depends "Unix Makefiles" /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/tests/general /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/tests/general /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/tests/general/CMakeFiles/pio_tutil.dir/DependInfo.cmake --color=
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build && /usr/local/Cellar/cmake/3.24.2/bin/cmake -E cmake_depends "Unix Makefiles" /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/examples/f03 /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/examples/f03 /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/examples/f03/CMakeFiles/examplePio_f90.dir/DependInfo.cmake --color=
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build && /usr/local/Cellar/cmake/3.24.2/bin/cmake -E cmake_depends "Unix Makefiles" /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/examples/f03 /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/examples/f03 /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/examples/f03/CMakeFiles/exampleAsyncPio_f90.dir/DependInfo.cmake --color=
+Dependee "/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/tests/general/CMakeFiles/pio_tutil.dir/DependInfo.cmake" is newer than depender "/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/tests/general/CMakeFiles/pio_tutil.dir/depend.internal".
+Dependee "/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/examples/f03/CMakeFiles/examplePio_f90.dir/DependInfo.cmake" is newer than depender "/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/examples/f03/CMakeFiles/examplePio_f90.dir/depend.internal".
+Dependee "/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/examples/f03/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/examples/f03/CMakeFiles/examplePio_f90.dir/depend.internal".
+Dependee "/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/examples/f03/CMakeFiles/exampleAsyncPio_f90.dir/DependInfo.cmake" is newer than depender "/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/examples/f03/CMakeFiles/exampleAsyncPio_f90.dir/depend.internal".
+Dependee "/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/tests/general/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/tests/general/CMakeFiles/pio_tutil.dir/depend.internal".
+Dependee "/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/examples/f03/CMakeFiles/CMakeDirectoryInformation.cmake" is newer than depender "/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/examples/f03/CMakeFiles/exampleAsyncPio_f90.dir/depend.internal".
+Scanning dependencies of target pio_tutil
+Scanning dependencies of target examplePio_f90
+Scanning dependencies of target exampleAsyncPio_f90
+/Library/Developer/CommandLineTools/usr/bin/make  -f tests/general/CMakeFiles/pio_tutil.dir/build.make tests/general/CMakeFiles/pio_tutil.dir/build
+/Library/Developer/CommandLineTools/usr/bin/make  -f examples/f03/CMakeFiles/examplePio_f90.dir/build.make examples/f03/CMakeFiles/examplePio_f90.dir/build
+/Library/Developer/CommandLineTools/usr/bin/make  -f examples/f03/CMakeFiles/exampleAsyncPio_f90.dir/build.make examples/f03/CMakeFiles/exampleAsyncPio_f90.dir/build
+[ 90%] Building Fortran object tests/general/CMakeFiles/pio_tutil.dir/util/pio_tutil.F90.o
+[ 90%] Building Fortran object examples/f03/CMakeFiles/examplePio_f90.dir/examplePio.F90.o
+[ 90%] Building Fortran object examples/f03/CMakeFiles/exampleAsyncPio_f90.dir/exampleAsyncPio.F90.o
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/tests/general && /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi/4.0.7/bin/mpifort -DCPRAPPLECLANG -DCPRGNU -DDARWIN -DLOGGING -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/flib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/../ncint -fPIC -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk   -ffree-line-length-none -c /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/tests/general/util/pio_tutil.F90 -o CMakeFiles/pio_tutil.dir/util/pio_tutil.F90.o
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/examples/f03 && /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi/4.0.7/bin/mpifort -DCPRAPPLECLANG -DCPRGNU -DDARWIN -DLOGGING -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/flib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/../ncint -fPIC -g -O0 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -c /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/examples/f03/examplePio.F90 -o CMakeFiles/examplePio_f90.dir/examplePio.F90.o
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/examples/f03 && /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi/4.0.7/bin/mpifort -DCPRAPPLECLANG -DCPRGNU -DDARWIN -DLOGGING -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/flib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2/include -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib -I/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib/../ncint -fPIC -g -O0 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk -c /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/examples/f03/exampleAsyncPio.F90 -o CMakeFiles/exampleAsyncPio_f90.dir/exampleAsyncPio.F90.o
+/usr/local/Cellar/cmake/3.24.2/bin/cmake -E cmake_copy_f90_mod examples/f03/pioexample.mod examples/f03/CMakeFiles/examplePio_f90.dir/pioexample.mod.stamp GNU
+/usr/local/Cellar/cmake/3.24.2/bin/cmake -E touch examples/f03/CMakeFiles/examplePio_f90.dir/examplePio.F90.o.provides.build
+/usr/local/Cellar/cmake/3.24.2/bin/cmake -E cmake_copy_f90_mod examples/f03/pioasyncexample.mod examples/f03/CMakeFiles/exampleAsyncPio_f90.dir/pioasyncexample.mod.stamp GNU
+[ 95%] Linking Fortran executable examplePio_f90
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/examples/f03 && /usr/local/Cellar/cmake/3.24.2/bin/cmake -E cmake_link_script CMakeFiles/examplePio_f90.dir/link.txt --verbose=1
+/usr/local/Cellar/cmake/3.24.2/bin/cmake -E touch examples/f03/CMakeFiles/exampleAsyncPio_f90.dir/exampleAsyncPio.F90.o.provides.build
+[ 95%] Linking Fortran executable exampleAsyncPio_f90
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/examples/f03 && /usr/local/Cellar/cmake/3.24.2/bin/cmake -E cmake_link_script CMakeFiles/exampleAsyncPio_f90.dir/link.txt --verbose=1
+/Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi/4.0.7/bin/mpifort -fPIC -g -O0 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk CMakeFiles/examplePio_f90.dir/examplePio.F90.o -o examplePio_f90  ../../src/flib/libpiof.a ../../src/clib/libpioc.a /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib/libnetcdf.dylib /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib/libnetcdff.dylib /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2/lib/libpnetcdf.dylib 
+/Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi/4.0.7/bin/mpifort -fPIC -g -O0 -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.3.sdk CMakeFiles/exampleAsyncPio_f90.dir/exampleAsyncPio.F90.o -o exampleAsyncPio_f90  ../../src/flib/libpiof.a ../../src/clib/libpioc.a /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib/libnetcdf.dylib /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi-4.0.7/netcdf/4.7.4/lib/libnetcdff.dylib /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi-4.0.7/pnetcdf/1.12.2/lib/libpnetcdf.dylib 
+[ 95%] Built target examplePio_f90
+[ 95%] Built target exampleAsyncPio_f90
+/usr/local/Cellar/cmake/3.24.2/bin/cmake -E cmake_copy_f90_mod tests/general/pio_tutil.mod tests/general/CMakeFiles/pio_tutil.dir/pio_tutil.mod.stamp GNU
+/usr/local/Cellar/cmake/3.24.2/bin/cmake -E touch tests/general/CMakeFiles/pio_tutil.dir/util/pio_tutil.F90.o.provides.build
+[100%] Linking Fortran static library libpio_tutil.a
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/tests/general && /usr/local/Cellar/cmake/3.24.2/bin/cmake -P CMakeFiles/pio_tutil.dir/cmake_clean_target.cmake
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/tests/general && /usr/local/Cellar/cmake/3.24.2/bin/cmake -E cmake_link_script CMakeFiles/pio_tutil.dir/link.txt --verbose=1
+/usr/bin/ar qc libpio_tutil.a CMakeFiles/pio_tutil.dir/util/pio_tutil.F90.o
+/usr/bin/ranlib libpio_tutil.a
+[100%] Built target pio_tutil
+/usr/local/Cellar/cmake/3.24.2/bin/cmake -E cmake_progress_start /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/CMakeFiles 0
++ [[ N =~ [yYtT] ]]
++ VERBOSE=Y
++ sudo make install
+/usr/local/Cellar/cmake/3.24.2/bin/cmake -S/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO -B/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/local/Cellar/cmake/3.24.2/bin/cmake -E cmake_progress_start /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/CMakeFiles /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build//CMakeFiles/progress.marks
+/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/Makefile2 all
+/Library/Developer/CommandLineTools/usr/bin/make  -f src/clib/CMakeFiles/pioc.dir/build.make src/clib/CMakeFiles/pioc.dir/depend
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build && /usr/local/Cellar/cmake/3.24.2/bin/cmake -E cmake_depends "Unix Makefiles" /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/clib /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/clib/CMakeFiles/pioc.dir/DependInfo.cmake --color=
+Consolidate compiler generated dependencies of target pioc
+/Library/Developer/CommandLineTools/usr/bin/make  -f src/clib/CMakeFiles/pioc.dir/build.make src/clib/CMakeFiles/pioc.dir/build
+make[2]: Nothing to be done for `src/clib/CMakeFiles/pioc.dir/build'.
+[ 38%] Built target pioc
+/Library/Developer/CommandLineTools/usr/bin/make  -f src/flib/CMakeFiles/genf90.dir/build.make src/flib/CMakeFiles/genf90.dir/depend
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build && /usr/local/Cellar/cmake/3.24.2/bin/cmake -E cmake_depends "Unix Makefiles" /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/flib /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib/CMakeFiles/genf90.dir/DependInfo.cmake --color=
+/Library/Developer/CommandLineTools/usr/bin/make  -f src/flib/CMakeFiles/genf90.dir/build.make src/flib/CMakeFiles/genf90.dir/build
+make[2]: Nothing to be done for `src/flib/CMakeFiles/genf90.dir/build'.
+[ 52%] Built target genf90
+/Library/Developer/CommandLineTools/usr/bin/make  -f src/flib/CMakeFiles/piof.dir/build.make src/flib/CMakeFiles/piof.dir/depend
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build && /usr/local/Cellar/cmake/3.24.2/bin/cmake -E cmake_depends "Unix Makefiles" /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/src/flib /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/src/flib/CMakeFiles/piof.dir/DependInfo.cmake --color=
+/Library/Developer/CommandLineTools/usr/bin/make  -f src/flib/CMakeFiles/piof.dir/build.make src/flib/CMakeFiles/piof.dir/build
+make[2]: Nothing to be done for `src/flib/CMakeFiles/piof.dir/build'.
+[ 80%] Built target piof
+/Library/Developer/CommandLineTools/usr/bin/make  -f tests/general/CMakeFiles/pio_tutil.dir/build.make tests/general/CMakeFiles/pio_tutil.dir/depend
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build && /usr/local/Cellar/cmake/3.24.2/bin/cmake -E cmake_depends "Unix Makefiles" /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/tests/general /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/tests/general /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/tests/general/CMakeFiles/pio_tutil.dir/DependInfo.cmake --color=
+/Library/Developer/CommandLineTools/usr/bin/make  -f tests/general/CMakeFiles/pio_tutil.dir/build.make tests/general/CMakeFiles/pio_tutil.dir/build
+make[2]: Nothing to be done for `tests/general/CMakeFiles/pio_tutil.dir/build'.
+[ 85%] Built target pio_tutil
+/Library/Developer/CommandLineTools/usr/bin/make  -f examples/f03/CMakeFiles/examplePio_f90.dir/build.make examples/f03/CMakeFiles/examplePio_f90.dir/depend
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build && /usr/local/Cellar/cmake/3.24.2/bin/cmake -E cmake_depends "Unix Makefiles" /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/examples/f03 /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/examples/f03 /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/examples/f03/CMakeFiles/examplePio_f90.dir/DependInfo.cmake --color=
+/Library/Developer/CommandLineTools/usr/bin/make  -f examples/f03/CMakeFiles/examplePio_f90.dir/build.make examples/f03/CMakeFiles/examplePio_f90.dir/build
+make[2]: Nothing to be done for `examples/f03/CMakeFiles/examplePio_f90.dir/build'.
+[ 90%] Built target examplePio_f90
+/Library/Developer/CommandLineTools/usr/bin/make  -f examples/f03/CMakeFiles/exampleAsyncPio_f90.dir/build.make examples/f03/CMakeFiles/exampleAsyncPio_f90.dir/depend
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build && /usr/local/Cellar/cmake/3.24.2/bin/cmake -E cmake_depends "Unix Makefiles" /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/examples/f03 /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/examples/f03 /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/examples/f03/CMakeFiles/exampleAsyncPio_f90.dir/DependInfo.cmake --color=
+/Library/Developer/CommandLineTools/usr/bin/make  -f examples/f03/CMakeFiles/exampleAsyncPio_f90.dir/build.make examples/f03/CMakeFiles/exampleAsyncPio_f90.dir/build
+make[2]: Nothing to be done for `examples/f03/CMakeFiles/exampleAsyncPio_f90.dir/build'.
+[ 95%] Built target exampleAsyncPio_f90
+/Library/Developer/CommandLineTools/usr/bin/make  -f examples/c/CMakeFiles/example1.dir/build.make examples/c/CMakeFiles/example1.dir/depend
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build && /usr/local/Cellar/cmake/3.24.2/bin/cmake -E cmake_depends "Unix Makefiles" /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/examples/c /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/examples/c /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/examples/c/CMakeFiles/example1.dir/DependInfo.cmake --color=
+Consolidate compiler generated dependencies of target example1
+/Library/Developer/CommandLineTools/usr/bin/make  -f examples/c/CMakeFiles/example1.dir/build.make examples/c/CMakeFiles/example1.dir/build
+make[2]: Nothing to be done for `examples/c/CMakeFiles/example1.dir/build'.
+[100%] Built target example1
+/Library/Developer/CommandLineTools/usr/bin/make  -f examples/c/CMakeFiles/darray_no_async.dir/build.make examples/c/CMakeFiles/darray_no_async.dir/depend
+cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build && /usr/local/Cellar/cmake/3.24.2/bin/cmake -E cmake_depends "Unix Makefiles" /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/examples/c /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/examples/c /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/examples/c/CMakeFiles/darray_no_async.dir/DependInfo.cmake --color=
+Consolidate compiler generated dependencies of target darray_no_async
+/Library/Developer/CommandLineTools/usr/bin/make  -f examples/c/CMakeFiles/darray_no_async.dir/build.make examples/c/CMakeFiles/darray_no_async.dir/build
+make[2]: Nothing to be done for `examples/c/CMakeFiles/darray_no_async.dir/build'.
+[100%] Built target darray_no_async
+/usr/local/Cellar/cmake/3.24.2/bin/cmake -E cmake_progress_start /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/pkg/ParallelIO/build/CMakeFiles 0
+/Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/Makefile2 preinstall
+make[1]: Nothing to be done for `preinstall'.
+Install the project...
+/usr/local/Cellar/cmake/3.24.2/bin/cmake -P cmake_install.cmake
+-- Install configuration: "Debug"
+-- Installing: /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi-4.0.7/pio/2.5.9-debug/lib/libpio.settings
+-- Installing: /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi-4.0.7/pio/2.5.9-debug/lib/libpioc.a
+/Library/Developer/CommandLineTools/usr/bin/ranlib: file: /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi-4.0.7/pio/2.5.9-debug/lib/libpioc.a(topology.c.o) has no symbols
+-- Installing: /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi-4.0.7/pio/2.5.9-debug/include/pio.h
+-- Installing: /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi-4.0.7/pio/2.5.9-debug/include/uthash.h
+-- Installing: /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi-4.0.7/pio/2.5.9-debug/lib/libpiof.a
+-- Installing: /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi-4.0.7/pio/2.5.9-debug/include/pio.mod
+-- Installing: /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi-4.0.7/pio/2.5.9-debug/include/pio_nf.mod
+-- Installing: /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi-4.0.7/pio/2.5.9-debug/include/pio_types.mod
+-- Installing: /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi-4.0.7/pio/2.5.9-debug/include/piolib_mod.mod
+-- Installing: /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi-4.0.7/pio/2.5.9-debug/include/pionfget_mod.mod
+-- Installing: /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi-4.0.7/pio/2.5.9-debug/include/pio_kinds.mod
+-- Installing: /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi-4.0.7/pio/2.5.9-debug/include/pio_support.mod
+-- Installing: /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi-4.0.7/pio/2.5.9-debug/include/piodarray.mod
+-- Installing: /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi-4.0.7/pio/2.5.9-debug/include/pionfatt_mod.mod
+-- Installing: /Users/yonggang/tools/js1.clang-mpich/modules/clang-14.0.0/openmpi-4.0.7/pio/2.5.9-debug/include/pionfput_mod.mod
++ true
++ update_modules mpi pio 2.5.9-debug
++ OPT=/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules
++ case $1 in
++ tmpl_file=/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/../modulefiles/mpi/compilerName/compilerVersion/mpiName/mpiVersion/pio/pio.lua
++ to_dir=/Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/modulefiles/mpi/clang/14.0.0/openmpi/4.0.7
++ [[ -e /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/../modulefiles/mpi/compilerName/compilerVersion/mpiName/mpiVersion/pio/pio.lua ]]
++ [[ -d /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/modulefiles/mpi/clang/14.0.0/openmpi/4.0.7 ]]
++ cd /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/env/../../../../modules/modulefiles/mpi/clang/14.0.0/openmpi/4.0.7
++ sudo mkdir -p pio
++ cd pio
++ sudo cp /Users/yonggang/tools/js1.clang-mpich/src/jedi-stack_pub_test/buildscripts/../modulefiles/mpi/compilerName/compilerVersion/mpiName/mpiVersion/pio/pio.lua 2.5.9-debug.lua
++ [[ -n '' ]]
++ [[ -e default ]]
++ sudo ln -s 2.5.9-debug.lua default
+BUILD SUCCESS! Lib: pio-2.5.9
++ build_lib FFTW fftw 3.3.8
++ set +x
++ build_lib BOOST_FULL boost 1.68.0
++ set +x
++ build_lib ESMF esmf 8_0_1
++ set +x
++ build_lib BASELIBS baselibs 6.2.13
++ set +x
++ build_lib PDTOOLKIT pdtoolkit 3.25.1
++ set +x
++ build_lib TAU2 tau2 3.25.1
++ set +x
++ build_lib FMS fms jcsda release-stable
++ set +x
++ [[ N =~ [yYtT] ]]
++ echo 'build_stack.sh mac: success!'
+build_stack.sh mac: success!
