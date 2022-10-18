@@ -4,7 +4,7 @@
 # http://www.apache.org/licenses/LICENSE-2.0.
 
 # Minimal JEDI Stack
-export      STACK_BUILD_CMAKE=N
+export      STACK_BUILD_CMAKE=Y  # otherwise, ncview, netcdf, h5 needs brew uninstall
 export     STACK_BUILD_GITLFS=N
 export       STACK_BUILD_SZIP=Y
 export    STACK_BUILD_UDUNITS=Y
