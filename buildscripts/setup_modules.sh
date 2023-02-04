@@ -55,8 +55,18 @@ else
   fi
 fi
 
+
 compilerName=$(echo $JEDI_COMPILER | cut -d/ -f1)
+# mod due to baselibs naming
+if [ $compilerName == 'gcc-gfortran' ]; then
+    compilerName='gnu'
+fi
 compilerVersion=$(echo $JEDI_COMPILER | cut -d/ -f2)
+echo "compilerName=$compilerName"
+echo 'compilerVersion=$compilerVersion'
+JEDI_COMPILER="$compilerName/$compilerVersion"
+#exit -1
+
 
 mpiName=$(echo $JEDI_MPI | cut -d/ -f1)
 mpiVersion=$(echo $JEDI_MPI | cut -d/ -f2)
@@ -99,7 +109,8 @@ case ${COMPILER_BUILD} in
     echo -e "==========================\n USING NATIVE COMPILER MODULE"
     set +x
     source $MODULESHOME/init/bash
-    module load $JEDI_COMPILER
+#    YGYU 2-Feb-2023 for building jedi-stack on top of baselibs
+#    module load $JEDI_COMPILER
     module list
     set -x
     ;;

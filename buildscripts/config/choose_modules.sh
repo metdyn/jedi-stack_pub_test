@@ -6,16 +6,16 @@
 # Minimal JEDI Stack
 export      STACK_BUILD_CMAKE=Y  # otherwise, ncview, netcdf, h5 needs brew uninstall
 export     STACK_BUILD_GITLFS=N
-export       STACK_BUILD_SZIP=Y
-export    STACK_BUILD_UDUNITS=Y
-export       STACK_BUILD_ZLIB=Y
+export       STACK_BUILD_SZIP=N
+export    STACK_BUILD_UDUNITS=N
+export       STACK_BUILD_ZLIB=N
 export     STACK_BUILD_LAPACK=N
 export STACK_BUILD_BOOST_HDRS=Y
 export       STACK_BUILD_BUFR=Y
 export     STACK_BUILD_EIGEN3=N
-export       STACK_BUILD_HDF5=Y
-export    STACK_BUILD_PNETCDF=Y
-export     STACK_BUILD_NETCDF=Y
+export       STACK_BUILD_HDF5=N
+export    STACK_BUILD_PNETCDF=N
+export     STACK_BUILD_NETCDF=N
 export      STACK_BUILD_NCCMP=Y
 export    STACK_BUILD_ECBUILD=Y
 export      STACK_BUILD_ECKIT=Y

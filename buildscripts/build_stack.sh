@@ -49,15 +49,16 @@ else
     fi
 
     # Currently we do not use modules in the containers
-    [[ $1 =~ ^container ]] && export MODULES=false || export MODULES=true
+    #[[ $1 =~ ^container ]] && export MODULES=false || export MODULES=true
+    export MODULES=false
 
 fi
 
 # Choose which modules you wish to install
-$MODULES && source ${JEDI_BUILDSCRIPTS_DIR}/config/choose_modules.sh
+source ${JEDI_BUILDSCRIPTS_DIR}/config/choose_modules.sh
 
 # this is needed to set environment variables if modules are not used
-$MODULES || no_modules $1
+#$MODULES || no_modules $1
 
 # This is for the log files
 logdir=$JEDI_STACK_ROOT/$LOGDIR
@@ -70,7 +71,7 @@ mkdir -p $logdir
 # Minimal JEDI Stack
 
 # start with a clean slate
-$MODULES && (set +x;  source $MODULESHOME/init/bash; module purge; set -x)
+#(set +x;  source $MODULESHOME/init/bash; module purge; set -x)
 
 #----------------------
 # MPI-independent
