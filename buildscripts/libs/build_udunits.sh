@@ -15,6 +15,9 @@ cd ${JEDI_STACK_ROOT}/${PKGDIR:-"pkg"}
 
 software=$name-$version
 url=ftp://ftp.unidata.ucar.edu/pub/udunits/$software.tar.gz
+url=https://downloads.unidata.ucar.edu/udunits/$version/$software.tar.gz
+# https://downloads.unidata.ucar.edu/udunits/2.2.28/udunits-2.2.28.tar.gz
+
 [[ -d $software ]] || (rm -f $software.tar.gz; $WGET $url; tar xvf $software.tar.gz )
 [[ ${DOWNLOAD_ONLY} =~ [yYtT] ]] && exit 0
 

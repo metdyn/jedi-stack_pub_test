@@ -51,8 +51,17 @@ export CXX=$MPI_CXX
 [[ -d build ]] && $SUDO rm -rf build
 mkdir -p build && cd build
 
+# ygyu  python flag
+
+
 # set install prefix and CMAKE_INSTALL_LIBDIR to make sure it installs as lib, not lib64
 ecbuild --build=release -DCMAKE_INSTALL_PREFIX=$prefix -DCMAKE_INSTALL_LIBDIR=lib ..
+
+# fail
+#ecbuild --build=release -DCMAKE_INSTALL_PREFIX=$prefix -DCMAKE_INSTALL_LIBDIR=lib \
+#    -DPYTHON_INCLUDE_DIR=$(python3.11 -c "import sysconfig; print(sysconfig.get_path('include'))")  \
+#    -DPYTHON_LIBRARY=$(python3.11 -c "import sysconfig; print(sysconfig.get_config_var('LIBDIR'))") ..
+
 VERBOSE=$MAKE_VERBOSE make -j${NTHREADS:-4}
 VERBOSE=$MAKE_VERBOSE $SUDO make install
 

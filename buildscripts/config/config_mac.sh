@@ -13,11 +13,11 @@ export MPI_BUILD="from-source"
 
 # Build options
 export PREFIX=${JEDI_OPT:-/opt/modules}
-export USE_SUDO=Y
+export USE_SUDO=N
 export PKGDIR=pkg
 export LOGDIR=buildscripts/log
 export OVERWRITE=Y
-export NTHREADS=16
+export NTHREADS=8
 export   MAKE_CHECK=N
 export MAKE_VERBOSE=Y
 export   MAKE_CLEAN=N

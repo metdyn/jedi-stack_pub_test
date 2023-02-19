@@ -82,12 +82,16 @@ export CFLAGS+=" -fPIC"
 export CXXFLAGS+=" -fPIC -std=c++11"
 export FCFLAGS="$FFLAGS"
 
-# add 17-Oct-2022
-# clang on mac
-# ld: file not found: @rpath/libquadmath.0.dylib 
-export CFLAGS+=" -I/usr/local/Cellar/gcc/12.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/12/include"
-export CXXFLAGS+=" -I/usr/local/Cellar/gcc/12.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/12/include"
-export LDFLAGS+=" -L/usr/local/Cellar/gcc/12.2.0/lib/gcc/current"
+## add 17-Oct-2022 : 
+## clang on mac
+## ld: file not found: @rpath/libquadmath.0.dylib 
+#export CFLAGS+=" -I/usr/local/Cellar/gcc/12.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/12/include"
+#export CXXFLAGS+=" -I/usr/local/Cellar/gcc/12.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/12/include"
+#export LDFLAGS+=" -L/usr/local/Cellar/gcc/12.2.0/lib/gcc/current"
+# GMAO
+export CFLAGS+=" -I$HOME/.homebrew/brew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/12/include"
+export CXXFLAGS+=" -I$HOME/.homebrew/brew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/12/include"
+export LDFLAGS+=" -L$HOME/.homebrew/brew/Cellar/gcc/12.2.0/lib/gcc/current"
 
 export LDFLAGS+=" -L$HDF5_ROOT/lib -L$SZIP_ROOT/lib"
 
@@ -155,38 +159,38 @@ $MODULES || echo $software >> ${JEDI_STACK_ROOT}/jedi-stack-contents.log
 # /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/__stddef_max_align_t.h:16:21: error:
 # typedef redefinition with different types ('long double' vs 'struct max_align_t')
 
+
+set +x
+echo "################################################################################"
+echo "BUILDING NETCDF-CXX"
+echo "################################################################################"
+set -x
+
+version=$cxx_version
+software=$name-"cxx4"-$version
+[[ -d $software ]] || ( git clone -b "v$version" $gitURLroot/$name-cxx4.git $software )
+[[ -d $software ]] && cd $software || ( echo "$software does not exist, ABORT!"; exit 1 )
+[[ -d build ]] && rm -rf build
+mkdir -p build && cd build
+
+../configure --prefix=$prefix
+
+# If on macos, rename the file "VERSION" so it doesn't collide with the
+# c++ include file (named "version"). Note this collision occurs since macos
+# uses a case-insensitive file system.
 #
-#set +x
-#echo "################################################################################"
-#echo "BUILDING NETCDF-CXX"
-#echo "################################################################################"
-#set -x
-#
-#version=$cxx_version
-#software=$name-"cxx4"-$version
-#[[ -d $software ]] || ( git clone -b "v$version" $gitURLroot/$name-cxx4.git $software )
-#[[ -d $software ]] && cd $software || ( echo "$software does not exist, ABORT!"; exit 1 )
-#[[ -d build ]] && rm -rf build
-#mkdir -p build && cd build
-#
-#../configure --prefix=$prefix
-#
-## If on macos, rename the file "VERSION" so it doesn't collide with the
-## c++ include file (named "version"). Note this collision occurs since macos
-## uses a case-insensitive file system.
-##
-## Unidata has fixed this in their development track:
-##   https://github.com/Unidata/netcdf-cxx4/commit/41c0233cb964a3ee1d4e5db5448cd28d617925fb
-## Once this fix is released, and we update to that release, the following
-## if statements needs to be removed.
-#if [[ "$(uname)" == "Darwin" ]]
-#then
-#  mv VERSION config.VERSION
-#fi
-#
-#make V=$MAKE_VERBOSE -j${NTHREADS:-4}
-#[[ $MAKE_CHECK =~ [yYtT] ]] && make check
-#$SUDO make install
-#
-#$MODULES || echo $software >> ${JEDI_STACK_ROOT}/jedi-stack-contents.log
-#
+# Unidata has fixed this in their development track:
+#   https://github.com/Unidata/netcdf-cxx4/commit/41c0233cb964a3ee1d4e5db5448cd28d617925fb
+# Once this fix is released, and we update to that release, the following
+# if statements needs to be removed.
+if [[ "$(uname)" == "Darwin" ]]
+then
+  mv VERSION config.VERSION
+fi
+
+make V=$MAKE_VERBOSE -j${NTHREADS:-4}
+[[ $MAKE_CHECK =~ [yYtT] ]] && make check
+$SUDO make install
+
+$MODULES || echo $software >> ${JEDI_STACK_ROOT}/jedi-stack-contents.log
+
