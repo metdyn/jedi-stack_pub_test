@@ -89,10 +89,9 @@ export FCFLAGS="$FFLAGS"
 #export CXXFLAGS+=" -I/usr/local/Cellar/gcc/12.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/12/include"
 #export LDFLAGS+=" -L/usr/local/Cellar/gcc/12.2.0/lib/gcc/current"
 # GMAO
-export CFLAGS+=" -I$HOME/.homebrew/brew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/12/include"
-export CXXFLAGS+=" -I$HOME/.homebrew/brew/Cellar/gcc/12.2.0/lib/gcc/current/gcc/x86_64-apple-darwin21/12/include"
-export LDFLAGS+=" -L$HOME/.homebrew/brew/Cellar/gcc/12.2.0/lib/gcc/current"
-
+export CFLAGS+=" -I$HOME/.homebrew/brew/Cellar/gcc/13.1.0/lib/gcc/current/gcc/aarch64-apple-darwin22/13/include"
+export CXXFLAGS+=" -I$HOME/.homebrew/brew/Cellar/gcc/13.1.0/lib/gcc/current/gcc/aarch64-apple-darwin22/13/include"
+export LDFLAGS+=" -L$HOME/.homebrew/brew/Cellar/gcc/13.1.0/lib/gcc/current"
 export LDFLAGS+=" -L$HDF5_ROOT/lib -L$SZIP_ROOT/lib"
 
 set +x
