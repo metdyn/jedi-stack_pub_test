@@ -25,7 +25,7 @@ export   STACK_BUILD_GSL_LITE=Y
 export   STACK_BUILD_PYBIND11=Y
 
 # Optional Additions
-export       STACK_BUILD_ECCODES=Y
+export       STACK_BUILD_ECCODES=N
 export           STACK_BUILD_ODC=Y
 export           STACK_BUILD_PIO=Y
 export          STACK_BUILD_GPTL=N
@@ -49,4 +49,4 @@ export          STACK_BUILD_PROJ=N
 export           STACK_BUILD_FMS=Y
 export          STACK_BUILD_JSON=Y
 export STACK_BUILD_JSON_SCHEMA_VALIDATOR=Y
-export        STACK_BUILD_ECFLOW=Y
+export        STACK_BUILD_ECFLOW=N

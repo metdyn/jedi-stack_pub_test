@@ -2,7 +2,7 @@
 # © Copyright 2020 UCAR
 
 # only for ec,fc,atlas
-# follow spack-stack/configs/templates/skylab-dev
+# follow spack-stack/configs/templates/skylab-dev/spack.yaml
 # commit 825ff7793bed10  Thu May 11 11:31:12 2023
 #
 
@@ -89,14 +89,14 @@ build_lib ECBUILD ecbuild ecmwf 3.7.2
 build_lib CGAL cgal 5.0.4
 build_lib GITLFS git-lfs 2.11.0
 build_lib GSL_LITE gsl_lite 0.37.0
-build_lib PYBIND11 pybind11 2.12.2  # 2.8.1
+build_lib PYBIND11 pybind11 2.10.2  # 2.8.1
 
 #----------------------
 # These must be rebuilt for each MPI implementation
 build_lib HDF5 hdf5 1.12.2   #  1.13.2
 build_lib PNETCDF pnetcdf 1.12.2
 
-build_lib NETCDF netcdf 4.6.0 4.9.2 4.3.1  # 4.7.4 4.5.3 4.3.0
+build_lib NETCDF netcdf 4.9.2 4.6.0  4.3.1  # c:for:cxx 4.7.4 4.5.3 4.3.0  still cxx failed
 build_lib NCCMP nccmp 1.8.7.0
 
 build_lib ECKIT eckit ecmwf 1.23.0  # 1.19.0
@@ -104,7 +104,7 @@ build_lib FCKIT fckit ecmwf 0.10.1   #
 build_lib ATLAS atlas ecmwf 0.33.0  # 0.30.0
 build_lib ODB odb 0.18.1.r2
 build_lib ODC odc ecmwf 1.4.6
-build_lib ECCODES eccodes 2.27.0
+build_lib ECCODES eccodes 2.27.0   # failed  AEC library was not found
 
 # ===============================================================================
 # Optional Extensions to the JEDI Stack
@@ -121,7 +121,7 @@ build_lib SQLITE sqlite 3.32.3
 build_lib PROJ proj 7.1.0
 build_lib JSON json 3.9.1
 build_lib JSON_SCHEMA_VALIDATOR json-schema-validator 2.1.0
-build_lib ECFLOW ecflow ecmwf 5.5.3 boost 1.68.0
+build_lib ECFLOW ecflow ecmwf 5.5.3 boost 1.68.0    # stil fail
 
 #----------------------
 # These must be rebuilt for each MPI implementation
@@ -136,7 +136,7 @@ build_lib ESMF esmf 8_0_1
 build_lib BASELIBS baselibs 6.2.13
 build_lib PDTOOLKIT pdtoolkit 3.25.1
 build_lib TAU2 tau2 3.25.1
-build_lib FMS fms jcsda release-stable
+build_lib FMS fms jcsda release-stable   # failed
 
 # ===============================================================================
 # optionally clean up
