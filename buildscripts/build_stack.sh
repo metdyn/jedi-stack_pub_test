@@ -74,6 +74,11 @@ $MODULES && (set +x;  source $MODULESHOME/init/bash; module purge; set -x)
 # this can be done in each script individually
 # it might warrant a --force flag to force rebuild when desired
 
+i=1
+if [ $i -eq 0 ]; then
+    echo i=0
+    exit -1
+    
 build_lib CMAKE cmake 3.24.3  # 3.22.0
 
 build_lib UDUNITS udunits 2.2.28
@@ -111,9 +116,13 @@ build_lib ECCODES eccodes 2.27.0   # failed  AEC library was not found
 
 #----------------------
 # MPI-independent
-build_lib JASPER jasper 1.900.1
+build_lib JASPER jasper 4.0.0
 build_lib XERCES xerces 3.1.4
-build_lib NCEPLIBS nceplibs fv3
+
+
+
+
+build_lib NCEPLIBS nceplibs fv3   # does not work on mac
 build_lib TKDIFF tkdiff 4.3.5
 build_lib PYJEDI pyjedi
 build_lib GEOS geos 3.8.1
@@ -127,8 +136,10 @@ build_lib ECFLOW ecflow ecmwf 5.5.3 boost 1.68.0    # stil fail
 # These must be rebuilt for each MPI implementation
 build_lib GPTL gptl 8.0.3
 build_lib NCO nco 4.9.9
-+++++++++++++++++++++
 
+else
+    echo i/=0
+    
 build_lib PIO pio 2.5.5
 build_lib FFTW fftw 3.3.8
 build_lib BOOST_FULL boost 1.68.0
@@ -138,6 +149,7 @@ build_lib PDTOOLKIT pdtoolkit 3.25.1
 build_lib TAU2 tau2 3.25.1
 build_lib FMS fms jcsda release-stable   # failed
 
+fi
 # ===============================================================================
 # optionally clean up
 [[ $MAKE_CLEAN =~ [yYtT] ]] && \
