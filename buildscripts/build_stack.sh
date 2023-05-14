@@ -1,15 +1,11 @@
 #!/bin/bash
 # © Copyright 2020 UCAR
-# This software is licensed under the terms of the Apache Licence Version 2.0 which can be obtained at
-# http://www.apache.org/licenses/LICENSE-2.0.
 
-# The purpose of this script is to build the software stack using
-# the compiler/MPI combination defined by setup_modules.sh
+# only for ec,fc,atlas
+# follow spack-stack/configs/templates/skylab-dev
+# commit 825ff7793bed10  Thu May 11 11:31:12 2023
 #
-# Arguments:
-# configuration: Determines which libraries will be installed.
-#     Each supported option will have an associated config_<option>.sh
-#     file that will be used to
+
 #
 # sample usage:
 # build_stack.sh "container"
@@ -88,28 +84,27 @@ build_lib SZIP szip 2.1.1
 build_lib LAPACK lapack 3.8.0
 build_lib BOOST_HDRS boost 1.78.0 headers-only
 build_lib EIGEN3 eigen 3.4.0
-build_lib BUFR bufr noaa-emc 11.5.0
-build_lib ECBUILD ecbuild ecmwf 3.6.5
+build_lib BUFR bufr noaa-emc 11.7.1
+build_lib ECBUILD ecbuild ecmwf 3.7.2
 build_lib CGAL cgal 5.0.4
 build_lib GITLFS git-lfs 2.11.0
 build_lib GSL_LITE gsl_lite 0.37.0
-build_lib PYBIND11 pybind11 2.8.1
+build_lib PYBIND11 pybind11 2.12.2  # 2.8.1
 
 #----------------------
 # These must be rebuilt for each MPI implementation
-build_lib HDF5 hdf5 1.13.2
+build_lib HDF5 hdf5 1.12.2   #  1.13.2
 build_lib PNETCDF pnetcdf 1.12.2
 
-
-build_lib NETCDF netcdf 4.7.4 4.5.3 4.3.0
+build_lib NETCDF netcdf 4.6.0 4.9.2 4.3.1  # 4.7.4 4.5.3 4.3.0
 build_lib NCCMP nccmp 1.8.7.0
 
-build_lib ECKIT eckit ecmwf 1.20.2  # 1.19.0
-build_lib FCKIT fckit ecmwf 0.9.5   #
-build_lib ATLAS atlas ecmwf 0.31.1  # 0.30.0
+build_lib ECKIT eckit ecmwf 1.23.0  # 1.19.0
+build_lib FCKIT fckit ecmwf 0.10.1   #
+build_lib ATLAS atlas ecmwf 0.33.0  # 0.30.0
 build_lib ODB odb 0.18.1.r2
-build_lib ODC odc ecmwf 1.4.4
-build_lib ECCODES eccodes 2.24.0
+build_lib ODC odc ecmwf 1.4.6
+build_lib ECCODES eccodes 2.27.0
 
 # ===============================================================================
 # Optional Extensions to the JEDI Stack
