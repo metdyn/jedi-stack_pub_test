@@ -4,7 +4,7 @@
 # http://www.apache.org/licenses/LICENSE-2.0.
 
 # Compiler/MPI combination
-export JEDI_COMPILER="clang/14.0.0"  # "clang/14.0.0" ? hwloc inconsistent between clang and gfortran, 13.1.6 old
+export JEDI_COMPILER="clang/14.0.3"  # "clang/14.0.0" ? hwloc inconsistent between clang and gfortran, 13.1.6 old
 export FC=gfortran                   # Set the initial fortran compiler to build MPI distribution
 export JEDI_MPI="openmpi/4.0.7"
 #export JEDI_MPI="mpich/3.3.2"        # 17-Oct-2022 fail mpich/4.0.2
@@ -17,7 +17,7 @@ export USE_SUDO=N
 export PKGDIR=pkg
 export LOGDIR=buildscripts/log
 export OVERWRITE=Y
-export NTHREADS=8
+export NTHREADS=16
 export   MAKE_CHECK=N
 export MAKE_VERBOSE=Y
 export   MAKE_CLEAN=N

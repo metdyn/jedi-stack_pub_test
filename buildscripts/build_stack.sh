@@ -78,6 +78,9 @@ i=1
 if [ $i -eq 0 ]; then
     echo i=0
     exit -1
+
+else
+    echo i/=0
     
 build_lib CMAKE cmake 3.24.3  # 3.22.0
 
@@ -119,9 +122,6 @@ build_lib ECCODES eccodes 2.27.0   # failed  AEC library was not found
 build_lib JASPER jasper 4.0.0
 build_lib XERCES xerces 3.1.4
 
-
-
-
 build_lib NCEPLIBS nceplibs fv3   # does not work on mac
 build_lib TKDIFF tkdiff 4.3.5
 build_lib PYJEDI pyjedi
@@ -136,9 +136,6 @@ build_lib ECFLOW ecflow ecmwf 5.5.3 boost 1.68.0    # stil fail
 # These must be rebuilt for each MPI implementation
 build_lib GPTL gptl 8.0.3
 build_lib NCO nco 4.9.9
-
-else
-    echo i/=0
     
 build_lib PIO pio 2.5.5
 build_lib FFTW fftw 3.3.8
